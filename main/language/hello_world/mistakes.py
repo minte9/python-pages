@@ -1,5 +1,3 @@
-# python hello.py
-
 print('Hello World') # correct
     # Hello World
 
