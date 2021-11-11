@@ -7,5 +7,5 @@ def myfunc(a, b):
 
 print(myfunc(3, 4)) # 7
 
-print(c) 
+# print(c) 
     # NameError: name 'c' is not defined

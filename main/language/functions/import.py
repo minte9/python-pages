@@ -1,4 +1,3 @@
-# Functions from module
 # To use a function from a module, you have to import it.
 
 import math
