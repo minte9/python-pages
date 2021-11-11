@@ -8,4 +8,4 @@ Learn and Remember - [minte9.com/java](https://www.minte9.com/python)
 
 
 ## Language
-  * hello_world/ [hello](/main/language/hello.py), [mistakes](/main/language/mistakes.py)
+  * hello_world/ [hello](/main/language/hello_world/hello.py), [mistakes](/main/language/hello_world/mistakes.py)
