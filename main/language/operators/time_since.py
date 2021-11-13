@@ -1,8 +1,8 @@
 # The time module provides a function ...
 # that returns the current GMT in “the epoch”
 #
-# Let's write a function convert() that returns ...
-# days, hours, minutes, seconds since UTC
+# Let's write a function that returns ...
+# days, hours, minutes, seconds since Unix birthday 01.01.1970
 
 import time
 
@@ -10,7 +10,7 @@ today = time.time()
 print(today)
     # 1636720824.934335
 
-def time2gmt(t):
+def convert_GMT(t):
 
     days = int(t) // (3600 * 4)
     remainder = int(t) % (3600 * 4)
@@ -30,5 +30,5 @@ def time2gmt(t):
         str(seconds) + " seconds"
     )
 
-print(time2gmt(today))
+print(convert_GMT(today))
     # 113661 days 0 hours 50 minutes 32 seconds
