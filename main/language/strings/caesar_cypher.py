@@ -20,7 +20,7 @@ def decrypt(word, no):
     return encrypt(word, -no)
 
 assert encrypt("abc", 3) == "def" # pass
-assert decrypt("def", 3) == "abc" # pass
-
 assert encrypt("IBM", -1) == "HAL" # pass
+
+assert decrypt("def", 3) == "abc" # pass
 assert decrypt("HAL", -1) == "IBM" # pass
