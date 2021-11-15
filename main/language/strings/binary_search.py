@@ -36,9 +36,6 @@ def binary_search(words, keyword, i=0):
     return i
 
 
-print("Words: " + str(len(words)))
-print("Full search loops: " + str(full_search(words, "mother")))
-print("Binary search loops: " + str(binary_search(words, "mother")))
-    # Words: 113783
-    # Full search loops: 62889
-    # Binary search loops: 16
+print("Words: " + str(len(words))) # 113783
+print("Full search loops: " + str(full_search(words, "mother"))) # 62889
+print("Binary search loops: " + str(binary_search(words, "mother"))) # 16
