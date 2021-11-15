@@ -24,7 +24,8 @@ for line in open(file):
     word = line.strip()
     if has_three_doubles(word):
         print(word)
-            # bookkeeper
-            # bookkeepers
-            # bookkeeping
-            # bookkeepings
+        
+        # bookkeeper
+        # bookkeepers
+        # bookkeeping
+        # bookkeepings
