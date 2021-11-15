@@ -1,6 +1,8 @@
 # Get the words with three consecutive double letters
 
-def has_three_double(word):
+import os
+
+def has_three_doubles(word):
     i = 0
     jj = 0
     while i < len(word) -1:
@@ -14,15 +16,13 @@ def has_three_double(word):
             i = i + 1
     return False
 
-assert has_three_double("aabbcc") == True
-assert has_three_double("Mississippi") == False
-
-import os
+assert has_three_doubles("aabbcc") == True
+assert has_three_doubles("Mississippi") == False
 
 file = os.path.dirname(__file__) + "/words.txt"
 for line in open(file):
     word = line.strip()
-    if has_three_double(word):
+    if has_three_doubles(word):
         print(word)
             # bookkeeper
             # bookkeepers
