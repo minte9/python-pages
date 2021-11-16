@@ -1,4 +1,6 @@
-# Newton's method for finding roots ...
+# Newton's method:
+# 
+# For finding roots ...
 # is a root-finding algorithm to produce succesive better aproximations
 # 
 # Suppose that you want to know the square root of a. 
