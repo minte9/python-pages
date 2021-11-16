@@ -1,4 +1,6 @@
-# python hello.py
+# hello.py
 
 print('Hello World')
+
+# python hello.py
     # Hello World
