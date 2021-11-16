@@ -1,4 +1,4 @@
-# Newton's method:
+# Newton method:
 # 
 # For finding roots ...
 # is a root-finding algorithm to produce succesive better aproximations
