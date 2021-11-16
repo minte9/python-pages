@@ -1,6 +1,6 @@
 # Newton method:
 # 
-# For finding roots ... assert distance(1, 2, 4, 6) == 0.0
+# For finding roots ... assert distance(1, 2, 4, 6) == 0.0 
 # is a root-finding algorithm to produce succesive better aproximations
 # 
 # Suppose that you want to know the square root of a. 
