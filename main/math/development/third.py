@@ -1,6 +1,6 @@
 # Incremental development - Pythagorean Theorem
 #
-#    d = square( (x2-x1)^2 + (y2-y1)^2 )
+#    d = square( (x2-x1)^2 + (y2-y1)^2 ) 
 #
 # Third: Compute the sum of squares
 
