@@ -7,7 +7,7 @@
 # The keys are in no order.
 
 
-# Get histogram of a string
+# string histogram
 
 def histogram(str):
     dictionary = dict()
