@@ -3,8 +3,6 @@
 # 
 # In a list, the index have to be integer ...
 # in a dictionary it can be any type.
-#
-# The in operator works on dictionaries, same as with lists.
 
 
 # Create a dictionary using dict()
