@@ -34,7 +34,26 @@ assert histogram("yahoo").get('o', 0) == 2
 h = histogram("google")
 for k in h:
     print(k + ": " + str(h[k]))
-    # g: 2
-    # o: 2
-    # l: 1
-    # e: 1
+        # g: 2
+        # o: 2
+        # l: 1
+        # e: 1
+
+
+# invert histogram - to map the frequencies to letters
+
+def invert_histogram(d):
+    dictionary = dict()
+    for key in d:
+        value = d[key]
+        if value not in dictionary:
+            dictionary[value] = [key]  # new row list
+        else:
+            dictionary[value].append(key)  # add to row list
+    return dictionary
+
+h = invert_histogram(histogram("google"))
+for k in h:
+    print(k, h[k])
+        # 2 ['g', 'o']
+        # 1 ['l', 'e']
