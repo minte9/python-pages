@@ -10,41 +10,41 @@
 # -------------------------------------
 #   - define function
 
-def is_palindrome_v1(word):
+def is_palindrome(word):
     return True
 
-assert is_palindrome_v1("abc") == True
+assert is_palindrome("abc") == True
 
 
 # SECOND:
 # -------------------------------------
 #   - test first/last
 
-def is_palindrome_v2(word):
+def is_palindrome(word):
     first = word[0]
     last = word[-1]
     if (first != last):
         return False
     return True
 
-assert is_palindrome_v2("abca") == True
-assert is_palindrome_v2("abc") == False
+assert is_palindrome("abca") == True
+assert is_palindrome("abc") == False
 
 
 # THIRD:
 # -------------------------------------
 #   - test middle
 
-def is_palindrome_v2(word):
+def is_palindrome(word):
     if (word[0] != word[-1]):
         return False
     if (len(word) > 2):
         middle = word[1:-1]
-        return is_palindrome_v2(middle)
+        return is_palindrome(middle)
     return True
 
-assert is_palindrome_v2("abcba") == True
-assert is_palindrome_v2("abca") == False
+assert is_palindrome("abcba") == True
+assert is_palindrome("abca") == False
 
 
 # FINAL:
