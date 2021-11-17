@@ -1,5 +1,7 @@
 # Palindrome:
 # 
+# Incremental development - check if string is palindrome
+#
 # A palindrom is a word that is spelled the same backward and forward
 # Example: noon, redivider
 #
