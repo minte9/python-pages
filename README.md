@@ -16,7 +16,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * strings/ [slice](/main/language/strings/slice.py), [imutable](/main/language/strings/imutable.py), [search](/main/language/strings/search.py), [words](/main/language/strings/words.py), [builtin](/main/language/strings/builtin.py), [binary_search](/main/language/strings/binary_search.py), [caesar_cypher](/main/language/strings/caesar_cypher.py),  [three_doubles](/main/language/strings/three_doubles.py)
 
 ## Math
-  * [recursion/] [recursion](/main/math/recursion/recursion.py), [repeat](/main/math/recursion/repeat.py)
-  * [factorial/] [factorial](/main/math/factorial/factorial.py), [fibonnaci](/main/math/factorial/fibonnaci.py), 
-  * [approximate/] [square](/main/math/approximate/square.py), [square_abs](/main/math/approximate/square_abs.py), 
-  * [development/] [first](/main/math/development/first.py), [second](/main/math/development/second.py),  [third](/main/math/development/third.py), [forth](/main/math/development/forth.py), [palindrome](/main/math/development/palindrome.py)
+  * recursion/ [recursion](/main/math/recursion/recursion.py), [repeat](/main/math/recursion/repeat.py)
+  * factorial/ [factorial](/main/math/factorial/factorial.py), [fibonnaci](/main/math/factorial/fibonnaci.py), 
+  * approximate/ [square](/main/math/approximate/square.py), [square_abs](/main/math/approximate/square_abs.py), 
+  * development/ [first](/main/math/development/first.py), [second](/main/math/development/second.py),  [third](/main/math/development/third.py), [forth](/main/math/development/forth.py), [palindrome](/main/math/development/palindrome.py)
