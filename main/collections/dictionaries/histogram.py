@@ -1,7 +1,7 @@
 # Histogram
 # 
 # How many times each letter appears
-# The get method takes a key and a default value
+# To get a value use get(key, default) method
 
 def histogram(str):
     dictionary = dict()
