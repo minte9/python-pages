@@ -1,10 +1,8 @@
-# Slow - only recursion
+# Slow (recursion only)
 #
 #    fb(0) = 0
 #    fb(1) = 1
 #    fb(n) = fb(n-1) + fb(n-2)
-#
-# Each number is the sum of the two preceding ones.
 #
 # The bigger the argument, the longer the function runs.
 # It gets worst as the argument gets bigger.

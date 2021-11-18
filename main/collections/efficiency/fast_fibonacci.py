@@ -1,10 +1,8 @@
-# Fast - recursion & dictionary
+# Fast (recursion & dictionary)
 #
 #    fb(0) = 0
 #    fb(1) = 1
 #    fb(n) = fb(n-1) + fb(n-2)
-#
-# Each number is the sum of the two preceding ones.
 #
 # To make the algorith run faster ...
 # one solution is to keep track of values and store them in a dictionary.
