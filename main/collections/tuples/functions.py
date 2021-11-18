@@ -3,7 +3,7 @@
 # The effect is the same as returning multiple values.
 
 # Quontient & Reminder:
-# -------------------------------------------------------------
+#
 # To compute the quontient and reminders it is better to ...
 # compute both at the same time.
 
@@ -16,7 +16,7 @@ assert (quot, rem) == (2, 1)
 
 
 # Function arguments:
-# -------------------------------------------------------------
+#
 # Functions can take a variable number of arguments.
 # A parameter name that begins with * gathers arguments into a tuple.
 
