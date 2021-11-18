@@ -1,4 +1,4 @@
-# Slow (recursion only)
+# Slow (recursion)
 #
 #    fb(0) = 0
 #    fb(1) = 1
