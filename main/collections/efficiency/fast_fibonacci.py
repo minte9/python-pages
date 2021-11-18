@@ -1,4 +1,4 @@
-# Fibonacci - fast implementation
+# Fast - recursion & dictionary
 #
 #    fb(0) = 0
 #    fb(1) = 1

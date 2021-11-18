@@ -1,4 +1,4 @@
-# Fibonacci - slow implementation
+# Slow - only recursion
 #
 #    fb(0) = 0
 #    fb(1) = 1
