@@ -6,6 +6,7 @@
 #
 # Tuples are different than lists, they are immutable.
 
+# CLASS
 t = 'a', 'b', 'c'; 
 t = 'a',
 t = ('a', 'b', 'c')
@@ -14,14 +15,14 @@ print(type(t))
     # <class 'tuple'>
 
 
-# Not a tuple
+# NOT a tuple
 # -------------------------------------------
 t = ('a')
 print(type(t)) 
     # <class 'str'>
 
 
-# Immutable
+# IMUTTABLE
 # -------------------------------------------
 mylist = [1, 2, 3]
 mylist[0] = 4
@@ -32,8 +33,11 @@ mytuple = (1, 2, 3)
     # TypeError: 'tuple' object does not support item assignment
 
 
-# Replace
+# REPLACE
 # -------------------------------------------
 # You can't modify the elements, ...
 # but you can replace one tuple with another.
 # ---------------------------------------------
+t = ('a', 'b', 'c', 'd', 'e')
+t = ('A',) + t[2:]
+print(t)  # ('A', 'c', 'd', 'e')
