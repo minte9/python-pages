@@ -1,5 +1,6 @@
-# A tuple is a comma separated values
+# Tuple:
 #
+# A tuple is a comma separated values
 # It is common to use parantheses, but not necessary
 #
 # A single value in parantheses is not a tuple
