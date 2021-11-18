@@ -5,10 +5,10 @@ c = 3
 d = 4
 c, d = d, c
 
-assert (c, d) == (4, 3)
-assert (c) == 4
-assert (c,) != 4
-assert (c, d) != (3, 4)
+assert (c, d)   == (4, 3)
+assert (c)      == 4
+assert (c,)     != 4
+assert (c, d)   != (3, 4)
 
 
 # Common method ...
