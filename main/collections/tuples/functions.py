@@ -1,6 +1,8 @@
-# A function can return only one value, ...
-# but if the value is a tuple ...
-# The effect is the same as returning multiple values.
+# A function can return only one value.
+#
+# If the value is a tuple ...
+# the effect is the same as returning multiple values.
+
 
 # Quontient & Reminder:
 #
