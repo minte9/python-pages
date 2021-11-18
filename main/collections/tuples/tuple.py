@@ -6,6 +6,7 @@
 #
 # Tuples are different than lists, they are immutable.
 
+
 # CLASS type
 # -------------------------------------------
 t = 'a', 'b', 'c'; 
