@@ -6,6 +6,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 
 - [Language](#language) 
 - [Math](#math) 
+- [Collections](#collections) 
 
 
 ## Language
@@ -22,3 +23,9 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * factorial/ [factorial](/main/math/factorial/factorial.py), [fibonnaci](/main/math/factorial/fibonnaci.py), 
   * approximate/ [square](/main/math/approximate/square.py), [square_abs](/main/math/approximate/square_abs.py), 
   * development/ [first](/main/math/development/first.py), [second](/main/math/development/second.py),  [third](/main/math/development/third.py), [forth](/main/math/development/forth.py), [palindrome](/main/math/development/palindrome.py)
+
+## Collections
+  * lists/ [mutable](/main/collections/lists/mutable.py), [concat](/main/collections/lists/concat.py), [multiply](/main/collections/lists/multiply.py), [slice](/main/collections/lists/slice.py), [append](/main/collections/lists/append.py)
+  * dictionaries/ [dictionary](/main/collections/dictionaries/dictionary.py), [histogram](/main/collections/dictionaries/histogram.py), [hash](/main/collections/dictionaries/hash.py)
+  * efficiency/ [slow_fibonacci](/main/collections/efficiency/slow_fibonacci.py), [fast_fibonacci](/main/collections/efficiency/fast_fibonacci.py)
+  * tuples/ [tuple](/main/collections/tuples/tuple.py), [variables](/main/collections/tuples/variables.py), [dictionaries](/main/collections/tuples/dictionaries.py), [functions](/main/collections/tuples/functions.py)
