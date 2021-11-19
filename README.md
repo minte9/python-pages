@@ -23,7 +23,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 ## Math
   * recursion/ [recursion](/main/math/recursion/recursion.py), [repeat](/main/math/recursion/repeat.py)
   * factorial/ [factorial](/main/math/factorial/factorial.py), [fibonnaci](/main/math/factorial/fibonnaci.py)
-  * reassignment/ [assign](/main/reassignment/assign.py), [reassign](/main/reassignment/reassign.py)
+  * reassignment/ [assign](/main/math/reassignment/assign.py), [reassign](/main/math/reassignment/reassign.py)
   * approximate/ [square](/main/math/approximate/square.py), [square_abs](/main/math/approximate/square_abs.py)
   * development/ [first](/main/math/development/first.py), [second](/main/math/development/second.py),  [third](/main/math/development/third.py), [forth](/main/math/development/forth.py), [palindrome](/main/math/development/palindrome.py)
 
