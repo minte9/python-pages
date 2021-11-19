@@ -1,4 +1,6 @@
-# Conditional statement
+# Conditional statement ...
+#
+# normal expression
 # short expression
 
 n = 0
