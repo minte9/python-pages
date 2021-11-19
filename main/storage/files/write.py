@@ -8,8 +8,8 @@
 
 import os
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-file = dir_path + "/data/myfile1.txt"
+DIR = os.path.dirname(os.path.realpath(__file__))
+file = DIR + "/data/myfile1.txt"
 
 fp = open(file, "w")
 fp.write("New line 1 \n")
