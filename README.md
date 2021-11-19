@@ -5,7 +5,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/minte9/python-pages)
 
 - [Language](#language) 
-- [Math](#math) 
+- [Functions](#functions) 
 - [Collections](#collections) 
 - [Storage](#storage) 
 - [Class](#class) 
@@ -20,12 +20,12 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * debugging/ [semantic_error](/main/language/debugging/semantic_error.py)
   * strings/ [slice](/main/language/strings/slice.py), [imutable](/main/language/strings/imutable.py), [search](/main/language/strings/search.py), [words](/main/language/strings/words.py), [builtin](/main/language/strings/builtin.py), [binary_search](/main/language/strings/binary_search.py), [caesar_cypher](/main/language/strings/caesar_cypher.py),  [three_doubles](/main/language/strings/three_doubles.py)
 
-## Math
-  * recursion/ [recursion](/main/math/recursion/recursion.py), [repeat](/main/math/recursion/repeat.py)
-  * factorial/ [factorial](/main/math/factorial/factorial.py), [fibonnaci](/main/math/factorial/fibonnaci.py)
-  * reassignment/ [assign](/main/math/reassignment/assign.py), [reassign](/main/math/reassignment/reassign.py)
-  * approximate/ [square](/main/math/approximate/square.py), [square_abs](/main/math/approximate/square_abs.py)
-  * development/ [first](/main/math/development/first.py), [second](/main/math/development/second.py),  [third](/main/math/development/third.py), [forth](/main/math/development/forth.py), [palindrome](/main/math/development/palindrome.py)
+## Functions
+  * recursion/ [recursion](/main/functions/recursion/recursion.py), [repeat](/main/functions/recursion/repeat.py)
+  * factorial/ [factorial](/main/functions/factorial/factorial.py), [fibonnaci](/main/functions/factorial/fibonnaci.py)
+  * reassignment/ [assign](/main/functions/reassignment/assign.py), [reassign](/main/functions/reassignment/reassign.py)
+  * approximate/ [square](/main/functions/approximate/square.py), [square_abs](/main/functions/approximate/square_abs.py)
+  * development/ [first](/main/functions/development/first.py), [second](/main/functions/development/second.py),  [third](/main/functions/development/third.py), [forth](/main/functions/development/forth.py), [palindrome](/main/functions/development/palindrome.py)
 
 ## Collections
   * lists/ [mutable](/main/collections/lists/mutable.py), [concat](/main/collections/lists/concat.py), [multiply](/main/collections/lists/multiply.py), [slice](/main/collections/lists/slice.py), [append](/main/collections/lists/append.py)
