@@ -1,7 +1,6 @@
 # Method __init__ gets invoked when an object is instantiated
 # Method __str__ returns a string representation of an object
 
-
 class Time:
     def __init__(self, hour=0, min=0, sec=0):
         self.hour = hour
@@ -14,7 +13,6 @@ class Time:
 time = Time(9, 30) # parameters are optional
 time.print() 
     # 09:30:00
-
 
 class Time:
     def __init__(self, hour=0, min=0, sec=0):
