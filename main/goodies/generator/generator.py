@@ -14,7 +14,7 @@ assert next(g) == 4
 next(g) # StopIteration - Exception
 
 
-# Populate a list using - generator
+# Populate a list using generator
 # only once at a time
 
 list = []
@@ -25,7 +25,7 @@ assert len(list) == 2
 assert len(list) != 101010
 
 
-# Populate a list using - for loop
+# Populate a list using for loop
 # it is invoking __next__ generator
 
 list = []
