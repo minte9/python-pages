@@ -1,9 +1,10 @@
-# Opening a file in write mode ...
-# clears out old data if the files exists.
-#
+# Open a file in wrrite mode (default is read)
+# 
+# The old data is cleared if the files exists.
 # If the file doesn't exists a new one is created.
 #
-# The os module provides functions for working with files and directories.
+# The os module ...
+# provides functions for working with files and directories.
 
 import os
 
