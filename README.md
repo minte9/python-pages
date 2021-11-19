@@ -9,6 +9,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 - [Collections](#collections) 
 - [Storage](#storage) 
 - [Class](#class) 
+- [Goodies](#goodies) 
 
 ## Language
   * hello_world/ [hello](/main/language/hello_world/hello.py), [mistakes](/main/language/hello_world/mistakes.py)
@@ -41,3 +42,9 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * attributes/ [attributes](/main/class/attributes/attributes.py), [argument](/main/class/attributes/argument.py), [docstring](/main/class/attributes/docstring.py), [distance](/main/class/attributes/distance.py)
   * functional/ [pure_function](/main/class/functional/pure_function.py), [modifiers](/main/class/functional/modifiers.py)
   * methods/ [active](/main/class/methods/active.py), [methods](/main/class/methods/methods.py), [init](/main/class/methods/init.py)
+
+## Goodies
+  * conditional_expression/ [conditional](/main/goodies/conditional_expression/conditional.py), [recursion](/main/goodies/conditional_expression/recursion.py)
+  * list_comprehension/ [loop](/main/goodies/list_comprehension/loop.py), [comprehension](/main/goodies/list_comprehension/comprehension.py)
+  * generator/ [generator](/main/goodies/generator/generator.py), [functions](/main/goodies/generator/functions.py)
+  * named_tuple/ [class](/main/goodies/named_tuple/class.py), [drawback](/main/goodies/named_tuple/drawback.py)
