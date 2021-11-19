@@ -8,6 +8,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 - [Math](#math) 
 - [Collections](#collections) 
 - [Storage](#storage) 
+- [Class](#class) 
 
 ## Language
   * hello_world/ [hello](/main/language/hello_world/hello.py), [mistakes](/main/language/hello_world/mistakes.py)
@@ -34,3 +35,9 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * databases/ [database](/main/storage/databases/database.py), [db_pickle](/main/storage/databases/db_pickle.py)
   * files/ [write](/main/storage/files/write.py), [csvreader](/main/storage/files/csvreader.py), [exception](/main/storage/files/exception.py)
   * pipes/ [md5sum](/main/storage/pipes/md5sum.py), [pipe](/main/storage/pipes/pipe.py)
+
+## Class
+  * definition/ [definition](/main/class/definition/definition.py), [object](/main/class/definition/object.py)
+  * attributes/ [attributes](/main/class/attributes/attributes.py), [argument](/main/class/attributes/argument.py), [docstring](/main/class/attributes/docstring.py), [distance](/main/class/attributes/distance.py)
+  * functional/ [pure_function](/main/class/functional/pure_function.py), [modifiers](/main/class/functional/modifiers.py)
+  * methods/ [active](/main/class/methods/active.py), [methods](/main/class/methods/methods.py), [init](/main/class/methods/init.py)
