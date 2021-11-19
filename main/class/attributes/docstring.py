@@ -1,4 +1,4 @@
-# Class definition
+# Class definition ...
 #
 # Use docstring to lists attributes
 

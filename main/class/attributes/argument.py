@@ -1,4 +1,4 @@
-# Function arguments
+# Function arguments ...
 #
 # Class instances can be pass as arguments to functions
 

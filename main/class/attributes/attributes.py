@@ -1,4 +1,4 @@
-# Class attributes
+# Class attributes ...
 #
 # Use dot to assign values to a class instance
 
