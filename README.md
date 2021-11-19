@@ -7,7 +7,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 - [Language](#language) 
 - [Math](#math) 
 - [Collections](#collections) 
-
+- [Storage](#storage) 
 
 ## Language
   * hello_world/ [hello](/main/language/hello_world/hello.py), [mistakes](/main/language/hello_world/mistakes.py)
