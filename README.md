@@ -30,7 +30,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * efficiency/ [slow_fibonacci](/main/collections/efficiency/slow_fibonacci.py), [fast_fibonacci](/main/collections/efficiency/fast_fibonacci.py)
   * tuples/ [tuple](/main/collections/tuples/tuple.py), [variables](/main/collections/tuples/variables.py), [dictionaries](/main/collections/tuples/dictionaries.py), [functions](/main/collections/tuples/functions.py)
 
-## storage
+## Storage
   * databases/ [database](/main/storage/databases/database.py), [db_pickle](/main/storage/databases/db_pickle.py)
-  * files/ [csvreader](/main/storage/files/csvreader.py), [exception](/main/storage/files/exception.py), [write.py](/main/storage/files/write.py)
+  * files/ [write](/main/storage/files/write.py), [csvreader](/main/storage/files/csvreader.py), [exception](/main/storage/files/exception.py)
   * pipes/ [md5sum](/main/storage/pipes/md5sum.py), [pipe](/main/storage/pipes/pipe.py)
