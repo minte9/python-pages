@@ -1,3 +1,7 @@
+# Normal use of a for loop ...
+#
+# without list comprehension
+
 str = "abc"
 res = []
 
