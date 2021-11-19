@@ -29,3 +29,8 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * dictionaries/ [dictionary](/main/collections/dictionaries/dictionary.py), [histogram](/main/collections/dictionaries/histogram.py), [hash](/main/collections/dictionaries/hash.py)
   * efficiency/ [slow_fibonacci](/main/collections/efficiency/slow_fibonacci.py), [fast_fibonacci](/main/collections/efficiency/fast_fibonacci.py)
   * tuples/ [tuple](/main/collections/tuples/tuple.py), [variables](/main/collections/tuples/variables.py), [dictionaries](/main/collections/tuples/dictionaries.py), [functions](/main/collections/tuples/functions.py)
+
+## storage
+  * databases/ [database](/main/storage/databases/database.py), [db_pickle](/main/storage/databases/db_pickle.py)
+  * files/ [csvreader](/main/storage/files/csvreader.py), [exception](/main/storage/files/exception.py), [write.py](/main/storage/files/write.py)
+  * pipes/ [md5sum](/main/storage/pipes/md5sum.py), [pipe](/main/storage/pipes/pipe.py)
