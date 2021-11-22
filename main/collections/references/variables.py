@@ -2,9 +2,6 @@
 # you are creating 42 value in computer memory ...
 # and store a reference to it
 a = 42
-
-# When you copy the value in a ....
-# you are copying the reference.
 b = a
 
 # When later you change the value of a, 
