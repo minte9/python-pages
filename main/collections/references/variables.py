@@ -1,6 +1,3 @@
-# Tehnically, variables are storing references ...
-# to the computer memory locations where the values are stored
-
 # When you assign 42 to a variable,
 # you are creating 42 value in computer memory ...
 # and store a reference to it
