@@ -4,8 +4,6 @@
 # When you assign 42 to a variable,
 # you are creating 42 value in computer memory ...
 # and store a reference to it
-#
-# Integers are imutable
 a = 42
 
 # When you copy the value in a ....
