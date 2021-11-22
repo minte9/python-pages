@@ -5,6 +5,7 @@
 # For a single element, include the final comma
 #
 # Tuples are different than lists, they are immutable.
+# Tuples are typed with parentheses, instead of square brackets.
 
 
 # CLASS type
