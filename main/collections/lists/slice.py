@@ -1,5 +1,7 @@
 # The slice operator [:] works on list
 # (same as with strings)
+#
+# The value -1 refers to the last index in a list
 
 word = "abcde"
 
@@ -14,3 +16,5 @@ assert list[:1] != "a"
 assert list[:1] == ["a"]
 assert list[1:] == ["b", "c", "d", "e"]
 assert list[1:3] == ["b", "c"]
+
+assert list[-1] == "e"  # last
