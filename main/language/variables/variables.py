@@ -2,15 +2,18 @@
 # If you give an illegal name of a variable, you get a syntax error.
 # An expression is a combination of values, variables, and operators.
 
+
 # Assignment
 message = 'Hello World!'
 print(message)
     # Hello World!
 
+
 # Illegal name variables
 # name@ = "John" 
 # class = "myClass" 
      # SyntaxError: invalid syntax
+
 
 # Expression
 n = 17
