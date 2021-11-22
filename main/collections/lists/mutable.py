@@ -1,3 +1,5 @@
+# A list contains multiple values in an ordered sequence
+#
 # Unlike strings, list are mutable
 # It can be changed
 
