@@ -5,15 +5,16 @@
 #
 # To end the function, you have to enter an empty line.
 # Statements inside a function don't run until the function is called
+#
+# In Python, there is value called None
+# which represents the absence of a value
+
 
 def myfunc(a): 
     return a%2
 
 print (myfunc(3)) # 1
 
-
-# In Python, there is value called None
-# which represents the absence of a value
 
 def myprint(x):
     return
