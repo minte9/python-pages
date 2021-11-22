@@ -6,7 +6,7 @@
 # To end the function, you have to enter an empty line.
 # Statements inside a function don't run until the function is called
 #
-# In Python, there is value called None
+# In Python, there is value called None ...
 # which represents the absence of a value
 
 
