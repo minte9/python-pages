@@ -8,6 +8,8 @@
 #
 # In Python, there is value called None ...
 # which represents the absence of a value
+#
+# You can split a singule instruction on multple lines with \
 
 
 def myfunc(a): 
@@ -20,3 +22,7 @@ def myprint(x):
     return
 
 print (myprint("2")) # None
+
+
+print("Hello " + \
+        "World") # Hello World
