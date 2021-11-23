@@ -6,8 +6,7 @@
 # Assignment
 # --------------------------
 message = 'Hello World!'
-print(message)
-    # Hello World!
+print(message) # Hello World!
 
 
 # Illegal name variables
