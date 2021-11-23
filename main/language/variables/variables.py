@@ -13,8 +13,7 @@ print(message)
 # Illegal name variables
 # --------------------------
 # name@ = "John" 
-# class = "myClass" 
-     # SyntaxError: invalid syntax
+# class = "myClass" # SyntaxError: invalid syntax
 
 
 # Expression
