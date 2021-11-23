@@ -11,9 +11,8 @@
 #
 # Every other square dies or remains dead ...
 # on the next step. 
-# --------------------------------------
 
-import random, time, copy, sys
+import random, time, copy, sys, math
 
 X = 6
 Y = 6
@@ -33,6 +32,11 @@ def get_cells():
 def print_cells(cells):
     for row in cells:
         print (*row, sep=' ')
+
+
+
+
+sys.exit(0)
 
 cells = get_cells()
 print_cells(cells)
@@ -73,3 +77,4 @@ for x in range(X):
 
         print(x, y, neighbours)
     print("---")
+    sys.exit(0)
