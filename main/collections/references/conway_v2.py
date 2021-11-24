@@ -17,7 +17,7 @@
 # The neighbours are wraparound \
 # for x=0, the left neighbour has x=59
 #
-# The mod-wraparound tehchnique works as well for \
+# The mod-wraparound technique works as well for \
 # right, above, below
 
 import random
