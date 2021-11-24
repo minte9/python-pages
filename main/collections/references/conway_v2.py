@@ -49,7 +49,7 @@ print_cells(cells)
 for x in range(X): # x=0 ... x=5
     for y in range(Y):
 
-        left  = (x - 1) % X
+        left  = (x - 1) % X  # Look Here
         right = (x + 1) % X
         above = (y - 1) % Y
         below = (y + 1) % Y

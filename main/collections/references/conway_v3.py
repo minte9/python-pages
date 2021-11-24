@@ -32,7 +32,7 @@ nextC = get_cells()
 #
 while True:
     print("-------------")
-    currC = copy.deepcopy(nextC)    # new compound object (copies everything)
+    currC = copy.deepcopy(nextC)  # Look Here
     print_cells(currC)
 
     for x in range(X):
