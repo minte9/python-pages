@@ -1,30 +1,29 @@
-# Conway game of life
+# Conway game of life - v4
 #
-# v4 - Glider pattern
-# --------------------------------------
+# Glider pattern (not random)
+# 
 # A filled-in square will be "alive" (#)
 # An empty square will be "dead" (' ')
 #
-# If a living square has 2 or 3 living neighbours, ...
+# If a living square has 2 or 3 living neighbours, \
 # it continures to be alive on the next step.
 #
-# If a dead square has 3 living neighbours, ...
+# If a dead square has 3 living neighbours, \
 # it comes alive on the next step.
 #
-# Every other square dies or remains dead ...
+# Every other square dies or remains dead \
 # on the next step. 
 #
-# The neighbour is wraparound ...
+# The neighbour is wraparound \
 # For x=0, the left neighbour has x=59
 #
-# The mod-wraparound tehchnique works as well for ...
+# The mod-wraparound tehchnique works as well for \
 # right, above, below
 # 
-# Deep copy is relevant only for compound objects ...
+# Deep copy is relevant only for compound objects \
 # (objects that contain other objects, like lists or class instances)
-# -------------------------------------------------
 #
-# The glider pattern, results in a pattern that ...
+# The glider pattern, results in a pattern that \
 # moves diagonally every four steps
 
 import time, copy
@@ -37,7 +36,7 @@ def get_cells():
     for x in range(X):
         row = []
         for y in range(Y):
-            if (x, y) in ((1,0), (2,1), (0,2), (1,2), (2,2)):
+            if (x, y) in ((1,0), (2,1), (0,2), (1,2), (2,2)):  # Look Here
                 row.append('#')
             else:
                 row.append(' ')
@@ -52,7 +51,7 @@ nextC = get_cells()
 
 while True:
     print("-------------")
-    currC = copy.deepcopy(nextC)    # new compound object (copies everything)
+    currC = copy.deepcopy(nextC)
     print_cells(currC)
 
     for x in range(X):

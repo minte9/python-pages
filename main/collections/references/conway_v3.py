@@ -1,26 +1,26 @@
-# Conway game of life
+# Conway game of life - v3
 #
-# v3 - main loop (to set alive / dead)
-# --------------------------------------
+# Main loop to set next alive or dead squares \
+# 
 # A filled-in square will be "alive" (#)
 # An empty square will be "dead" (' ')
 #
-# If a living square has 2 or 3 living neighbours, ...
+# If a living square has 2 or 3 living neighbours, \
 # it continures to be alive on the next step.
 #
-# If a dead square has 3 living neighbours, ...
+# If a dead square has 3 living neighbours, \
 # it comes alive on the next step.
 #
-# Every other square dies or remains dead ...
+# Every other square dies or remains dead \
 # on the next step. 
 #
-# The neighbour is wraparound ...
+# The neighbour is wraparound \
 # For x=0, the left neighbour has x=59
 #
-# The mod-wraparound tehchnique works as well for ...
+# The mod-wraparound tehchnique works as well for \
 # right, above, below
 #
-# Deep copy is relevant only for compound objects ...
+# Deep copy is relevant only for compound objects \
 # (objects that contain other objects, like lists or class instances)
 
 import random, time, copy
