@@ -35,7 +35,6 @@ def print_cols(cols):
     for row in cols:
         print (*row, sep=' ')
 
-
 while True:
     print_cols(get_cols())
     print("-------------")

@@ -1,30 +1,7 @@
 # Conway game of life - v4
 #
-# Glider pattern (not random)
-# 
-# A filled-in square will be "alive" (#)
-# An empty square will be "dead" (' ')
-#
-# If a living square has 2 or 3 living neighbours, \
-# it continures to be alive on the next step.
-#
-# If a dead square has 3 living neighbours, \
-# it comes alive on the next step.
-#
-# Every other square dies or remains dead \
-# on the next step. 
-#
-# The neighbour is wraparound \
-# For x=0, the left neighbour has x=59
-#
-# The mod-wraparound tehchnique works as well for \
-# right, above, below
-# 
-# Deep copy is relevant only for compound objects \
-# (objects that contain other objects, like lists or class instances)
-#
-# The glider pattern, results in a pattern that \
-# moves diagonally every four steps
+# Glider pattern (not random) \
+# A pattern that moves diagonally every four steps
 
 import time, copy
 
@@ -64,32 +41,32 @@ while True:
 
             n = 0
 
-            if currC[L][A] == '#':  # top left
+            if currC[L][A] == '#':
                 n += 1
-            if currC[x][A] == '#':  # top
+            if currC[x][A] == '#':
                 n += 1
-            if currC[R][A] == '#':  # top right
+            if currC[R][A] == '#':
                 n += 1
-            if currC[R][y] == '#':  # right
+            if currC[R][y] == '#':
                 n += 1
-            if currC[R][B] == '#':  # bottom right
+            if currC[R][B] == '#':
                 n += 1
-            if currC[x][B] == '#':  # bottom
+            if currC[x][B] == '#':
                 n += 1
-            if currC[L][B] == '#':  # bottom left 
+            if currC[L][B] == '#': 
                 n += 1
-            if currC[L][y] == '#':  # left
+            if currC[L][y] == '#':
                 n += 1
 
             # Game Rules
             #
             if currC[x][y] == '#' and n == 2 or n == 3:
-                nextC[x][y] = '#' # stay alive
+                nextC[x][y] = '#'
 
             elif currC[x][y] == ' ' and n == 3:
-                nextC[x][y] = '#' # dead cells become alive
+                nextC[x][y] = '#'
 
             else:
-                nextC[x][y] = ' ' # everything else dies or stays dead
+                nextC[x][y] = ' '
                 
     time.sleep(1)
