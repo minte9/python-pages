@@ -1,4 +1,6 @@
 # Conway game of life
+#
+# v1 - Display live / dead squares
 # --------------------------------------
 # A filled-in square will be "alive" (#)
 # An empty square will be "dead" (' ')
@@ -13,7 +15,7 @@
 # on the next step. 
 # --------------------------------------
 
-import random, time, copy
+import random, time
 
 X = 6
 Y = 6
