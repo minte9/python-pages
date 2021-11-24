@@ -34,39 +34,39 @@ while True:
     for x in range(X):
         for y in range(Y):
 
-            L = (x - 1) % X
-            R = (x + 1) % X
-            A = (y - 1) % Y
-            B = (y + 1) % Y
+            L = (x - 1) % X     # left
+            R = (x + 1) % X     # right
+            A = (y - 1) % Y     # above
+            B = (y + 1) % Y     # below
 
             n = 0
 
-            if currC[L][A] == '#':
+            if currC[L][A] == '#':  # top left
                 n += 1
-            if currC[x][A] == '#':
+            if currC[x][A] == '#':  # top
                 n += 1
-            if currC[R][A] == '#':
+            if currC[R][A] == '#':  # top right
                 n += 1
-            if currC[R][y] == '#':
+            if currC[R][y] == '#':  # right
                 n += 1
-            if currC[R][B] == '#':
+            if currC[R][B] == '#':  # bottom right
                 n += 1
-            if currC[x][B] == '#':
+            if currC[x][B] == '#':  # bottom
                 n += 1
-            if currC[L][B] == '#': 
+            if currC[L][B] == '#':  # bottom left 
                 n += 1
-            if currC[L][y] == '#':
+            if currC[L][y] == '#':  # left
                 n += 1
 
             # Game Rules
             #
             if currC[x][y] == '#' and n == 2 or n == 3:
-                nextC[x][y] = '#'
+                nextC[x][y] = '#' # stay alive
 
             elif currC[x][y] == ' ' and n == 3:
-                nextC[x][y] = '#'
+                nextC[x][y] = '#' # dead cells become alive
 
             else:
-                nextC[x][y] = ' '
+                nextC[x][y] = ' ' # everything else dies or stays dead
                 
     time.sleep(1)

@@ -38,10 +38,10 @@ while True:
     for x in range(X):
         for y in range(Y):
 
-            L = (x - 1) % X
-            R = (x + 1) % X
-            A = (y - 1) % Y
-            B = (y + 1) % Y
+            L = (x - 1) % X     # left
+            R = (x + 1) % X     # right
+            A = (y - 1) % Y     # above
+            B = (y + 1) % Y     # below
 
             n = 0
 
