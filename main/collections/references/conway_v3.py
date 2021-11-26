@@ -1,4 +1,5 @@
-"""Conway's game of life
+"""Conway's game of life, by Al Sweigart
+Automate the Boring Stuff with Python, 2nd Edition
 More info at: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 Version: 3
 Main loop to set next alive or dead squares.
@@ -70,7 +71,7 @@ while True: # main loop
 
             elif currC[x][y] == ' ' and n == 3:
                 nextC[x][y] = '#'
-                
+
             else:
                 nextC[x][y] = ' '
     

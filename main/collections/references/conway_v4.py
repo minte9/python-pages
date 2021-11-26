@@ -1,4 +1,5 @@
-"""Conway's game of life
+"""Conway's game of life, by Al Sweigart
+Automate the Boring Stuff with Python, 2nd Edition
 More info at: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 Version 4:
 Glider pattern (not random).
