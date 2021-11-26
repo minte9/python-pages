@@ -4,7 +4,7 @@ Version 4:
 Glider pattern (not random).
 A pattern that moves diagonally every four steps"""
 
-import time, copy
+import time, copy, sys
 
 X = 6
 Y = 6
@@ -74,5 +74,8 @@ while True:
             else:
                 # Everything else dies or stays dead:
                 nextC[x][y] = DEAD
-                
-    time.sleep(1)
+
+    try:         
+        time.sleep(1)
+    except KeyboardInterrupt:
+        sys.exit()  # When Ctrl-C is pressed, end the program.
