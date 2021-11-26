@@ -1,4 +1,4 @@
-"""Conway game of life
+"""Conway's game of life
 Glider pattern (not random).
 A pattern that moves diagonally every four steps"""
 __version__ = 4

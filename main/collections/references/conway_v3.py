@@ -1,4 +1,4 @@
-"""Conway game of life
+"""Conway's game of life
 Main loop to set next alive or dead squares.
 Deep copy is relevant only for compound objects
 (objects that contain other objects, like lists or class instances)"""

@@ -1,4 +1,4 @@
-"""Conway game of life
+"""Conway's game of life
 Displays random alive or dead squares. 
 A filled-in square will be "alive" (#)
 An empty square will be "dead" (' ')"""

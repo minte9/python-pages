@@ -1,4 +1,4 @@
-"""Conway game of life
+"""Conway's game of life
 If a living square has 2 or 3 living neighbours, 
 it continures to be alive on the next step.
 If a dead square has 3 living neighbours, it comes alive on the next step.
