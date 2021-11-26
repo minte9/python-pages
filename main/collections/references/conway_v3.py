@@ -60,17 +60,18 @@ while True: # main loop
             if currC[L][y] == '#': # Left
                 n += 1
 
-            # Set cells base on Conway's Game of Life rules:
+            """Set cells base on Conway's Game of Life rules:
+            Living cells with 2 or 3 neighbors stay alive.
+            Dead cells with 3 neighbors become alive.
+            Everything else dies or stays dead."""
+
             if currC[x][y] == '#' and n == 2 or n == 3:
-                # Living cells with 2 or 3 neighbors stay alive:
                 nextC[x][y] = '#'
 
             elif currC[x][y] == ' ' and n == 3:
-                # Dead cells with 3 neighbors become alive:
                 nextC[x][y] = '#'
-
+                
             else:
-                # Everything else dies or stays dead:
                 nextC[x][y] = ' '
     
     time.sleep(1)

@@ -64,15 +64,12 @@ while True:
 
             # Set cells base on Conway's Game of Life rules:
             if currC[x][y] == ALIVE and n == 2 or n == 3:
-                # Living cells with 2 or 3 neighbors stay alive:
                 nextC[x][y] = ALIVE
 
-            elif currC[x][y] == ' ' and n == 3:
-                # Dead cells with 3 neighbors become alive:
+            elif currC[x][y] == DEAD and n == 3:
                 nextC[x][y] = ALIVE
-
+                
             else:
-                # Everything else dies or stays dead:
                 nextC[x][y] = DEAD
 
     try:         
