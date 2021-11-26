@@ -1,4 +1,6 @@
 """Conway's game of life
+More info at: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+Version: 3
 Main loop to set next alive or dead squares.
 Deep copy is relevant only for compound objects
 (objects that contain other objects, like lists or class instances)"""
@@ -34,39 +36,41 @@ while True: # main loop
     for x in range(X):
         for y in range(Y):
 
-            L = (x - 1) % X # left
-            R = (x + 1) % X # right
-            A = (y - 1) % Y # above
-            B = (y + 1) % Y # below
+            L = (x - 1) % X # Left
+            R = (x + 1) % X # Right
+            A = (y - 1) % Y # Above
+            B = (y + 1) % Y # Below
 
             n = 0
 
-            if currC[L][A] == '#': # top left
+            if currC[L][A] == '#': # Top left
                 n += 1
-            if currC[x][A] == '#': # top
+            if currC[x][A] == '#': # Top
                 n += 1
-            if currC[R][A] == '#': # top right
+            if currC[R][A] == '#': # Top right
                 n += 1
-            if currC[R][y] == '#': # right
+            if currC[R][y] == '#': # Right
                 n += 1
-            if currC[R][B] == '#': # bottom right
+            if currC[R][B] == '#': # Bottom right
                 n += 1
-            if currC[x][B] == '#': # bottom
+            if currC[x][B] == '#': # Bottom
                 n += 1
-            if currC[L][B] == '#': # bottom left 
+            if currC[L][B] == '#': # Bottom left 
                 n += 1
-            if currC[L][y] == '#': # left
+            if currC[L][y] == '#': # Left
                 n += 1
 
-            # Game Rules
-            #
+            # Set cells base on Conway's Game of Life rules:
             if currC[x][y] == '#' and n == 2 or n == 3:
-                nextC[x][y] = '#' # stay alive
+                # Living cells with 2 or 3 neighbors stay alive:
+                nextC[x][y] = '#'
 
             elif currC[x][y] == ' ' and n == 3:
-                nextC[x][y] = '#' # dead cells become alive
+                # Dead cells with 3 neighbors become alive:
+                nextC[x][y] = '#'
 
             else:
-                nextC[x][y] = ' ' # everything else dies or stays dead
+                # Everything else dies or stays dead:
+                nextC[x][y] = ' '
     
     time.sleep(1)
