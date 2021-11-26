@@ -8,15 +8,18 @@ import time, copy
 X = 6
 Y = 6
 
+ALIVE = '#'
+DEAD = ' '
+
 def get_cells():
     cells = []
     for x in range(X):
         row = []
         for y in range(Y):
             if (x, y) in ((1,0), (2,1), (0,2), (1,2), (2,2)):  # Look Here
-                row.append('#')
+                row.append(ALIVE)
             else:
-                row.append(' ')
+                row.append(DEAD)
         cells.append(row)
     return cells
 
@@ -41,32 +44,32 @@ while True:
 
             n = 0
 
-            if currC[L][A] == '#':  # top left
+            if currC[L][A] == ALIVE:  # top left
                 n += 1
-            if currC[x][A] == '#':  # top
+            if currC[x][A] == ALIVE:  # top
                 n += 1
-            if currC[R][A] == '#':  # top right
+            if currC[R][A] == ALIVE:  # top right
                 n += 1
-            if currC[R][y] == '#':  # right
+            if currC[R][y] == ALIVE:  # right
                 n += 1
-            if currC[R][B] == '#':  # bottom right
+            if currC[R][B] == ALIVE:  # bottom right
                 n += 1
-            if currC[x][B] == '#':  # bottom
+            if currC[x][B] == ALIVE:  # bottom
                 n += 1
-            if currC[L][B] == '#':  # bottom left 
+            if currC[L][B] == ALIVE:  # bottom left 
                 n += 1
-            if currC[L][y] == '#':  # left
+            if currC[L][y] == ALIVE:  # left
                 n += 1
 
             # Game Rules
             #
-            if currC[x][y] == '#' and n == 2 or n == 3:
-                nextC[x][y] = '#' # stay alive
+            if currC[x][y] == ALIVE and n == 2 or n == 3:
+                nextC[x][y] = ALIVE
 
             elif currC[x][y] == ' ' and n == 3:
-                nextC[x][y] = '#' # dead cells become alive
+                nextC[x][y] = ALIVE
 
             else:
-                nextC[x][y] = ' ' # everything else dies or stays dead
+                nextC[x][y] = DEAD
                 
     time.sleep(1)
