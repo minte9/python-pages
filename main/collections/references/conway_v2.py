@@ -3,6 +3,7 @@ If a living square has 2 or 3 living neighbours,
 it continures to be alive on the next step.
 If a dead square has 3 living neighbours, it comes alive on the next step.
 Every other square dies or remains dead on the next step.
+
 Count cell neighbours (8 maximum).
 The neighbours are wraparound, for x=0, the left neighbour has x=59
 The mod-wraparound technique works as well for right, above, below"""
