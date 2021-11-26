@@ -4,7 +4,7 @@ Version: 3
 Main loop to set next alive or dead squares.
 Deep copy is relevant only for compound objects
 (objects that contain other objects, like lists or class instances)"""
-__version__ = 3
+
 import random, time, copy
 
 X = 6

@@ -4,6 +4,7 @@ Version 2:
 Count cell neighbours (8 maximum).
 The neighbours are wraparound, for x=0, the left neighbour has x=59
 The mod-wraparound technique works as well for right, above, below"""
+
 import random
 
 X = 6

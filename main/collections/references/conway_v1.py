@@ -4,6 +4,7 @@ Version 1:
 Displays random alive or dead squares. 
 A filled-in square will be "alive" (#)
 An empty square will be "dead" (' ')"""
+
 import random, time
 
 X = 6
