@@ -1,10 +1,8 @@
-# Conway game of life - v3
-#
-# Main loop to set next alive or dead squares \
-# 
-# Deep copy is relevant only for compound objects \
-# (objects that contain other objects, like lists or class instances)
-
+"""Conway game of life
+Main loop to set next alive or dead squares.
+Deep copy is relevant only for compound objects
+(objects that contain other objects, like lists or class instances)"""
+__version__ = 3
 import random, time, copy
 
 X = 6
@@ -28,9 +26,7 @@ def print_cells(cells):
 
 nextC = get_cells()
 
-# Conway's Game of Life - Loop
-#
-while True:
+while True: # main loop
     print("-------------")
     currC = copy.deepcopy(nextC)  # Look Here
     print_cells(currC)
@@ -38,28 +34,28 @@ while True:
     for x in range(X):
         for y in range(Y):
 
-            L = (x - 1) % X     # left
-            R = (x + 1) % X     # right
-            A = (y - 1) % Y     # above
-            B = (y + 1) % Y     # below
+            L = (x - 1) % X # left
+            R = (x + 1) % X # right
+            A = (y - 1) % Y # above
+            B = (y + 1) % Y # below
 
             n = 0
 
-            if currC[L][A] == '#':  # top left
+            if currC[L][A] == '#': # top left
                 n += 1
-            if currC[x][A] == '#':  # top
+            if currC[x][A] == '#': # top
                 n += 1
-            if currC[R][A] == '#':  # top right
+            if currC[R][A] == '#': # top right
                 n += 1
-            if currC[R][y] == '#':  # right
+            if currC[R][y] == '#': # right
                 n += 1
-            if currC[R][B] == '#':  # bottom right
+            if currC[R][B] == '#': # bottom right
                 n += 1
-            if currC[x][B] == '#':  # bottom
+            if currC[x][B] == '#': # bottom
                 n += 1
-            if currC[L][B] == '#':  # bottom left 
+            if currC[L][B] == '#': # bottom left 
                 n += 1
-            if currC[L][y] == '#':  # left
+            if currC[L][y] == '#': # left
                 n += 1
 
             # Game Rules

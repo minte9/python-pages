@@ -1,8 +1,7 @@
-# Conway game of life - v4
-#
-# Glider pattern (not random) \
-# A pattern that moves diagonally every four steps
-
+"""Conway game of life - v4
+Glider pattern (not random).
+A pattern that moves diagonally every four steps"""
+__version__ = 4
 import time, copy
 
 X = 6
@@ -37,33 +36,31 @@ while True:
     for x in range(X):
         for y in range(Y):
 
-            L = (x - 1) % X     # left
-            R = (x + 1) % X     # right
-            A = (y - 1) % Y     # above
-            B = (y + 1) % Y     # below
+            L = (x - 1) % X # left
+            R = (x + 1) % X # right
+            A = (y - 1) % Y # above
+            B = (y + 1) % Y # below
 
             n = 0
 
-            if currC[L][A] == ALIVE:  # top left
+            if currC[L][A] == ALIVE: # top left
                 n += 1
-            if currC[x][A] == ALIVE:  # top
+            if currC[x][A] == ALIVE: # top
                 n += 1
-            if currC[R][A] == ALIVE:  # top right
+            if currC[R][A] == ALIVE: # top right
                 n += 1
-            if currC[R][y] == ALIVE:  # right
+            if currC[R][y] == ALIVE: # right
                 n += 1
-            if currC[R][B] == ALIVE:  # bottom right
+            if currC[R][B] == ALIVE: # bottom right
                 n += 1
-            if currC[x][B] == ALIVE:  # bottom
+            if currC[x][B] == ALIVE: # bottom
                 n += 1
-            if currC[L][B] == ALIVE:  # bottom left 
+            if currC[L][B] == ALIVE: # bottom left 
                 n += 1
-            if currC[L][y] == ALIVE:  # left
+            if currC[L][y] == ALIVE: # left
                 n += 1
 
-            # Game Rules
-            #
-            if currC[x][y] == ALIVE and n == 2 or n == 3:
+            if currC[x][y] == ALIVE and n == 2 or n == 3: # game rules
                 nextC[x][y] = ALIVE
 
             elif currC[x][y] == ' ' and n == 3:

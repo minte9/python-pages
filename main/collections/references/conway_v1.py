@@ -1,19 +1,8 @@
 """Conway game of life
-
 Displays random alive or dead squares. 
 A filled-in square will be "alive" (#)
-An empty square will be "dead" (' ')
-
-If a living square has 2 or 3 living neighbours,
-it continures to be alive on the next step.
-
-If a dead square has 3 living neighbours,
-it comes alive on the next step.
-
-Every other square dies or remains dead
-on the next step."""
+An empty square will be "dead" (' ')"""
 __version__ = 1
-
 import random, time
 
 X = 6
