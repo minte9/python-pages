@@ -21,4 +21,3 @@ except:
         print("File not closed - not ok")
     else:
         print("File closed before exception - ok")
-
