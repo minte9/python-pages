@@ -10,6 +10,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 - [Storage](#storage) 
 - [Class](#class) 
 - [Goodies](#goodies) 
+- [Applications](#applications) 
 
 ## Language
   * hello_world/ [hello](/main/language/hello_world/hello.py), [mistakes](/main/language/hello_world/mistakes.py)
@@ -56,3 +57,10 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * list_comprehension/ [loop](/main/goodies/list_comprehension/loop.py), [comprehension](/main/goodies/list_comprehension/comprehension.py)
   * generator/ [generator](/main/goodies/generator/generator.py), [functions](/main/goodies/generator/functions.py)
   * named_tuple/ [class](/main/goodies/named_tuple/class.py), [drawback](/main/goodies/named_tuple/drawback.py)
+
+## Applications
+  * binary_search/ [binary_search](/main/applications/binary_search/binary_search.py), [caesar_cypher](/main/applications/binary_search/caesar_cypher.py), [three_doubles](/main/applications/binary_search/three_doubles.py)
+  * coin_flip/ [coinflip](/main/applications/coin_flip/coinflip.py), [coinflip_v2](/main/applications/coin_flip/coinflip_v2.py)
+  * conway_game/ [conway_v1](/main/applications/conway_game/conway_v1.py), [conway_v2](/main/applications/conway_game/conway_v2.py), [conway_v3](/main/applications/conway_game/conway_v3.py), [conway_v4](/main/applications/conway_game/conway_v4.py)
+  * palindrome/ [final](/main/applications/palindrome/final.py), [first](/main/applications/palindrome/first.py),  [second](/main/applications/palindrome/second.py), [third](/main/applications/palindrome/third.py)
+  * pythagora/ [first](/main/applications/pythagora/first.py), [forth](/main/applications/pythagora/forth.py), [second](/main/applications/pythagora/second.py), [third](./applications/pythagora/third.py)
