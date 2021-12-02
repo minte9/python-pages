@@ -1,4 +1,4 @@
-"""Check if string is palindrome
+"""Use incremental development to check if string is palindrome
 A palindrome is a word that is spelled the same backward and forward.
 Example: noon, redivider
 
