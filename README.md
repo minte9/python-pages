@@ -35,7 +35,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * efficiency/ [slow_fibonacci](/main/collections/efficiency/slow_fibonacci.py), [fast_fibonacci](/main/collections/efficiency/fast_fibonacci.py)
   * tuples/ [tuple](/main/collections/tuples/tuple.py), [variables](/main/collections/tuples/variables.py), [dictionaries](/main/collections/tuples/dictionaries.py), [functions](/main/collections/tuples/functions.py)
   * references/ [variables](/main/collections/references/variables.py), [lists](/main/collections/references/lists.py), [garbage collection](/main/collections/references/garbage.py)
-  * conway game/ [v1](/main/collections/references/conway_v1.py), [v2](/main/collections/references/conway_v2.py), [v3](/main/collections/references/conway_v3.py), [v4](/main/collections/references/conway_v4.py)
+  * conway game/ [v1](/main/collections/conway_game/conway_v1.py), [v2](/main/collections/conway_game/conway_v2.py), [v3](/main/collections/conway_game/conway_v3.py), [v4](/main/collections/conway_game/conway_v4.py)
 
 ## Storage
   * databases/ [database](/main/storage/databases/database.py), [db_pickle](/main/storage/databases/db_pickle.py)
