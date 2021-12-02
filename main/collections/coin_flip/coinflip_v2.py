@@ -8,7 +8,7 @@ import random
 streaks = 0
 
 for i in range(10000):
-    HT = random.choices('HT', k=100)
+    HT = random.choices('HT', k=100) # Look Here
     
     for k in range(len(HT)):
         
