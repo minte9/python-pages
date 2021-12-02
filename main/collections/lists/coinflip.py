@@ -1,4 +1,4 @@
-"""A program to find out how often (frequency or probability)
+"""A program to find out how often
 a line of six heads or six tails comes up 
 in a randomly generated list of heads and tails."""
 
