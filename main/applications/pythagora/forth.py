@@ -2,7 +2,7 @@
 #
 #    d = square( (x2-x1)^2 + (y2-y1)^2 )
 #
-# Third: Use math.sqrt() to compute the result
+# Forth: Use math.sqrt() to compute the result
 
 import math
 
