@@ -20,7 +20,6 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * operators/ [operators](/main/language/operators/operators.py), [time_since](/main/language/operators/time_since.py)
   * debugging/ [semantic_error](/main/language/debugging/semantic_error.py), [except](/main/language/debugging/except.py)
   * strings/ [slice](/main/language/strings/slice.py), [imutable](/main/language/strings/imutable.py), [search](/main/language/strings/search.py), [words](/main/language/strings/words.py), [builtin](/main/language/strings/builtin.py)
-  * binary_search/ [binary_search](/main/language/binary_search/binary_search.py), [caesar_cypher](/main/language/binary_search/caesar_cypher.py),  [three_doubles](/main/language/binary_search/three_doubles.py)
 
 ## Functions
   * recursion/ [recursion](/main/functions/recursion/recursion.py), [repeat](/main/functions/recursion/repeat.py)
@@ -28,9 +27,6 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * modulus/ [positive numbers](/main/functions/modulus/positive.py), [negative numbers](/main/functions/modulus/negative.py)
   * reassignment/ [assign](/main/functions/reassignment/assign.py), [reassign](/main/functions/reassignment/reassign.py)
   * approximate/ [square](/main/functions/approximate/square.py), [square_abs](/main/functions/approximate/square_abs.py)
-  * pythagora/ [first](/main/functions/pythagora/first.py), [second](/main/functions/pythagora/second.py),  [third](/main/functions/pythagora/third.py), [forth](/main/functions/pythagora/forth.py)
-  * palindrome/ [first](/main/functions/palindrome/first.py), [second](/main/functions/palindrome/second.py), [third](/main/functions/palindrome/third.py), [final](/main/functions/palindrome/final.py)
-
 
 ## Collections
   * lists/ [mutable](/main/collections/lists/mutable.py), [concat](/main/collections/lists/concat.py), [multiply](/main/collections/lists/multiply.py), [slice](/main/collections/lists/slice.py), [append](/main/collections/lists/append.py)
@@ -38,8 +34,6 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * efficiency/ [slow_fibonacci](/main/collections/efficiency/slow_fibonacci.py), [fast_fibonacci](/main/collections/efficiency/fast_fibonacci.py)
   * tuples/ [tuple](/main/collections/tuples/tuple.py), [variables](/main/collections/tuples/variables.py), [dictionaries](/main/collections/tuples/dictionaries.py), [functions](/main/collections/tuples/functions.py)
   * references/ [variables](/main/collections/references/variables.py), [lists](/main/collections/references/lists.py), [garbage collection](/main/collections/references/garbage.py)
-  * conway game/ [v1](/main/collections/conway_game/conway_v1.py), [v2](/main/collections/conway_game/conway_v2.py), [v3](/main/collections/conway_game/conway_v3.py), [v4](/main/collections/conway_game/conway_v4.py)
-  * coin_flip/ [v1](/main/collections/coin_flip/coinflip.py), [v2](/main/collections/coin_flip/coinflip_v2.py)
 
 ## Storage
   * databases/ [database](/main/storage/databases/database.py), [db_pickle](/main/storage/databases/db_pickle.py)
