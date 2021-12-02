@@ -1,4 +1,4 @@
-"""A program to find out how often 
+"""A program to find out how often (frequency or probability)
 a line of six heads or six tails comes up 
 in a randomly generated list of heads and tails."""
 
@@ -20,9 +20,10 @@ for i in range(10000): # Run experiment multiple times
         count = 0
         for m in range(6):
             try:
-                if HT[k] == HT[k+m]:
+                if HT[k] == 'H' and HT[k] == HT[k+m]:
                     count += 1
                 else:
+                    count = 0
                     break
             except IndexError: # item 95
                 break
@@ -31,12 +32,16 @@ for i in range(10000): # Run experiment multiple times
             print('\x1b[6;30;42m' + str(HT[k:k+6]) + '\x1b[0m')
             streaks += 1
 
-posibilities = 100 * 10000 # maxim posibilities
+posibilities = 95 * 10000 # maxim posibilities
 percentage = streaks * 100 / posibilities
 probability = percentage / 100
 
-print("Posibilities: " + str(posibilities))
-print("Streaks: " + str(streaks))
-print("Percentage: " + str(percentage) + "%")
-print("Probability: " + str(probability))
-print("Math: 1/2^6 = " + str(1/2**6))
+print("Streaks: ", streaks)
+print("Posibilities: ", posibilities)
+print("Probability: ", probability)
+print("Math 1/2^6: ", 1/2**6)
+
+# Streaks:  14861
+# Posibilities:  950000
+# Probability:  0.01564315789473684
+# Math 1/2^6:  0.015625
