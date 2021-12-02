@@ -18,7 +18,8 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * conditional/ [conditional](/main/language/conditional/conditional.py), [input](/main/language/conditional/input.py)
   * operators/ [operators](/main/language/operators/operators.py), [time_since](/main/language/operators/time_since.py)
   * debugging/ [semantic_error](/main/language/debugging/semantic_error.py), [except](/main/language/debugging/except.py)
-  * strings/ [slice](/main/language/strings/slice.py), [imutable](/main/language/strings/imutable.py), [search](/main/language/strings/search.py), [words](/main/language/strings/words.py), [builtin](/main/language/strings/builtin.py), [binary_search](/main/language/strings/binary_search.py), [caesar_cypher](/main/language/strings/caesar_cypher.py),  [three_doubles](/main/language/strings/three_doubles.py)
+  * strings/ [slice](/main/language/strings/slice.py), [imutable](/main/language/strings/imutable.py), [search](/main/language/strings/search.py), [words](/main/language/strings/words.py), [builtin](/main/language/strings/builtin.py)
+  * binary_search/ [binary_search](/main/language/binary_search/binary_search.py), [caesar_cypher](/main/language/binary_search/caesar_cypher.py),  [three_doubles](/main/language/binary_search/three_doubles.py)
 
 ## Functions
   * recursion/ [recursion](/main/functions/recursion/recursion.py), [repeat](/main/functions/recursion/repeat.py)
