@@ -27,8 +27,8 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * modulus/ [positive numbers](/main/functions/modulus/positive.py), [negative numbers](/main/functions/modulus/negative.py)
   * reassignment/ [assign](/main/functions/reassignment/assign.py), [reassign](/main/functions/reassignment/reassign.py)
   * approximate/ [square](/main/functions/approximate/square.py), [square_abs](/main/functions/approximate/square_abs.py)
-  * pythagora/ [first](/main/functions/pythagora/first.py), [second](/main/functions/pythagora/second.py),  [third](/main/functions/pythagora/third.py), [forth](/main/functions/pythagora/forth.py), [palindrome](/main/functions/development/palindrome.py)
-  * palindrome/ [first.py](/main/functions/palindrome/first.py), [second.py](/main/functions/palindrome/second.py), [third.py](/main/functions/palindrome/third.py), [final.py](/main/functions/palindrome/final.py)
+  * pythagora/ [first](/main/functions/pythagora/first.py), [second](/main/functions/pythagora/second.py),  [third](/main/functions/pythagora/third.py), [forth](/main/functions/pythagora/forth.py)
+  * palindrome/ [first](/main/functions/palindrome/first.py), [second](/main/functions/palindrome/second.py), [third](/main/functions/palindrome/third.py), [final](/main/functions/palindrome/final.py)
 
 
 ## Collections
