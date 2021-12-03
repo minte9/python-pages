@@ -3,14 +3,14 @@ From command line use: pip list"""
 import pkg_resources
 
 pkgs = pkg_resources.working_set
-pkgs = sorted(['%s \t %s' % (k.key, k.version) for k in pkgs])
+pkgs = sorted(['%s %s' % (k.key, k.version) for k in pkgs])
 
 print('\n'.join(pkgs))
     # ...
-    # 3.0.4    chardet
-    # 3.1.0    oauthlib
-    # 3.1.7    bcrypt
-    # 3.12.0   louis
-    # 3.16.0   simplejson
-    # 3.36.0   PyGObject
-    # ...
+    # ufw 0.36
+    # unattended-upgrades 0.1
+    # urllib3 1.25.8
+    # usb-creator 0.3.7
+    # wadllib 1.3.3
+    # wheel 0.34.2
+    # xkit 0.0.0
