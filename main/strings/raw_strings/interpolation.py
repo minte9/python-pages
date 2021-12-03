@@ -1,4 +1,3 @@
-# pp134 You {{don't have}} to use str() to convert values to string.
 """String interpolation:
 The %s operator inside the string is a marker to be replaced.
 """

@@ -1,5 +1,3 @@
-# pp134 Braces are used {{insteed}} of %s
-# https://www.w3schools.com/python/ref_string_format.asp
 """f-string:
 Is similar to string interpolation, except that ...
 braces are used insteed of %s

@@ -1,4 +1,3 @@
-# pp142 Strip off {{whitespace}} characters (\s, \t, \n)
 """Removing white spaces:
 Use strip(), rstrip() and lstrip() ...
 to strip off whitespace characters (\s, \t, \n)
