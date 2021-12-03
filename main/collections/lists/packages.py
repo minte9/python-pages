@@ -1,5 +1,8 @@
 """Display all installed python modules
-From command line use: pip list"""
+From command line use: 
+pip list
+pip list --outdated
+"""
 import pkg_resources
 
 pkgs = pkg_resources.working_set
