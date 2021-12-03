@@ -1,5 +1,9 @@
 """Display all installed python modules
-From command line use: pip list / pip list --outdated
+CLI commands examples: 
+pip list
+pip list --outdated
+pip show pyperclip
+pip install pyperclip
 """
 import pkg_resources
 
