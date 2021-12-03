@@ -1,4 +1,3 @@
-# pp131 Raw strings prints {{any backslash}} in the string
 """Raw strings:
 A raw string ignores all escape characters"""
 
