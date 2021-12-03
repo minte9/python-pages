@@ -1,7 +1,5 @@
 """Display all installed python modules
-From command line use: 
-pip list
-pip list --outdated
+From command line use: pip list / pip list --outdated
 """
 import pkg_resources
 
