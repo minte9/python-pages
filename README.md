@@ -1,4 +1,4 @@
-# Python 
+# Python Pages
 
 Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 
