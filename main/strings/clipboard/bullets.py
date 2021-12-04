@@ -21,4 +21,4 @@ lines = text.split('\n')
 lines = [f'* {k}' for k in lines]
 text = '\n'.join(lines)
 
-pyperclip.copy(text) # text in clipboard ready to be paste
+pyperclip.copy(text) # text ready to be paste
