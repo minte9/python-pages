@@ -5,6 +5,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/minte9/python-pages)
 
 - [Language](#language) 
+- [Strings](#strings) 
 - [Functions](#functions) 
 - [Collections](#collections) 
 - [Storage](#storage) 
@@ -20,6 +21,12 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * operators/ [operators](/main/language/operators/operators.py), [time_since](/main/language/operators/time_since.py)
   * debugging/ [semantic_error](/main/language/debugging/semantic_error.py), [except](/main/language/debugging/except.py)
   * strings/ [slice](/main/language/strings/slice.py), [imutable](/main/language/strings/imutable.py), [search](/main/language/strings/search.py), [words](/main/language/strings/words.py), [builtin](/main/language/strings/builtin.py)
+
+## Strings
+  * slice/ [slice](/main/strings/slice/slice.py), [imutable](/main/strings/slice/imutable.py), [search](/main/strings/slice/search.py), [words](/main/strings/slice/words.py), [builtin](/main/strings/slice/builtin.py)
+  * raw_strings/ [raw](/main/strings/raw_strings/raw.py), [interpolation](/main/strings/raw_strings/interpolation.py), [format](/main/strings/raw_strings/format.py), [strip](/main/strings/raw_strings/strip.py)
+  * clipboard/ [clipboard](/main/strings/clipboard/clipboard.py), [multiclipboard](/main/strings/clipboard/multiclipboard.py)
+
 
 ## Functions
   * recursion/ [recursion](/main/functions/recursion/recursion.py), [repeat](/main/functions/recursion/repeat.py)
@@ -57,4 +64,4 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * coin_flip/ [version1](/main/applications/coin_flip/coinflip.py), [version2](/main/applications/coin_flip/coinflip_v2.py)
   * conway_game/ [version1](/main/applications/conway_game/conway_v1.py), [version2](/main/applications/conway_game/conway_v2.py), [version3](/main/applications/conway_game/conway_v3.py), [version4](/main/applications/conway_game/conway_v4.py)
   * palindrome/ [first](/main/applications/palindrome/first.py),  [second](/main/applications/palindrome/second.py), [third](/main/applications/palindrome/third.py), [final](/main/applications/palindrome/final.py)
-  * pythagora/ [first](/main/applications/pythagora/first.py), [second](/main/applications/pythagora/second.py), [third](./applications/pythagora/third.py), [forth](/main/applications/pythagora/forth.py)
+  * pythagora/ [first](/main/applications/pythagora/first.py), [second](/main/applications/pythagora/second.py), [third](/main/applications/pythagora/third.py), [forth](/main/applications/pythagora/forth.py)
