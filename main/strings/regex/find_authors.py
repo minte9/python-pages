@@ -1,5 +1,7 @@
 """Find all authors @nickname in an amazon page.
-Page example: https://www.amazon.com/gp/product/1593279922
+Page example: 
+https://www.amazon.com/gp/product/1593279922
+Run program:
 Ctrl-A, Ctrl-C, run program, Ctrl-V
 """
 import re, pyperclip
