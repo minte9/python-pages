@@ -1,4 +1,5 @@
 """Regex: Grouping with parenthesses
+Adding parenthesses will create groups in the regex.
 """
 import re
 
