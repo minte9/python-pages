@@ -26,6 +26,7 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * slice/ [slice](/main/strings/slice/slice.py), [imutable](/main/strings/slice/imutable.py), [search](/main/strings/slice/search.py), [words](/main/strings/slice/words.py), [builtin](/main/strings/slice/builtin.py)
   * raw_strings/ [raw](/main/strings/raw_strings/raw.py), [interpolation](/main/strings/raw_strings/interpolation.py), [format](/main/strings/raw_strings/format.py), [strip](/main/strings/raw_strings/strip.py)
   * clipboard/ [clipboard](/main/strings/clipboard/clipboard.py), [multiclipboard](/main/strings/clipboard/multiclipboard.py), [bullets](/main/strings/clipboard/bullets.py)
+  * regex/ [noregex](/main/strings/regex/noregex.py), [regex](/main/strings/regex/regex.py), [groups](/main/strings/regex/groups.py), [find_authors](/main/strings/regex/find_authors.py), [multiple_lines](/main/strings/regex/multiple_lines.py), [strong_password](/main/strings/regex/strong_password.py)
 
 
 ## Functions
