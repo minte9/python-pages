@@ -8,9 +8,8 @@ clipboard = pyperclip.paste()
 
 pattern = re.compile('@[a-zA-Z0-9_-]+')
 authors = pattern.findall(clipboard)
-text = '\n'.join(authors)
 
-pyperclip.copy(text)
+pyperclip.copy('\n'.join(authors))
 print(pyperclip.paste())
     # @OscarBaruffa
     # @Awful_Curious
