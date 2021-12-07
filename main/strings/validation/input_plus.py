@@ -3,6 +3,7 @@ Contains functions similar to input() for other kind of data:
 number, date, email, adress
 Pyinputplus is not part of the standar distribution:
 pip install pyinputplus
+Import as pyip save us from typing pyinputplus every time.
 """
 import pyinputplus as pyip
 
