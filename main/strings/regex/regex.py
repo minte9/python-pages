@@ -22,7 +22,7 @@ assert is_phone_number('123-4567777') == False
 
 # Search phone numbers in a text
 
-text = """Call me at 123-456-7777 or 415-555-1234, but not at 415-5551234."""
+text = 'Call me at 123-456-7777 or 415-555-1234, but not at 415-5551234.'
 
 def search_first_number(text):
     pattern = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
