@@ -3,7 +3,6 @@ Extract all files into the current directory.
 """
 import zipfile, os
 from pathlib import Path
-
 DIR = Path(__file__).resolve().parent
 
 with zipfile.ZipFile(DIR / 'data/archive.zip') as archive:

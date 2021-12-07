@@ -2,7 +2,6 @@
 Compressing multiple files into a single archive file.
 """
 import zipfile, os
-
 DIR = os.path.dirname(os.path.realpath(__file__))
 
 newZip = zipfile.ZipFile(DIR + '/data/archive.zip', 'w')
