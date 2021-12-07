@@ -29,7 +29,7 @@ with shelve.open(FILE) as db:
 
 
 # ./multi_clipboard.pyw
-# keywords: {}
+# {}
 #
 # Copy text: AAA
 # ./multi_clipboard.pyw save a
