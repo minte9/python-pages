@@ -1,5 +1,7 @@
 """A program which uses the computer's clipboard,
 using pyperclip package, by Al Sweigart
+Pyperclip is not part of the standard distribution.
+pip install pyperclip
 """
 import pyperclip, time
 
