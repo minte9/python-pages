@@ -16,10 +16,9 @@ while True:
     break
 
 print(f'Your age is: {age}')
-
-# What is your age? abc
-# Please use numberic values!
-# What is your age? -10
-# lease enter a positive number!
-# What is your age? 20
-# Your age is: 20
+    # What is your age? abc
+    # Please use numberic values!
+    # What is your age? -10
+    # lease enter a positive number!
+    # What is your age? 20
+    # Your age is: 20
