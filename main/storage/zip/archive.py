@@ -13,7 +13,7 @@ newZip.close()
 
 archive = zipfile.ZipFile(DIR / 'data/archive.zip')
 print(archive.namelist())
-    # [file1, file2]
+    # file1, file2
 
 info = archive.getinfo('file1')
 print(info.file_size) 
