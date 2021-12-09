@@ -7,6 +7,7 @@ import csv, pathlib
 from typing import AnyStr
 DIR = pathlib.Path(__file__).resolve().parent
 
+# Dictionary Reader
 with open(DIR / 'data/fileH1.csv') as file:
     dr = csv.DictReader(file)
     for row in dr:
@@ -15,6 +16,7 @@ with open(DIR / 'data/fileH1.csv') as file:
             # 21 22 23
             # 31 32 33
 
+# Dictionary Writer
 with open(DIR / 'data/fileH2.csv', 'w', newline='') as file:
     dw = csv.DictWriter(file, ['A', 'B', 'C'])
     dw.writeheader()
@@ -22,6 +24,7 @@ with open(DIR / 'data/fileH2.csv', 'w', newline='') as file:
     dw.writerow({'A':21, 'B':22, 'C':23})
     dw.writerow({'A':31, 'B':32, 'C':33})
 
+# Check the file
 A = []
 with open(DIR / 'data/fileH2.csv') as file:
     dr = csv.DictReader(file)
