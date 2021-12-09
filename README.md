@@ -66,8 +66,8 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * named_tuple/ [class](/main/goodies/named_tuple/class.py), [drawback](/main/goodies/named_tuple/drawback.py)
 
 ## Applications
-  * binary_search/ [binary_search](/main/applications/binary_search/binary_search.py), [caesar_cypher](/main/applications/binary_search/caesar_cypher.py), [three_doubles](/main/applications/binary_search/three_doubles.py)
-  * coin_flip/ [version1](/main/applications/coin_flip/coinflip.py), [version2](/main/applications/coin_flip/coinflip_v2.py)
-  * conway_game/ [version1](/main/applications/conway_game/conway_v1.py), [version2](/main/applications/conway_game/conway_v2.py), [version3](/main/applications/conway_game/conway_v3.py), [version4](/main/applications/conway_game/conway_v4.py)
-  * palindrome/ [first](/main/applications/palindrome/first.py),  [second](/main/applications/palindrome/second.py), [third](/main/applications/palindrome/third.py), [final](/main/applications/palindrome/final.py)
   * pythagora/ [first](/main/applications/pythagora/first.py), [second](/main/applications/pythagora/second.py), [third](/main/applications/pythagora/third.py), [forth](/main/applications/pythagora/forth.py)
+  * palindrome/ [first](/main/applications/palindrome/first.py),  [second](/main/applications/palindrome/second.py), [third](/main/applications/palindrome/third.py), [final](/main/applications/palindrome/final.py)
+  * binary_search/ [binary_search](/main/applications/binary_search/binary_search.py), [caesar_cypher](/main/applications/binary_search/caesar_cypher.py), [three_doubles](/main/applications/binary_search/three_doubles.py)
+  * conway_game/ [version1](/main/applications/conway_game/conway_v1.py), [version2](/main/applications/conway_game/conway_v2.py), [version3](/main/applications/conway_game/conway_v3.py), [version4](/main/applications/conway_game/conway_v4.py)
+  * coin_flip/ [version1](/main/applications/coin_flip/coinflip.py), [version2](/main/applications/coin_flip/coinflip_v2.py)
