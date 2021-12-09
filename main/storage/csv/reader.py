@@ -1,7 +1,8 @@
 """CSV reader:
-It's not enough to just split the text file by comma.
-Maybe files use escape characters to allowed commas as part of values.
 Always use csv module for reading and writing CSV files.
+It's not enough to just split the text file by comma (,)
+Maybe files use escape characters to allowed commas as part of values.
+
 The most convenient to access values in the reader object ...
 is to convert it to a list
 """
