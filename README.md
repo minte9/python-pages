@@ -47,6 +47,11 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * databases/ [database](/main/storage/databases/database.py), [db_pickle](/main/storage/databases/db_pickle.py)
   * files/ [write](/main/storage/files/write.py), [csvreader](/main/storage/files/csvreader.py), [exception](/main/storage/files/exception.py)
   * pipes/ [md5sum](/main/storage/pipes/md5sum.py), [pipe](/main/storage/pipes/pipe.py)
+  * with_open/ [open](/main/storage/with_open/open.py), [multiple](/main/storage/with_open/multiple.py), [exception](/main/storage/with_open/exception.py)
+  * shelve/ [variables](/main/storage/shelve/variables.py), [dictionaries](/main/storage/shelve/dictionaries.py), [multi_clipboard](/main/storage/shelve/multi_clipboard.pyw)
+  * zip/ [archive](/main/storage/zip/archive.py), [extract](/main/storage/zip/extract.py)
+  * csv/ [writer](/main/storage/csv/writer.py), [reader](/main/storage/csv/reader.py), [dictionary](/main/storage/csv/dictionary.py)
+  * json/ [reading](/main/storage/json/reading.py), [writing](/main/storage/json/writing.py)
 
 ## Class
   * definition/ [definition](/main/class/definition/definition.py), [object](/main/class/definition/object.py)
