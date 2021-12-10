@@ -25,7 +25,9 @@ assert factorial(-1)  == None
 assert factorial(4)   == 24
 assert factorial(-11) == None
 
+
 """ logs/file1.log
+--------------------------------------------------------------
 2021-12-10 17:09:40,229 - CRITICAL - Number -1 is not positive!
 2021-12-10 17:09:40,229 - DEBUG - n is 1
 2021-12-10 17:09:40,229 - DEBUG - n is 2
