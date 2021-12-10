@@ -30,7 +30,7 @@ print()
 
 """Correct"""
 def pauseC():
-    i = 0 # Look Here
+    i = 0
     while i < 3:
         print('Run thread: ' + threading.currentThread().name)
         i = i + 1
