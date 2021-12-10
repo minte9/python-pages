@@ -1,4 +1,4 @@
-"""Threads Concurency:
+"""Threads Concurrency:
 When you create a new thread make sure its target function
 uses only local variable in that function.
 """
