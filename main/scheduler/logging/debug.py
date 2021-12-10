@@ -30,7 +30,7 @@ assert factorial(4)  == 24
     # 2021-12-10 16:18:59,379 - DEBUG - n is 24
 
 
-"""Disable logging messages:
+"""Logging messages disabled:
 Only level > ERROR messages are displayed
 """
 logging.disable(logging.ERROR)
