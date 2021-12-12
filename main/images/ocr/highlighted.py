@@ -4,9 +4,7 @@ Get only highlighted text
 import os
 import cv2, pytesseract
 import numpy as np
-
 DIR = os.path.dirname(os.path.realpath(__file__))
-img = cv2.imread(DIR + '/files/01.png')
 
 def imread_highlighted(img):
 
@@ -34,6 +32,8 @@ def imread_highlighted(img):
 
     return res2
 
+
+img = cv2.imread(DIR + '/files/01.png')
 img2 = imread_highlighted(img)
 
 text = pytesseract.image_to_string(img)
