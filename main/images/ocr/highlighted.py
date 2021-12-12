@@ -8,7 +8,8 @@ import numpy as np
 DIR = os.path.dirname(os.path.realpath(__file__))
 img = cv2.imread(DIR + '/files/01.png')
 
-hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # convert BGR to HSV
+# Convert BGR to HSV
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) 
 
 # Range of yellow color in HSV
 lower = np.array([22, 93, 0]) 
@@ -28,6 +29,17 @@ highlighted = pytesseract.image_to_string(res2).strip()
 modified = text.replace(highlighted, f'<i>{highlighted}</i>').strip()
 
 print(modified)
+
+"""
+I've also done a lot of testing since LiveJournal.
+<i>Once I started working with other people
+especially. And once I realized that code I write
+never fucking goes away and I'm going to be a
+maintainer for life.</i> I get comments about blog
+posts that are almost 10 years old. “Hey, I found
+this code. I found a bug,” and I'm suddenly
+maintaining code.
+"""
 
 # display image
 cv2.imshow("img", res)
