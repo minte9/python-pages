@@ -9,7 +9,7 @@ DIR = os.path.dirname(os.path.realpath(__file__))
 img = cv2.imread(DIR + '/files/01.png')
 
 def imread_highlighted(img):
-    
+
     # Convert BGR to HSV
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) 
 
@@ -38,9 +38,9 @@ img2 = imread_highlighted(img)
 
 text = pytesseract.image_to_string(img)
 highlighted = pytesseract.image_to_string(img2).strip()
-modified = text.replace(highlighted, f'<i>{highlighted}</i>').strip()
+replaced = text.replace(highlighted, f'<i>{highlighted}</i>').strip()
 
-print(modified)
+print(replaced)
 
 """
 I've also done a lot of testing since LiveJournal.
