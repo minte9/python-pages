@@ -8,24 +8,36 @@ import numpy as np
 DIR = os.path.dirname(os.path.realpath(__file__))
 img = cv2.imread(DIR + '/files/01.png')
 
-# Convert BGR to HSV
-hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) 
+def imread_highlighted(img):
+    
+    # Convert BGR to HSV
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) 
 
-# Range of yellow color in HSV
-lower = np.array([22, 93, 0]) 
-upper = np.array([45, 255, 255])
+    # Range of yellow color in HSV
+    lower = np.array([22, 93, 0]) 
+    upper = np.array([45, 255, 255])
 
-# Mask to get only yellow colors
-mask = cv2.inRange(hsv, lower, upper)
+    # Mask to get only yellow colors
+    mask = cv2.inRange(hsv, lower, upper)
 
-# Bitwise-AND mask and original image
-res = cv2.bitwise_and(img, img, mask= mask)
+    # Bitwise-AND mask and original image
+    res = cv2.bitwise_and(img, img, mask= mask)
 
-# Invert the mask to get black letters on white background
-res2 = cv2.bitwise_not(mask)
+    # Invert the mask to get black letters on white background
+    res2 = cv2.bitwise_not(mask)
+
+    # Display image:
+    # cv2.imshow("img", res)
+    # cv2.imshow("img2", res2)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+
+    return res2
+
+img2 = imread_highlighted(img)
 
 text = pytesseract.image_to_string(img)
-highlighted = pytesseract.image_to_string(res2).strip()
+highlighted = pytesseract.image_to_string(img2).strip()
 modified = text.replace(highlighted, f'<i>{highlighted}</i>').strip()
 
 print(modified)
@@ -40,9 +52,3 @@ posts that are almost 10 years old. “Hey, I found
 this code. I found a bug,” and I'm suddenly
 maintaining code.
 """
-
-# display image
-cv2.imshow("img", res)
-cv2.imshow("img2", res2)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
