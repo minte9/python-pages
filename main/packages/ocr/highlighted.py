@@ -5,7 +5,6 @@ import os
 import cv2, pytesseract
 import numpy as np
 DIR = os.path.dirname(os.path.realpath(__file__))
-DEBUG = False
 
 def imread_highlighted(img):
 
@@ -26,7 +25,7 @@ def imread_highlighted(img):
     res2 = cv2.bitwise_not(mask)
 
     # Display images
-    if DEBUG:
+    if False:
         cv2.imshow("img", res)
         cv2.imshow("img2", res2)
         cv2.waitKey(0)
@@ -35,7 +34,7 @@ def imread_highlighted(img):
     return res2
 
 
-img = cv2.imread(DIR + '/files/02.png')
+img = cv2.imread(DIR + '/files/01.png')
 img2 = imread_highlighted(img)
 
 text = pytesseract.image_to_string(img).strip()
@@ -48,24 +47,28 @@ print('Replaced: \n' + replaced, '\n')
 
 """
 Text: 
-where it was writing some big file. We took really
-good advantage of multithreading in Java, which
-was less painful than I had expected it to be. It was
-just really pleasant to work on. From the API we
-had designed we saw all these directions it could
-grow. 
+I've also done a lot of testing since LiveJournal.
+Once I started working with other people
+especially. And once I realized that code I write
+never fucking goes away and I'm going to be a
+maintainer for life. I get comments about blog
+posts that are almost 10 years old. “Hey, I found
+this code. I found a bug,” and I'm suddenly
+maintaining code. 
 
 Highlighted: 
-We took really
-good advantage of multithreading in Java, which
-was less painful than I had expected it to be, It was
-just really pleasant to work on. 
+Once I started working with other people
+especially. And once I realized that code I write
+never fucking goes away and I'm going to be a
+maintainer for life. 
 
 Replaced: 
-where it was writing some big file. We took really
-good advantage of multithreading in Java, which
-was less painful than I had expected it to be. It was
-just really pleasant to work on. From the API we
-had designed we saw all these directions it could
-grow. 
+I've also done a lot of testing since LiveJournal.
+<i>Once I started working with other people
+especially. And once I realized that code I write
+never fucking goes away and I'm going to be a
+maintainer for life.</i> I get comments about blog
+posts that are almost 10 years old. “Hey, I found
+this code. I found a bug,” and I'm suddenly
+maintaining code. 
 """
