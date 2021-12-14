@@ -59,3 +59,21 @@ for root, dirs, files in os.walk(DIR + '/files/'):
         img2 = imread_highlighted(img)
         replaced = highlighted_replaced(img, img2)
         print(replaced, '\n')
+
+"""
+where it was writing some big file. <i>We took really
+good advantage of multithreading in Java, which
+was less painful than I had expected it to be. It was
+just really pleasant to work on.</i> From the API we
+had designed we saw all these directions it could
+grow. 
+
+I've also done a lot of testing since LiveJournal.
+<i>Once I started working with other people
+especially. And once I realized that code I write
+never fucking goes away and I'm going to be a
+maintainer for life.</i> I get comments about blog
+posts that are almost 10 years old. “Hey, I found
+this code. I found a bug,” and I'm suddenly
+maintaining code.
+"""
