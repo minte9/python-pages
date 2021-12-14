@@ -32,8 +32,11 @@ def highlighted_replaced(img, img2):
     text = '\n'.join(text.split('\n\n')) # remove double new lines
     highlighted = '\n'.join(highlighted.split('\n\n'))
 
-    start = highlighted[0:10] # start of highlighted text
-    end = highlighted[-10:]
+    pattern = re.compile(r',$') # wrong , end of propostion
+    highlighted = pattern.sub(r'', highlighted) # remove
+
+    start = highlighted[0:10].strip() # start of highlighted text
+    end = highlighted[-10:].strip()
 
     replaced = text.replace(start, '<i>%s' % start)
     replaced = replaced.replace(end, '%s</i>' % end)
@@ -75,5 +78,10 @@ never fucking goes away and I'm going to be a
 maintainer for life.</i> I get comments about blog
 posts that are almost 10 years old. “Hey, I found
 this code. I found a bug,” and I'm suddenly
-maintaining code.
+maintaining code. 
+
+Your competitor's six-month 1.0 has crap code and
+<i>they're going to have to rewrite it in two years but</i>,
+guess what: they can rewrite it because you don't
+have ajob anymore. 
 """
