@@ -53,9 +53,9 @@ def highlighted_replaced(img, img2):
 
     return replaced
 
-
-img = cv2.imread(DIR + '/files/02.png')
-img2 = imread_highlighted(img)
-replaced = highlighted_replaced(img, img2)
-
-print(replaced)
+for root, dirs, files in os.walk(DIR + '/files/'):
+    for file in files:
+        img = cv2.imread(DIR + '/files/' + file)
+        img2 = imread_highlighted(img)
+        replaced = highlighted_replaced(img, img2)
+        print(replaced, '\n')
