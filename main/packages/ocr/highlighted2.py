@@ -7,12 +7,12 @@ import cv2, pytesseract, numpy
 DIR = os.path.dirname(os.path.realpath(__file__))
 
 def imread_highlighted(img):
-    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # Convert BGR to HSV
-    lower = numpy.array([22, 93, 0]) # yellow range
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    lower = numpy.array([22, 93, 0])
     upper = numpy.array([45, 255, 255])
-    mask = cv2.inRange(hsv, lower, upper) # Mask to get only yellow colors
+    mask = cv2.inRange(hsv, lower, upper)
     res = cv2.bitwise_and(img, img, mask= mask)
-    res2 = cv2.bitwise_not(mask) # Invert the mask
+    res2 = cv2.bitwise_not(mask)
     return res2
 
 for root, dirs, files in os.walk(DIR + '/files/'):
@@ -21,13 +21,14 @@ for root, dirs, files in os.walk(DIR + '/files/'):
         img = cv2.imread(DIR + '/files/' + file)
         img2 = imread_highlighted(img)
 
-        text = pytesseract.image_to_string(img)
-        highlighted = pytesseract.image_to_string(img2)
-        
-        text = '\n'.join(text.split('\n\n')).strip() # remove double newlines
-        highlighted = '\n'.join(highlighted.split('\n\n')).strip()
+        text = pytesseract.image_to_string(img).strip()
+        highlighted = pytesseract.image_to_string(img2).strip()
+        # replaced = text.replace(highlighted, '<i>%s</i>' % highlighted)
 
-        start = highlighted[0:20]
+        text = '\n'.join(text.split('\n\n'))
+        highlighted = '\n'.join(highlighted.split('\n\n'))
+
+        start = highlighted[0:20] # Look Here
         end = highlighted[-20:]
 
         assert start in text
