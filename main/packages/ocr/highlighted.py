@@ -38,7 +38,7 @@ img2 = imread_highlighted(img)
 
 text = pytesseract.image_to_string(img)
 highlighted = pytesseract.image_to_string(img2).strip()
-replaced = text.replace(highlighted, f'<i>{highlighted}</i>').strip()
+replaced = text.replace(highlighted, f'<i>{highlighted}</i>')
 
 print(replaced)
 
