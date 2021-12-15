@@ -9,10 +9,8 @@ config.read(DIR/'config.ini')
 HOME_UNIX = config['HOME']['UNIX']
 HOME_WINDOWS = config['HOME']['WINDOWS']
 M9_URLs = config['M9']['URLS'].split(',')
+DEBUG = config['APP']['DEBUG']
 
-print(HOME_UNIX) 
-    # /home/catalin
-print(HOME_WINDOWS )
-    # c:/Users/catalin
-print(M9_URLs[1].strip())
-    # https://www.minte9.com/java
+assert HOME_UNIX == '/home/catalin'
+assert M9_URLs[1].strip() == 'https://www.minte9.com/java'
+assert DEBUG == 'False'
