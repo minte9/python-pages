@@ -10,10 +10,6 @@ HOME_UNIX = config['HOME']['UNIX']
 HOME_WINDOWS = config['HOME']['WINDOWS']
 M9_URLs = config['M9']['URLS'].split(',')
 
-print(HOME_UNIX)
-print(HOME_WINDOWS)
-print(M9_URLs[1].strip())
-
-# /home/catalin
-# c:/Users/catalin
-# https://www.minte9.com/java
+print(HOME_UNIX) # /home/catalin
+print(HOME_WINDOWS )# c:/Users/catalin
+print(M9_URLs[1].strip()) # https://www.minte9.com/java
