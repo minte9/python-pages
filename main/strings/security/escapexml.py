@@ -15,7 +15,6 @@ o2 = quoteattr(s2)
 print(o2)
     # "a ' b"
 
-
 assert o1 == '&lt; &amp; &gt;'
 assert o2 == '"a \' b"'
 
