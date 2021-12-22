@@ -1,8 +1,6 @@
 # Generators are often used ...
 # with functions like sum, max, min
 
-# sum
-
 y = sum(range(5))
 assert y == 10
 assert y != 15
