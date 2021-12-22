@@ -3,6 +3,9 @@
 # Unlike list, ...
 # it does not compute the values at once, ...
 # it waits to be asked.
+#
+# A generator expression are similar with list comprehesion,
+# but with parantheses instead of square brakets
 
 
 # Generator
