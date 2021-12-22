@@ -26,7 +26,7 @@ assert len(list) != 101010
 
 
 # Populate a list using for loop
-# it is invoking __next__ generator
+# automatically invokes __next__ generator
 
 list = []
 for x in range(101010): # __next__
