@@ -1,7 +1,6 @@
 """Import module:
 Any file that contains Python code can be imported as module.
 Test code (defined in mymodule) is not displayed.
-
 .pyc files are created automatically by the GraalVM Python runtime ...
 when you import custom mdules.
 """
