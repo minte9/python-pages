@@ -71,3 +71,8 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * binary_search/ [binary_search](/main/applications/binary_search/binary_search.py), [caesar_cypher](/main/applications/binary_search/caesar_cypher.py), [three_doubles](/main/applications/binary_search/three_doubles.py)
   * conway_game/ [version1](/main/applications/conway_game/conway_v1.py), [version2](/main/applications/conway_game/conway_v2.py), [version3](/main/applications/conway_game/conway_v3.py), [version4](/main/applications/conway_game/conway_v4.py)
   * coin_flip/ [version1](/main/applications/coin_flip/coinflip.py), [version2](/main/applications/coin_flip/coinflip_v2.py)
+
+
+##
+
+More on [minte9.com/python](https://www.minte9.com/python)
