@@ -72,6 +72,15 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
   * conway_game/ [version1](/main/applications/conway_game/conway_v1.py), [version2](/main/applications/conway_game/conway_v2.py), [version3](/main/applications/conway_game/conway_v3.py), [version4](/main/applications/conway_game/conway_v4.py)
   * coin_flip/ [version1](/main/applications/coin_flip/coinflip.py), [version2](/main/applications/coin_flip/coinflip_v2.py)
 
+## Repo
+
+~~~sh
+# Install
+git clone https://github.com/minte9/python-pages.git
+
+# Update
+git pull origin main
+~~~
 
 ##
 
