@@ -7,11 +7,16 @@ when you import custom mdules.
 import sys
 sys.dont_write_bytecode = True # no .pyc
 
+import mymodule
+mymodule.DIR = "/usr/local"
+
+mymodule.myprint('Hello World')
+    # Print from my module: Hello World: __main__
+    # /usr/local
+
 from mymodule import mysum
 from mymodule import myprint
 
-myprint('Hello World')
-    # Print from my module: Hello World: __main__
-
 myprint(mysum(1,2))
     # Print from my module: 3
+    # /usr/local
