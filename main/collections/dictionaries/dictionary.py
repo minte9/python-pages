@@ -32,3 +32,18 @@ assert D["two"] == "dos"
 assert "one" in D
 assert ("dos" in D) == False
 assert ("two" in D) == True
+
+
+# Loop
+
+for v in D.values():
+    print(v) 
+        # tres
+        # dos
+        # uno
+
+for k in D.keys():
+    print(k) 
+        # three
+        # two
+        # one
