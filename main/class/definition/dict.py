@@ -1,5 +1,5 @@
-# Like most Python objects, our empty class has a dictionary. 
-# #The dictionary holds the attributes of the object.
+# An empty class has a dictionary. 
+# The dictionary holds the attributes of the object.
 
 class A(object):
     pass
