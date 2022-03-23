@@ -1,5 +1,5 @@
-# Empty class - dict
-# An empty class has a dictionary that holds the attributes of the object.
+# An empty class has a dictionary that ... 
+# holds the attributes of the object.
 
 class A(object):
     pass
