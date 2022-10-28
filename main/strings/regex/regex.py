@@ -3,6 +3,7 @@ Use regular expression patterns.
 The group() method returns the match.
 The findAll() method returns a list of strings.
 """
+from nis import match
 import re
 
 
@@ -42,3 +43,8 @@ print("Numbers: \n" + '\n'.join(numbers))
     # Numbers: 
     # 123-456-7777
     # 415-555-1234
+
+pattern = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+result = pattern.search('111-222-4444')
+print(result.group())
+    # 111-222-4444
