@@ -8,19 +8,19 @@
 # Tuples are typed with parentheses, instead of square brackets.
 
 
-# CLASS type
+# tuple type
 # -------------------------------------------
-t = 'a', 'b', 'c'; 
-t = 'a',
-t = ('a', 'b', 'c')
-
-print(type(t)) # <class 'tuple'>
-
+t1 = 'a', 'b', 'c'
+t2 = ('a', 'b', 'c')
+print(type(t1)) # <class 'tuple'>
+print(type(t2)) # <class 'tuple'>
 
 # NOT a tuple
 # -------------------------------------------
-t = ('a')
-print(type(t)) # <class 'str'>
+t3 = 'a'
+t4 = ('a')
+print(type(t3)) # <class 'str'>
+print(type(t4)) # <class 'str'>
 
 
 # IMMUTABLE
