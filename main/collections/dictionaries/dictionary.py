@@ -37,13 +37,13 @@ assert ("two" in D) == True
 # Loop
 
 for v in D.values():
-    print(v) 
-        # tres
-        # dos
+    print(v)
         # uno
+        # dos
+        # tres
 
 for k in D.keys():
-    print(k) 
-        # three
-        # two
+    print(k)
         # one
+        # two
+        # three
