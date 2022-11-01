@@ -27,7 +27,7 @@ def binary_search(words, keyword, i=0):
     if words[key] == keyword:
         return i
    
-    if keyword < words[key]:
+    if keyword < words[key]: #Look Here
         words = words[:key]
     else:
         words = words[key+1:]
