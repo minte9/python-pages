@@ -1,5 +1,4 @@
 """Using Python to check if remote port is open and accessible
-
 connect_ex() return an error indicator ...
 instead of raising an exception
 """
