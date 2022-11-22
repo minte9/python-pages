@@ -14,6 +14,6 @@ for i in range(10, 100):
     thread = threading.Thread(target=scan_port, args=[i])
     thread.start()
 
-#Port 21 is open
-#Port 25 is open
-#Port 80 is open
+# Port 21 is open
+# Port 25 is open
+# Port 80 is open
