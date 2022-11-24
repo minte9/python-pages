@@ -1,7 +1,7 @@
 """ Input function waits for user input
 """
 
-name = input('What is your name?\n')
+name = input('What is your name?\n') 
     # type: John
-
-print(name) # output: John
+print(name) 
+    # output: John
