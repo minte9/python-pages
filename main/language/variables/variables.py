@@ -9,7 +9,7 @@ n = 17
 n = n + 24
 print(n) # 41
 
-a, b, c = [1, 2, 3]
+a, b, c = [1, 2, 3] # Look Here
 assert a == 1
 assert b == 2
 assert c == 3
