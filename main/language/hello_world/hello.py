@@ -1,6 +1,5 @@
-# hello.py
+"""hello.py
+python hello.py
+"""
 
-print('Hello World')
-
-# python hello.py
-    # Hello World
+print('Hello World') # Hello World
