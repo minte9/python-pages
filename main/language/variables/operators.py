@@ -1,5 +1,4 @@
 """ Operators
-
 The + operator concatenates two strings
 The * operator performs repetitions on strings
 """

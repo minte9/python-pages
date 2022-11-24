@@ -1,5 +1,4 @@
 """ Variables
-
 An assignment creates a variable and gives it value
 You can assign multiple variables in one line
 """
