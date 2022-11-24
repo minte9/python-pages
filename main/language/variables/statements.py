@@ -1,4 +1,6 @@
-""" When you type a statement, 
+""" Statements
+
+When you type a statement, 
 the interpreter executes it
 """
 
