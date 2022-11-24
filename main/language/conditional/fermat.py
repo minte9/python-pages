@@ -1,6 +1,6 @@
 """ Fermat's last theorem
 For any number > 2, there are no positive integers 
-a, b, c so that a**n + b**n = c**n
+a, b, c, so that a**n + b**n = c**n
 """
 
 def check(a, b, c, n):
