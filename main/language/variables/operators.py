@@ -1,8 +1,9 @@
-# The + operator concatenates two strings
-# The * operator performs repetitions on strings
+""" The + operator concatenates two strings
+The * operator performs repetitions on strings
+"""
 
-s1 = 'Hello'
-s2 = 'World'
-print(s1 + ' ' + s2) # 'Hello World'
+a = 'Hello'
+b = 'World'
 
-print('Spam'*3) # 'SpamSpamSpam'
+print(a + ' ' + b)  # 'Hello World'
+print(a*3)          # 'HelloHelloHello'
