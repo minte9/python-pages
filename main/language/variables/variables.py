@@ -1,5 +1,4 @@
 """An assignment creates a variable and gives it value
-An expression is a combination of values, variables, and operators
 You can assign multiple variables in one line
 """
 
