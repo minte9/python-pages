@@ -1,5 +1,4 @@
 """ Function definition
-
 A function is a named sequence of statements
 To end the function, you have to enter an empty line
 Split a single instruction on multple lines with \

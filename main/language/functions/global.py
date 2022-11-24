@@ -1,5 +1,4 @@
 """ Local, global variables
-
 Local variable is destroyed after the function is called
 To modify a global variable from within a function, 
 use global statement
