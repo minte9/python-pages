@@ -1,4 +1,4 @@
-""" Local / global variables
+""" Local, global variables
 
 Local variable is destroyed after the function is called
 To modify a global variable from within a function, 
@@ -6,22 +6,19 @@ use global statement
 """
 
 def myfunc(a, b):
-    c = a + b
+    c = a + b # Look Here
     return c
-
-assert myfunc(3, 4) != None
-assert myfunc(3, 4) == 7
-
-# print(c) # NameError: name 'c' is not defined
-
 
 n = 0
 def parse():
-    global n
+    global n # Look Here
     for i in range(10):
         n = i
 
-parse()
+print(myfunc(3,4))  # 7
+parse(); print(n)   # 9
 
-assert n != 0
-assert n == 9
+try:
+    print(c)
+except Exception as e:
+    print(e) # name c not defined
