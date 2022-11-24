@@ -1,5 +1,5 @@
-# The + operator concatenates two strings.
-# The * operator performs repetitions on strings.
+# The + operator concatenates two strings
+# The * operator performs repetitions on strings
 
 s1 = 'Hello'
 s2 = 'World'
