@@ -1,5 +1,5 @@
-print('Hello World') # correct
-    # Hello World
+""" Making mistakes on purpose, helps to remember
+print 'Hello World' # SyntaxError
+"""
 
-# print 'Hello World' # incorrect
-    # SyntaxError: Missing parentheses in call to 'print'
+print('Hello World') # Hello World
