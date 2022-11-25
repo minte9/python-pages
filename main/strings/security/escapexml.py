@@ -1,21 +1,17 @@
-"""XSS 
-Prevent cross site scriting attacks.
-Escape xml tags.
+""" XSS 
+Prevent cross site scriting attacks
+The sax library escape should execute faster
 """
 from xml.sax.saxutils import escape
 from xml.sax.saxutils import quoteattr
 
-s1 = '< & >'
-o1 = escape(s1)
-print(o1)
-    # &lt; &amp; &gt;
+a = '< & >'
+x = escape(a)
 
-s2 = "a ' b"
-o2 = quoteattr(s2)
-print(o2)
-    # "a ' b"
+b = "a ' b"
+y = quoteattr(b)
 
-assert o1 == '&lt; &amp; &gt;'
-assert o2 == '"a \' b"'
+assert x == '&lt; &amp; &gt;'
+assert y == '"a \' b"'
 
 print('pass')
