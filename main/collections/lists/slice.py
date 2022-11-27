@@ -1,20 +1,20 @@
-# The slice operator [:] works on list
-# (same as with strings)
-#
-# The value -1 refers to the last index in a list
+""" Slice operator [:] works on list, as with strings
+The value -1 refers to the last index in a list
+"""
 
-word = "abcde"
+a = "abcde"
 
-assert word[:1] == "a"
-assert word[1:] == "bcde"
-assert word[1:3] == "bc"    # 3 limit, not included
+assert a[:1]  == "a"
+assert a[1:]  == "bcde"
+assert a[1:3] == "bc" # limit 3 not included
 
+A = [1, 2, 3, 4, 5]
 
-list = ["a", "b", "c", "d", "e"]
+assert A[:1]   != 1
+assert A[:1]   == [1]
+assert A[1:]   == [2, 3, 4, 5]
+assert A[1:3]  == [2, 3] # limit 3 not included
+assert A[-1]   == 5
+assert A[-1:]  == [5] # last
 
-assert list[:1] != "a"
-assert list[:1] == ["a"]
-assert list[1:] == ["b", "c", "d", "e"]
-assert list[1:3] == ["b", "c"]
-
-assert list[-1] == "e"  # last
+print('Tests passed')
