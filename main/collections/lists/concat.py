@@ -8,7 +8,6 @@ C = A * 2
 
 assert A == [1, 2, 3, 4]
 assert B == [9, 9, 9, 9]
-
-print(C) # 1,2,3,4,1,2,3,4
+assert C == [1, 2, 3, 4, 1, 2, 3, 4]
 
 print('Tests passed')
