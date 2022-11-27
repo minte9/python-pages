@@ -1,18 +1,14 @@
-# To concatenate two list use + operator
+"""To concatenate two list use + operator
+To multiply a list use * operator
+"""
 
-a = [1, 2, 3]
-b = [4, 5, 6]
-c = a + b
+A = [1, 2] + [3,4]
+B = [9] * 4
+C = A * 2
 
-assert c == [1, 2, 3, 4, 5, 6]
-assert c != [1, 2, 7, 5, 6]
-assert c != [1, 2, 3]
+assert A == [1, 2, 3, 4]
+assert B == [9, 9, 9, 9]
 
-# To multiply a list use * operator
+print(C) # 1,2,3,4,1,2,3,4
 
-a = [2]
-b = [2] * 4
-
-assert b == [2, 2, 2, 2]
-assert b != 8
-assert b != [ [2], [2], [2], [2] ]
+print('Tests passed')
