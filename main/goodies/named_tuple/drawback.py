@@ -18,9 +18,7 @@ class B():
 a = A(1, 2)
 b = B(A(1, 2))
 
-assert a.x == 1
-assert a.y == 2
-assert b.x == 1
-assert b.y == 2
+assert a.x == 1 == b.x
+assert a.y == 2 == b.y
 
 print('Tests passed')

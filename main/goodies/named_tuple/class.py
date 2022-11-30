@@ -17,7 +17,7 @@ B = namedtuple('B', ['x', 'y'])
 a = A(1, 2)
 b = B(1, 2)
 
-assert a.x == b.x == 1
-assert a.y == b.y == 2
+assert a.x == 1 == b.x
+assert a.y == 2 == b.y
 
 print('Tests passed')
