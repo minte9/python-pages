@@ -22,7 +22,7 @@ if action == 'encrypt':
         with open('./password.bin', 'wb') as f: # Write encrypted
             encrypted = rsa.encrypt(msg.encode(), publicKey)
             f.write(encrypted)
-            print(encrypted) # b'[\xd6z\x7fP@\x96\x91\xa5\x01\x82\r
+            print(encrypted) # b'[\xd6z\x7fP@\x96\x91\xa5\x01\x82\r'
 
 if action == 'decrypt':
     master_pass = sys.argv[2]
