@@ -1,6 +1,6 @@
 """Generate keys
 Two keys, a public key and a private key
-    /app/restricted/newkeys.py
+/app/restricted/newkeys.py
 """
 
 import rsa, os
