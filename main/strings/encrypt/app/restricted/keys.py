@@ -1,4 +1,5 @@
 """Generate keys
+
 Two keys, a public key and a private key
 /app/restricted/keys.py
 """
