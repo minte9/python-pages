@@ -1,7 +1,10 @@
 """Encryption with asymmetric key
-rsa library
+
+Rsa library
+    pip install rsa
+    
 Two keys, a public key and a private key
-No one has your private key (no man in the middle attack)
+No one has your private key
 """
 
 import rsa
