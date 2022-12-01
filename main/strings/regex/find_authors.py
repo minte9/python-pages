@@ -1,7 +1,6 @@
-"""Application
+"""Find authors App:
 Find all authors @nickname in an amazon page
 
-Example:
 1) Open https://www.amazon.com/gp/product/1593279922
 2) Copy Ctrl-A, Ctrl-C
 3) Run python program
