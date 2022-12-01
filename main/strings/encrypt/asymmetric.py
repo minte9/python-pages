@@ -15,5 +15,5 @@ msg = "password_123"
 encrypted = rsa.encrypt(msg.encode(), publicKey)
 decrypted = rsa.decrypt(encrypted, privateKey).decode()
 
-print(encrypted) # b'%\x922\x166\xdd#\xe8\..'
+print(encrypted) # b'\x07z\x110\xb4\x05\xcb\xb8\x0b[FN2\xeb'
 print(decrypted) # password_123
