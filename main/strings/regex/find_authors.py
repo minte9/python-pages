@@ -1,4 +1,5 @@
-"""Find all authors @nickname in an amazon page
+"""Application
+Find all authors @nickname in an amazon page
 
 Example:
 1) Open https://www.amazon.com/gp/product/1593279922
