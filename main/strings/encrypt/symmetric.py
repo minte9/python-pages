@@ -17,5 +17,5 @@ msg = "password_123"
 encrypted = obj.encrypt(msg.encode())
 decrypted = obj.decrypt(encrypted).decode()
 
-print(encrypted)
-print(decrypted)
+print(encrypted) # b'gAAAAABjiKrvHBk19LPdKb..'
+print(decrypted) # password_123
