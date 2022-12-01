@@ -33,7 +33,7 @@ if action == 'decrypt':
     with open('./password.bin', "rb") as f: # Read encrypted
         encrypted = f.read()
     
-    with open('./restricted/private.pem', "rb") as p: # decryt using private key
+    with open('./restricted/private.pem', "rb") as p: # decryt, with private key
         privateKey = rsa.PrivateKey.load_pkcs1(p.read())
         decrypted = rsa.decrypt(encrypted, privateKey).decode()
         print(decrypted)
