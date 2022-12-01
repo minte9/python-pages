@@ -1,6 +1,7 @@
 """Decrypt text
 Public encrypted.bin containing encrypted password
 Use private.pem restricted private key
+/app/restricted/decrypt.py
 """
 
 import rsa, os
