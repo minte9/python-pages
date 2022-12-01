@@ -9,7 +9,7 @@ import rsa, os
 
 DIR = os.path.dirname(os.path.realpath(__file__))
 
-with open(DIR + '/../encrypted.txt', "rb") as f:
+with open(DIR + '/../password.bin', "rb") as f:
     encrypted = f.read()
         
     with open(DIR + '/private.pem', "rb") as p:
