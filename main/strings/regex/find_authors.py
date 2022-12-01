@@ -1,7 +1,12 @@
-"""Find all authors @nickname in an amazon page.
-Page example: https://www.amazon.com/gp/product/1593279922
-Run program: Ctrl-A, Ctrl-C, run program, Ctrl-V
+"""Find all authors @nickname in an amazon page
+
+Example:
+1) Open https://www.amazon.com/gp/product/1593279922
+2) Copy Ctrl-A, Ctrl-C
+3) Run python program
+4) Paste Ctrl-v
 """
+
 import re, pyperclip
 
 clipboard = pyperclip.paste()
