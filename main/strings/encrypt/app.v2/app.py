@@ -14,7 +14,7 @@ if len(sys.argv) < 2: # Check cmd arguments
 action = sys.argv[1]
 
 if action == 'encrypt':
-    msg = sys.argv[2]
+    msg = sys.argv[2] # pass_12333
 
     with open('./public.pem', 'rb') as p: # Read public key
         publicKey = rsa.PublicKey.load_pkcs1(p.read())
@@ -36,4 +36,4 @@ if action == 'decrypt':
     with open('./restricted/private.pem', "rb") as p: # decryt, with private key
         privateKey = rsa.PrivateKey.load_pkcs1(p.read())
         decrypted = rsa.decrypt(encrypted, privateKey).decode()
-        print(decrypted)
+        print(decrypted) # pass_12333
