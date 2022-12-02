@@ -7,6 +7,6 @@ a = 42; b = a
 a = 100 # new value, store a reference to it
 
 assert a == 100
-assert b == 42 # a copy doesn't afect b
+assert b == 42 # reference to a doesn't afect b
 
 print('Tests passed')
