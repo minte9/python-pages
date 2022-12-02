@@ -1,13 +1,15 @@
-# When you assign 42 to a variable,
-# you are creating 42 value in computer memory ...
-# and store a reference to it
-a = 42
-b = a
+"""Variables as references
 
-# When later you change the value of a, 
-# you are creating a new value and store a reference to it
-a = 100
+When you assign 42 to a variable,
+you are creating 42 value in computer memory ...
+and store a reference to it
+"""
 
-# This copy doesn't afect b
+a = 42; b = a
+
+a = 100 # new value, store a reference to it
+
 assert a == 100
-assert b == 42
+assert b == 42 # a copy doesn't afect b
+
+print('Tests passed')
