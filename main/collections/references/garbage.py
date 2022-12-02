@@ -1,22 +1,20 @@
-# Python's automatic garbage collection ...
-# delete any values not being referred to by any variables
-#
-# Manual memory management in other programming languages ...
-# is a common source of bugs
+"""Python's automatic garbage collection
+Delete any values not being referred to by any variables
+Manual memory management in other programming languages ...
+is a common source of bugs.
+The getrefcount function returns the number of references
+"""
 
 import sys
 
-a = 'm9 string'
+a = 'somevalue'
 assert sys.getrefcount(a) == 4
+assert sys.getrefcount('somevalue') == 4
 
-b = a
-assert sys.getrefcount(a) == 5
-
-c = b
+b = a; c = b
 assert sys.getrefcount(a) == 6
 
-del b
-assert sys.getrefcount(a) == 5
+del a; del b; del c
+assert sys.getrefcount('somevalue') == 3 # Look Here
 
-del c
-assert sys.getrefcount(a) == 4
+print('Tests passed')
