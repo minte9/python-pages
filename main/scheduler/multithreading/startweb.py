@@ -5,12 +5,13 @@ python startweb.py
     # Ctrl+C to kill the process
     # ps -aF | grep python
     # kill -9 no
-    
+
 Alternatives
     php -S localhost:8000
     python3 -m http.server 8000 
     http://localhost:8000/public_html
 """
+
 import os, pathlib, sys, time, threading, webbrowser
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
