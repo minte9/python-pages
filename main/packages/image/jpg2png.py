@@ -16,5 +16,6 @@ print(a.format)             # JPEG
 print(b.format)             # JPEG
 
 a.save("03.png")            # Look Here
+
 c = Image.open("03.png")    # .png
 print(c.format)             # PNG
