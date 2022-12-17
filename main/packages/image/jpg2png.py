@@ -13,4 +13,5 @@ os.chdir(DIR)
 img = Image.open(DIR / "01.jpeg")
 img.save(DIR / "01.png")
 
-print(Image.open(DIR / "01.png").format) # PNG
+format = Image.open(DIR / "01.png").format
+print(format) # PNG
