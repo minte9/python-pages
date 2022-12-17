@@ -10,12 +10,12 @@ from PIL import Image # Look Here
 DIR = pathlib.Path(__file__).resolve().parent
 os.chdir(DIR)
 
-a = Image.open(DIR / "01.jpeg")
-b = Image.open(DIR / "01.jpg")
+a = Image.open(DIR / "01.jpg")
+b = Image.open(DIR / "02.jpeg")
 
-a.save(DIR / "01.png") # Look Here
+a.save(DIR / "03.png") # Look Here
 
-c = Image.open(DIR / "01.jpg")
+c = Image.open(DIR / "03.png")
 
 print(a.format) # JPEG
 print(b.format) # JPEG
