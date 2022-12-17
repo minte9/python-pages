@@ -14,7 +14,6 @@ a = Image.open("01.jpg")    # .jpg
 b = Image.open("02.jpeg")   # .jpeg
 
 a.save("03.png")            # Look Here
-
 c = Image.open("03.png")
 c.show()
 
