@@ -5,13 +5,18 @@ Convert jpg to png
 """
 
 import os, pathlib
-from PIL import Image
+from PIL import Image # Look Here
 
 DIR = pathlib.Path(__file__).resolve().parent
 os.chdir(DIR)
 
-img = Image.open(DIR / "01.jpeg")
-img.save(DIR / "01.png")
+a = Image.open(DIR / "01.jpeg")
+b = Image.open(DIR / "01.jpg")
 
-format = Image.open(DIR / "01.png").format
-print(format) # PNG
+a.save(DIR / "01.png") # Look Here
+
+c = Image.open(DIR / "01.jpg")
+
+print(a.format) # JPEG
+print(b.format) # JPEG
+print(c.format) # JPEG
