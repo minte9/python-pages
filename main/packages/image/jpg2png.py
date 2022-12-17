@@ -19,4 +19,4 @@ c = Image.open(DIR / "01.jpg")
 
 print(a.format) # JPEG
 print(b.format) # JPEG
-print(c.format) # JPEG
+print(c.format) # PNG
