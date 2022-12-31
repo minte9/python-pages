@@ -16,9 +16,9 @@ data = {
      5.60, 8.38, 6.52, 7.89, 7.60, 6.12, 5.90, 4.5, 6.15, 5.82
   ],
   'fruit': [
-    'Mandarin', 'Apple', 'Lemon', 'Lemon', 'Lemon', 'Apple', 
-    'Mandarin', 'Mandarin', 'Lemon', 'Apple', 'Mandarin', 'Apple', 
-    'Lemon', 'Apple', 'Apple', 'Apple', 'Mandarin', 'Lemon', 'Lemon', 'Lemon'
+    'Mandarin', 'Apple', 'Lemon', 'Lemon', 'Lemon', 'Apple', 'Mandarin', 
+    'Mandarin', 'Lemon', 'Apple', 'Mandarin', 'Apple', 'Lemon', 'Apple', 
+    'Apple', 'Apple', 'Mandarin', 'Lemon', 'Lemon', 'Lemon'
   ]
 } 
 
