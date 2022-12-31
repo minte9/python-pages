@@ -1,5 +1,5 @@
-"""KNN is a simple, supervised machine learning (ML) algorithm
-that can be used for classification or regression tasks 
+"""KNN supervised machine learning (ML) algorithm
+Used for classification or regression tasks 
 """
 from sklearn.neighbors import KNeighborsClassifier
 
