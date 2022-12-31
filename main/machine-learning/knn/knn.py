@@ -1,7 +1,7 @@
 """KNN
 Supervised machine learning (ML) algorithm ...
 that can be used for classification or regression tasks 
-pip install -U scikit-learn
+    pip install -U scikit-learn
 """
 
 from sklearn.neighbors import KNeighborsClassifier
