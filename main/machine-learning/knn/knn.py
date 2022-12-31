@@ -1,5 +1,4 @@
-"""
-KNN is a simple, supervised machine learning (ML) algorithm 
+"""KNN is a simple, supervised machine learning (ML) algorithm 
 It can be used for classification or regression tasks 
 pip install -U scikit-learn
 """
