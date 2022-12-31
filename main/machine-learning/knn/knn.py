@@ -1,6 +1,7 @@
 """KNN supervised machine learning (ML) algorithm
-Used for classification or regression tasks 
+that can be used for classification or regression tasks 
 """
+
 from sklearn.neighbors import KNeighborsClassifier
 
 # Training set of data points and Labels
