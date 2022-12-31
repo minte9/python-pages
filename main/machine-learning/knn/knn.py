@@ -1,8 +1,9 @@
 """
 KNN is a simple, supervised machine learning (ML) algorithm 
 It can be used for classification or regression tasks 
-    pip install -U scikit-learn
 """
+
+# pip install -U scikit-learn
 from sklearn.neighbors import KNeighborsClassifier
 
 X = [[0,0], [1,1], [2,2], [3,3]]            # training set of data points
