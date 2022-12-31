@@ -29,8 +29,10 @@ knn.fit(X, y)
 
 # Predict the label for new data point
 prediction = knn.predict([[9, 3]])
-print(prediction)  # ['Lemon']
+print(prediction)  
+        # ['Lemon']
 
 # Predict multiple labels
 predictions = knn.predict([[9, 3], [4, 5], [2, 5], [8, 9], [5, 7]])
-print(predictions) # ['Lemon' 'Mandarin' 'Mandarin' 'Apple' 'Mandarin']
+print(predictions) 
+        # ['Lemon' 'Mandarin' 'Mandarin' 'Apple' 'Mandarin']
