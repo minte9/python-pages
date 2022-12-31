@@ -4,11 +4,18 @@ that can be used for classification or regression tasks
 
 from sklearn.neighbors import KNeighborsClassifier
 
-X = [[0,0], [1,1], [2,2], [3,3]]            # training set of data points
-y = [0, 1, 0, 1]                            # labels
+# Training set of data points
+X = [[0,0], [1,1], [2,2], [3,3]]    
 
-knn = KNeighborsClassifier(n_neighbors=3)   # KNN classifier with K=3
-knn.fit(X, y)                               # Fit the classifier
-                   
-prediction = knn.predict([[1,2]])   # predict the label of a new data point
-print(prediction)                   # [0]
+# Labels
+y = [0, 1, 0, 1]
+
+# KNN classifier with K=3
+knn = KNeighborsClassifier(n_neighbors=3)
+
+# Fit the classifier
+knn.fit(X, y)
+
+# Predict the label of a new data point                
+prediction = knn.predict([[1,2]])   
+print(prediction) # [0]
