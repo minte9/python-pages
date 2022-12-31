@@ -1,9 +1,6 @@
 """KNN fruit classification
 Learn a function f that maps any combination 
 of height and width of a fruit to a (predicted) fruit type
-
-pip install -U scikit-learn
-pip install pandad
 """
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
