@@ -1,5 +1,4 @@
-"""KNN
-Supervised machine learning (ML) algorithm ...
+"""KNN is a simple, supervised machine learning (ML) algorithm
 that can be used for classification or regression tasks 
 """
 
