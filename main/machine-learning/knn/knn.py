@@ -1,20 +1,16 @@
 """
+KNN is a simple, supervised machine learning (ML) algorithm 
+that can be used for classification or regression tasks 
+
 pip install -U scikit-learn
 """
 from sklearn.neighbors import KNeighborsClassifier
 
-# Assume we have a training set of data points with corresponding labels
-X = [[0,0], [1,1], [2,2], [3,3]]  # data points
-y = [0, 1, 0, 1]  # labels
+X = [[0,0], [1,1], [2,2], [3,3]]            # training set of data points
+y = [0, 1, 0, 1]                            # labels
 
-# Create a KNN classifier with K=3
-knn = KNeighborsClassifier(n_neighbors=3)
-
-# Fit the classifier to the training data
-knn.fit(X, y)
-
-# Use the classifier to predict the label of a new data point
-x_new = [1,2]  # new data point
-prediction = knn.predict([x_new])  # predict the label of x_new
-
-print("Prediction:", prediction)  # should output "Prediction: [0]"
+knn = KNeighborsClassifier(n_neighbors=3)   # KNN classifier with K=3
+knn.fit(X, y)                               # Fit the classifier to the training data
+                   
+prediction = knn.predict([[1,2]])           # predict the label of a new data point
+print(prediction)                           # [0]
