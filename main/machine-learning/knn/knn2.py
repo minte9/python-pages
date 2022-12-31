@@ -5,8 +5,7 @@ of height and width of a fruit to a (predicted) fruit type
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 
-# Training set of data points with corresponding labels
-data = {
+data = { # Training set of data points with corresponding labels
   'height': [
     3.91, 7.09, 10.48, 9.21, 7.95, 7.62, 7.95, 4.69, 7.50, 7.11, 
     4.15, 7.29, 8.49, 7.44, 7.86, 3.93, 4.40, 5.5, 8.10, 8.69
