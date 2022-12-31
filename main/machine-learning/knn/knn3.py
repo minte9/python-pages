@@ -44,7 +44,7 @@ predictions = knn.predict([[9, 3], [4, 5], [2, 5], [8, 9], [5, 7]])
 print(predictions) # ['Lemon' 'Mandarin' 'Mandarin' 'Apple' 'Mandarin']
 
 
-#-------------------------------------------------------------------------------
+#----------------------------------------------------------------
 
 # Libraries
 import pandas as pd
@@ -60,9 +60,12 @@ import seaborn as sns
 # Create a function to plot scatter graph
 def plotFruitFigure():
     # Define variables for graph
-    apple_height, apple_width = df.height[df.fruit == 'Apple'], df.width[df.fruit == 'Apple']
-    mandarin_height, mandarin_width = df.height[df.fruit == 'Mandarin'], df.width[df.fruit == 'Mandarin']
-    lemon_height, lemon_width = df.height[df.fruit == 'Lemon'], df.width[df.fruit == 'Lemon']
+    apple_height, apple_width = \
+        df.height[df.fruit == 'Apple'], df.width[df.fruit == 'Apple']
+    mandarin_height, mandarin_width = \
+        df.height[df.fruit == 'Mandarin'], df.width[df.fruit == 'Mandarin']
+    lemon_height, lemon_width = \
+        df.height[df.fruit == 'Lemon'], df.width[df.fruit == 'Lemon']
 
     # Initialize the graph
     fig, ax = plt.subplots()
@@ -102,7 +105,8 @@ def plotKNN(
     clf = KNeighborsClassifier(n_neighbors = n_neighbors)
     clf.fit(X, y_encoded)
 
-    # Plot the decision boundary. For that, we will assign a color to each point in the mesh
+    # Plot the decision boundary. 
+    # For that, we will assign a color to each point in the mesh
     x_min, x_max = X[:, 0].min() - 3, X[:, 0].max() + 3
     y_min, y_max = X[:, 1].min() - 3, X[:, 1].max() + 3
 
@@ -134,7 +138,8 @@ def plotKNN(
     plt.xlabel("height")
     plt.ylabel("width")  
 
-#-------------------------------------------------------------------------------
+
+#----------------------------------------------------------------
 
 """Visualize the Dataset
 """
