@@ -1,8 +1,7 @@
 """KNN fruit classification, height, width / type
-Evaluate the model on the training dataset
+Evaluate the model on the training and test dataset
 The score is the difference between actual and predicted labels
 1.0 means the model correctly predicted all (100%)
-Then, evaluate on TEST dataset
 """
 
 import pandas as pd
