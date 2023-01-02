@@ -1,4 +1,4 @@
-"""KNN fruit classification, height, width / type
+"""KNN Evaluation
 Evaluate the model on the training and test dataset
 The score is the difference between actual and predicted labels
 1.0 means the model correctly predicted all (100%)
@@ -8,8 +8,7 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
 
-# Training model data set
-data = pd.DataFrame({
+A = pd.DataFrame({ # training dataset
   'height': [
     3.91, 7.09, 10.48, 9.21, 7.95, 7.62, 7.95, 4.69, 7.50, 7.11, 
     4.15, 7.29, 8.49, 7.44, 7.86, 3.93, 4.40, 5.5, 8.10, 8.69
@@ -25,29 +24,24 @@ data = pd.DataFrame({
   ]
 })
 
-X = data[['height', 'width']].values
-y = data.fruit.values
-
-knn = KNeighborsClassifier(n_neighbors=3)
-knn.fit(X, y)
-
-# Evaluate the model on the TRAINING dataset
-predictions = knn.predict(X)
-score = metrics.accuracy_score(y, predictions)
-print(score) 
-    # 0.85 (85%)
-
-# Evaluate on TEST dataset
-data = pd.DataFrame({
+B = pd.DataFrame({   # test dataset
     'height': [4, 4.47, 6.49, 7.51, 8.34],
     'width':  [6.5, 7.13, 7, 5.01, 4.23],
     'fruit':  ['Mandarin', 'Mandarin', 'Apple', 'Lemon', 'Lemon']
 })
 
-X = data[['height', 'width']].values
-y = data.fruit.values
+X  = A[['height', 'width']].values
+X2 = B[['height', 'width']].values
+y  = A.fruit.values
+y2 = B.fruit.values
+
+knn = KNeighborsClassifier(n_neighbors=3)
+knn.fit(X, y)
 
 predictions = knn.predict(X)
-score = metrics.accuracy_score(y, predictions)
-print(score) 
-    # 1 (100%)
+score = metrics.accuracy_score(y, predictions) # evaluate on training dataset
+print(score)  # 0.85 (85%)
+
+predictions = knn.predict(X2)
+score = metrics.accuracy_score(y2, predictions)  # evaluate on test dataset
+print(score)  # 1 (100%)
