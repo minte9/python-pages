@@ -1,9 +1,9 @@
 """ KNN Supervised machine learning (ML) algorithm
 K is the number of nearest neighbors to use
 
-Provide Training set of data points and Labels
-Createa a KNN classifier with K=3
-Predict the label of a new data point   
+a) provide Training set of data points and Labels
+b) createa a KNN classifier with K=3
+c) predict the label of a new data point   
 """
 
 from sklearn.neighbors import KNeighborsClassifier
