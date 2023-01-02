@@ -40,8 +40,8 @@ knn.fit(X, y)
 
 predictions = knn.predict(X)
 score = metrics.accuracy_score(y, predictions) # evaluate on training dataset
-print(score)  # 0.85 (85%)
+print(score)  # 0.85 / 85%
 
 predictions = knn.predict(X2)
-score = metrics.accuracy_score(y2, predictions)  # evaluate on test dataset
-print(score)  # 1 (100%)
+score = metrics.accuracy_score(y2, predictions) # evaluate on test dataset
+print(score)  # 1 / 100%
