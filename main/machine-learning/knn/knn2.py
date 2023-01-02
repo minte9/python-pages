@@ -1,4 +1,4 @@
-"""KNN fruit classification
+"""KNN fruit classification, height, width / type
 Learn a function f that maps any combination 
 of height and width of a fruit to a (predicted) fruit type
 """

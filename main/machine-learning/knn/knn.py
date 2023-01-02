@@ -1,5 +1,6 @@
 """KNN supervised machine learning (ML) algorithm
 that can be used for classification or regression tasks 
+K is the number of nearest neighbors to use.
 """
 
 from sklearn.neighbors import KNeighborsClassifier
