@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 import seaborn as sns
 
-# Training set of data points with corresponding labels
 data = {
   'height': [
     3.91, 7.09, 10.48, 9.21, 7.95, 7.62, 7.95, 4.69, 7.50, 7.11, 
@@ -26,51 +25,24 @@ data = {
   ]
 } 
 
-# Transform dataset into a DataFrame
 df = pd.DataFrame(data)
 print(df)
-
-# Define X and y using the dataset
-X = df[['height', 'width']].values
-y = df.fruit.values
-
-# KNN classifier with K=3
-knn = KNeighborsClassifier(n_neighbors=3) 
-
-# Fit the classifier to the training data
-knn.fit(X, y)
-
-# Predict the label for new data point
-prediction = knn.predict([[9, 3]])
-print(prediction)  
-    # ['Lemon']
-
-# Predict multiple labels
-predictions = knn.predict([[9, 3], [4, 5], [2, 5], [8, 9], [5, 7]])
-print(predictions) 
-    # ['Lemon' 'Mandarin' 'Mandarin' 'Apple' 'Mandarin']
-
-
-#----------------------------------------------------------------
 
 # Create a function to plot scatter graph
 def plotFruitFigure():
     # Define variables for graph
-    apple_height, apple_width = \
-        df.height[df.fruit == 'Apple'], df.width[df.fruit == 'Apple']
-    mandarin_height, mandarin_width = \
-        df.height[df.fruit == 'Mandarin'], df.width[df.fruit == 'Mandarin']
-    lemon_height, lemon_width = \
-        df.height[df.fruit == 'Lemon'], df.width[df.fruit == 'Lemon']
+    H_apple, W_apple = df.height[df.fruit == 'Apple'], df.width[df.fruit == 'Apple']
+    H_mandarin, W_mandarin = df.height[df.fruit == 'Mandarin'], df.width[df.fruit == 'Mandarin']
+    H_lemon, W_lemon = df.height[df.fruit == 'Lemon'], df.width[df.fruit == 'Lemon']
 
     # Initialize the graph
     fig, ax = plt.subplots()
     plt.gca().set_aspect('equal', adjustable='box')
 
     # Plot defined variables on it
-    ax.plot(apple_height, apple_width, 'o', color='r', label='apple')
-    ax.plot(mandarin_height, mandarin_width, 'o', color='g', label='mandarin')
-    ax.plot(lemon_height, lemon_width, 'o', color='b', label='lemon')
+    ax.plot(H_apple, W_apple, 'o', color='r', label='apple')
+    ax.plot(H_mandarin, W_mandarin, 'o', color='g', label='mandarin')
+    ax.plot(H_lemon, W_lemon, 'o', color='b', label='lemon')
 
     # Show legend and configure graph's size
     plt.legend()
