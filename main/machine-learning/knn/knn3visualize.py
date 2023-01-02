@@ -1,4 +1,9 @@
 """Vizualize KNN Decision Regions
+Create a function to plot scatter graph - plotFruitFigure()
+Create a function to plot KNN's decision regions - plotKNN()
+Figure 1 - Visualize the Dataset
+Figure 2 - Visualize KNN Decision Regions
+Figure 3 - Visualize learned decision regions of a model
 """
 
 import pandas as pd
@@ -28,21 +33,21 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
-# Create a function to plot scatter graph
 def plotFruitFigure():
+
     # Define variables for graph
-    H_apple, W_apple = df.height[df.fruit == 'Apple'], df.width[df.fruit == 'Apple']
-    H_mandarin, W_mandarin = df.height[df.fruit == 'Mandarin'], df.width[df.fruit == 'Mandarin']
-    H_lemon, W_lemon = df.height[df.fruit == 'Lemon'], df.width[df.fruit == 'Lemon']
+    H1, W1 = df.height[df.fruit == 'Apple'], df.width[df.fruit == 'Apple']
+    H2, W2 = df.height[df.fruit == 'Mandarin'], df.width[df.fruit == 'Mandarin']
+    H3, W3 = df.height[df.fruit == 'Lemon'], df.width[df.fruit == 'Lemon']
 
     # Initialize the graph
     fig, ax = plt.subplots()
     plt.gca().set_aspect('equal', adjustable='box')
 
     # Plot defined variables on it
-    ax.plot(H_apple, W_apple, 'o', color='r', label='apple')
-    ax.plot(H_mandarin, W_mandarin, 'o', color='g', label='mandarin')
-    ax.plot(H_lemon, W_lemon, 'o', color='b', label='lemon')
+    ax.plot(H1, W1, 'o', color='r', label='apple')
+    ax.plot(H2, W2, 'o', color='g', label='mandarin')
+    ax.plot(H3, W3, 'o', color='b', label='lemon')
 
     # Show legend and configure graph's size
     plt.legend()
@@ -52,7 +57,6 @@ def plotFruitFigure():
     plt.xlabel("height")
     plt.ylabel("width") 
     
-# Create a function to plot KNN's decision regions
 def plotKNN(
     n_neighbors=int, 
             plot_data=True,
@@ -68,13 +72,11 @@ def plotKNN(
     cmap_light = ListedColormap(['pink', 'lightblue', 'lightgreen'])
     cmap_bold = ['green', 'red', 'blue']
 
-    # We want to visualize KNN with 1 nearest neighbor.
-    # Let's initialize the model and train it with the dataset
+    # Initialize the model and train it with the dataset
     clf = KNeighborsClassifier(n_neighbors = n_neighbors)
     clf.fit(X, y_encoded)
 
-    # Plot the decision boundary. 
-    # For that, we will assign a color to each point in the mesh
+    # Plot the decision boundary (assign a color to each point)
     x_min, x_max = X[:, 0].min() - 3, X[:, 0].max() + 3
     y_min, y_max = X[:, 1].min() - 3, X[:, 1].max() + 3
 
@@ -107,25 +109,14 @@ def plotKNN(
     plt.ylabel("width")  
 
 
-#----------------------------------------------------------------
-
-"""Visualize the Dataset
-"""
 plotFruitFigure()
 plt.figure()
 
-"""Vizualize KNN Decision Regions
-"""
 plotKNN(n_neighbors=1, 
-        plot_height= df['height'], 
-        plot_width = df['width'], 
+        plot_height=df['height'], 
+        plot_width=df['width'], 
         plot_labels=df.fruit.values)
 plt.figure()
 
-"""
-We can remove the datapoints, after the learning is done
-Figure shows the learned decision regions of a model, or specifically, 
-it shows how this classifier predicts the (unknown) type of a new fruit
-"""
 plotKNN(n_neighbors=5, plot_data=False)
 plt.show()
