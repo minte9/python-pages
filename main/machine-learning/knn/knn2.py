@@ -22,7 +22,7 @@ data = {
   ]
 } 
 
-df = pd.DataFrame(data) # Transform dataset into a DataFrame
+df = pd.DataFrame(data) # transform dataset into a DataFrame
 print(df)
 
 X = df[['height', 'width']].values
@@ -31,9 +31,8 @@ y = df.fruit.values
 knn = KNeighborsClassifier(n_neighbors=3) 
 knn.fit(X, y)
 
-prediction = knn.predict([[9, 3]])
-print(prediction) # Lemon
-
-# Predict multiple labels
+prediction  = knn.predict([[9, 3]])
 predictions = knn.predict([[9, 3], [4, 5], [2, 5], [8, 9], [5, 7]])
+
+print(prediction)  # Lemon
 print(predictions) # Lemon Mandarin Mandarin Apple Mandarin
