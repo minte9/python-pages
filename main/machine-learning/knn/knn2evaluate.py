@@ -34,7 +34,8 @@ knn.fit(X, y)
 # Evaluate the model on the TRAINING dataset
 predictions = knn.predict(X)
 score = metrics.accuracy_score(y, predictions)
-print(score) # 0.85 (85%)
+print(score) 
+    # 0.85 (85%)
 
 # Evaluate on TEST dataset
 data = pd.DataFrame({
@@ -48,5 +49,5 @@ y = data.fruit.values
 
 predictions = knn.predict(X)
 score = metrics.accuracy_score(y, predictions)
-print(score) # 1 (100%)
-
+print(score) 
+    # 1 (100%)
