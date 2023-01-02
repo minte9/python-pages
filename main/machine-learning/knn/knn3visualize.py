@@ -3,6 +3,11 @@
 
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
+import seaborn as sns
 
 # Training set of data points with corresponding labels
 data = {
@@ -47,17 +52,6 @@ print(predictions)
 
 
 #----------------------------------------------------------------
-
-# Libraries
-import pandas as pd
-import numpy as np
-from sklearn import metrics
-from sklearn.neighbors import KNeighborsClassifier
-
-import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
-from matplotlib.colors import ListedColormap
-import seaborn as sns
 
 # Create a function to plot scatter graph
 def plotFruitFigure():
