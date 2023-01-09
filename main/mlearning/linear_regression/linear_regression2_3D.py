@@ -2,8 +2,6 @@
 We can predict the CO2 emission of a car based on the size of the engine, 
 but with multiple regression we can throw in more variables, 
 like the weight of the car, to make the prediction more accurate
-
-https://www.kaggle.com/code/spidy20/3d-visualization-of-multiple-linear-regression
 """
 
 import numpy as np
