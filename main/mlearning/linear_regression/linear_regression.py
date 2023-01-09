@@ -2,6 +2,12 @@
     h(x) = ax + b
 Residuals, difference between the actual data points ...
 and the predicted (by our model) values
+Result:
+    coeficient (parameter a): [1.3]
+    intercept (parameter b): [-18.]
+    Predicted values: [array([21.]), array([41.8]), array([60.]), ...
+    Residuals: [array([10.]), array([-11.8]), array([20.]), ...
+    SSR = [1248.15]
 """
 
 import numpy as np
@@ -53,8 +59,3 @@ print(f'SSR = {ssr}')
 plt.legend()
 plt.show()
 
-# coeficient (parameter a): [1.3]
-# intercept (parameter b): [-18.]
-# Predicted values: [array([21.]), array([41.8]), array([60.]), ...
-# Residuals: [array([10.]), array([-11.8]), array([20.]), ...
-# SSR = [1248.15]
