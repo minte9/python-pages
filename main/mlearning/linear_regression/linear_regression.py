@@ -51,5 +51,4 @@ print(f'SSR = {ssr}') # 1248.15
 for i in range(len(x)):
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
 
-
 plt.show()
