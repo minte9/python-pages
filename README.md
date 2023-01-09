@@ -12,6 +12,10 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 - [Class](./main/class/) 
 - [Goodies](./main/goodies/) 
 - [Applications](./main/applications/) 
+- [Scheduler](./main/scheduler/) 
+- [Packages](./main/packages/) 
+- [Applications](./main/applications/) 
+- [MLearning](./main/mlearning/) 
 
 ##
 
