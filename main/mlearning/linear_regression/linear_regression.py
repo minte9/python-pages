@@ -42,7 +42,7 @@ print(f'Residuals: {R}')
 for i in range(len(x)):
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
 
-# Sum of squared residuals
+# Sum of squared residuals (SSR)
 ssr = 0
 for i in R:
     ssr += i**2
