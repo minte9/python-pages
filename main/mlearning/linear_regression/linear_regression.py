@@ -15,9 +15,7 @@ y = np.array([[31], [30], [80], [49], [70], [118]])
 fig, ax = plt.subplots()
 ax.plot(x, y, 'x', color='g', label='training data')
 plt.ylim(0, 140)
-plt.xlim(0, 140)
-
-#plt.legend(), plt.show()
+plt.xlim(0, 140) #,plt.legend(), plt.show()
 
 # Learning a prediction function
 r = LinearRegression().fit(x, y)
@@ -32,9 +30,7 @@ ax.plot(x, r.coef_[0]*x + r.intercept_, label=legend)
 P = []
 for i in x:
     P.append(-18 + 1.3*i)
-print(f'Predicted values: {P}')
-
-#plt.legend(), plt.show()
+print(f'Predicted values: {P}') #,plt.legend(), plt.show()
 
 # Residuals
 R = []
@@ -52,4 +48,5 @@ for i in R:
     ssr += i**2
 print(f'SSR = {ssr}')
 
-plt.legend(), plt.show()
+plt.legend()
+plt.show()
