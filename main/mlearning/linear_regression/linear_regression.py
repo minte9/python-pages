@@ -1,4 +1,5 @@
 """ Linear Regression
+    h(x) = ax + b
 Residuals, difference between the actual data points ...
 and the predicted (by our model) values
 """
