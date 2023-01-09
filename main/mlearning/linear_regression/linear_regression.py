@@ -24,6 +24,7 @@ r = LinearRegression().fit(x, y)
 print(f'Coeficient (parameter a): {r.coef_[0].round(1)}') # 1.3
 print(f'Intercept (parameter b): {r.intercept_.round(1)}') # -18
 
+# Draw
 legend = f'h(x) = {r.coef_[0].round(1)}x + {r.intercept_[0].round(1)}'
 ax.plot(x, r.coef_[0]*x + r.intercept_, label=legend)
 plt.legend() #, plt.show()
@@ -46,7 +47,9 @@ for i in R:
     ssr += i**2
 print(f'SSR = {ssr}') # 1248.15
 
+# Draw
 for i in range(len(x)):
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
+
 
 plt.show()
