@@ -21,6 +21,7 @@ plt.legend() #, plt.show()
 
 # Learning a prediction function
 r = LinearRegression().fit(x, y)
+
 a = r.coef_[0][0].round(1)
 b = r.intercept_[0].round(1)
 print(f'Coeficient (parameter a): {a}') # 1.3
