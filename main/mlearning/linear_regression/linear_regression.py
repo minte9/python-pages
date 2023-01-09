@@ -3,11 +3,11 @@
 Residuals, difference between the actual data points ...
 and the predicted (by our model) values
 Result:
-    coeficient (parameter a): [1.3]
-    intercept (parameter b): [-18.]
-    Predicted values: [array([21.]), array([41.8]), array([60.]), ...
-    Residuals: [array([10.]), array([-11.8]), array([20.]), ...
-    SSR = [1248.15]
+- Coeficient (parameter a): [1.3]
+- Intercept (parameter b): [-18.]
+- Predicted values: [array([21.]), array([41.8]), array([60.]), ...
+- Residuals: [array([10.]), array([-11.8]), array([20.]), ...
+SSR = [1248.15]
 """
 
 import numpy as np
@@ -26,8 +26,8 @@ plt.xlim(0, 140) #,plt.legend(), plt.show()
 
 # Learning a prediction function
 r = LinearRegression().fit(x, y)
-print(f'coeficient (parameter a): {r.coef_[0].round(1)}')
-print(f'intercept (parameter b): {r.intercept_.round(1)}')
+print(f'Coeficient (parameter a): {r.coef_[0].round(1)}')
+print(f'Intercept (parameter b): {r.intercept_.round(1)}')
 
 # Draw
 legend = f'h(x) = {r.coef_[0].round(1)}x + {r.intercept_[0].round(1)}'
