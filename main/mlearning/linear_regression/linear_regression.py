@@ -1,13 +1,13 @@
 """ Linear Regression
-h(x) = ax + b
+    h(x) = ax + b
 Residuals, difference between the actual data points ...
 and the predicted (by our model) values
 Learning result:
-- Coeficient (parameter a): [1.3]
-- Intercept (parameter b): [-18.]
-- Predicted values: [array([21.]), array([41.8]), array([60.]), ...
-- Residuals: [array([10.]), array([-11.8]), array([20.]), ...
-- SSR = [1248.15]
+    - Coeficient (parameter a): [1.3]
+    - Intercept (parameter b): [-18.]
+    - Predicted values: [array([21.]), array([41.8]), array([60.]), ...
+    - Residuals: [array([10.]), array([-11.8]), array([20.]), ...
+    - SSR = [1248.15]
 """
 
 import numpy as np
