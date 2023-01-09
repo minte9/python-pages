@@ -8,7 +8,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-# Dataset
+""" Dataset
+"""
 x = np.array([[30], [46], [60], [65], [77], [95]])
 y = np.array([[31], [30], [80], [49], [70], [118]])
 
@@ -19,8 +20,8 @@ plt.ylim(0, 140)
 plt.xlim(0, 140)
 plt.legend() #, plt.show()
 
-
-# Learning a prediction function
+""" Learning a prediction function
+"""
 r = LinearRegression().fit(x, y)
 print(f'Coeficient (parameter a): {r.coef_[0].round(1)}') # 1.3
 print(f'Intercept (parameter b): {r.intercept_.round(1)}') # -18
@@ -31,20 +32,19 @@ ax.plot(x, r.coef_[0]*x + r.intercept_, label=legend)
 plt.legend() #, plt.show()
 
 
-# Predicted values (for train dataset)
-P = []
+""" Residuals
+"""
+P = [] # Predicted values (for train dataset)
 for i in x:
     P.append(-18 + 1.3*i)
 print(f'Predicted values: {P}')  # 21, 41.8, 60, ... 
 
-# Residuals
-R = []
+R = [] # Residuals
 for i in range(len(x)):
     R.append(y[i] - P[i])
 print(f'Residuals: {R}') # 10, -11.8, 20, ...
 
-# Sum of squared residuals (SSR)
-ssr = 0
+ssr = 0 # Sum of squared residuals (SSR)
 for i in R:
     ssr += i**2
 print(f'SSR = {ssr}') # 1248.15
