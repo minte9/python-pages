@@ -12,7 +12,7 @@ from sklearn.linear_model import LinearRegression
 x = np.array([[30], [46], [60], [65], [77], [95]])
 y = np.array([[31], [30], [80], [49], [70], [118]])
 
-# Draw 
+# Draw
 fig, ax = plt.subplots()
 ax.plot(x, y, 'x', color='g', label='training data')
 plt.ylim(0, 140)
