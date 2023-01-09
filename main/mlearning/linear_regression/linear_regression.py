@@ -52,3 +52,9 @@ print(f'SSR = {ssr}')
 # Show
 plt.legend()
 plt.show()
+
+# coeficient (parameter a): [1.3]
+# intercept (parameter b): [-18.]
+# Predicted values: [array([21.]), array([41.8]), array([60.]), ...
+# Residuals: [array([10.]), array([-11.8]), array([20.]), ...
+# SSR = [1248.15]
