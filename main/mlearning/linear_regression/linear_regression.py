@@ -52,4 +52,11 @@ print(f'SSR = {ssr}') # 1248.15
 for i in range(len(x)):
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
 
+# Predict unknown
+x = 80
+y = -18 + 1.3*x
+print(f'Prediction x={x} -> {y}')
+ax.plot(x, y, 'o', color='r', label=f'h({x}) = {y}')
+
+plt.legend()
 plt.show()
