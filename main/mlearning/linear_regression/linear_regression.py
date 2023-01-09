@@ -19,7 +19,7 @@ ax.plot(x, y, 'x', color='g', label='training data')
 plt.ylim(0, 140)
 plt.xlim(0, 140)
 plt.legend()
-#plt.show()
+    # plt.show()
 
 
 """ Learning a prediction function
@@ -32,7 +32,7 @@ print(f'Intercept (parameter b): {r.intercept_.round(1)}') # -18
 legend = f'h(x) = {r.coef_[0].round(1)}x + {r.intercept_[0].round(1)}'
 ax.plot(x, r.coef_[0]*x + r.intercept_, label=legend)
 plt.legend() 
-#plt.show()
+    # plt.show()
 
 
 """ Residuals
