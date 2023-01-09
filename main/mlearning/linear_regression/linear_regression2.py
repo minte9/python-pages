@@ -7,11 +7,9 @@ and the predicted (by our model) values
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-import warnings
-warnings.filterwarnings("ignore", category=Warning)
 
 x = np.array([[30], [46], [60], [65], [77], [95]]) # Dataset
-y = np.array([31, 30, 80, 49, 70, 118])
+y = np.array([[31], [30], [80], [49], [70], [118]])
 
 r = LinearRegression().fit(x, y) # Learning a prediction function
 a = r.coef_[0].round(1)

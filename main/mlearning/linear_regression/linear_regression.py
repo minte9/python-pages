@@ -17,16 +17,18 @@ fig, ax = plt.subplots()
 ax.plot(x, y, 'x', color='g', label='training data')
 plt.ylim(0, 140)
 plt.xlim(0, 140)
-plt.legend() #, plt.show()
+plt.legend() , plt.show()
 
 # Learning a prediction function
 r = LinearRegression().fit(x, y)
-print(f'Coeficient (parameter a): {r.coef_[0].round(1)}') # 1.3
-print(f'Intercept (parameter b): {r.intercept_.round(1)}') # -18
+a = r.coef_[0].round(1)
+b = r.intercept_.round(1)
+
+print(f'Coeficient (parameter a): {a}') # 1.3
+print(f'Intercept (parameter b): {b}') # -18
 
 # Draw
-legend = f'h(x) = {r.coef_[0].round(1)}x + {r.intercept_[0].round(1)}'
-ax.plot(x, r.coef_[0]*x + r.intercept_, label=legend)
+ax.plot(x, a*x + b, label=f'h(x) = {a}x + {b}')
 plt.legend() #, plt.show()
 
 # Predicted values (for train dataset)
