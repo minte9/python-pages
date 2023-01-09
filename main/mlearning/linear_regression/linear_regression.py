@@ -11,7 +11,7 @@ from sklearn.linear_model import LinearRegression
 x = np.array([[30], [46], [60], [65], [77], [95]])
 y = np.array([[31], [30], [80], [49], [70], [118]])
 
-# Draw dataset
+# Draw
 fig, ax = plt.subplots()
 ax.plot(x, y, 'x', color='g', label='training data')
 plt.ylim(0, 140)
@@ -22,7 +22,7 @@ r = LinearRegression().fit(x, y)
 print(f'coeficient (parameter a): {r.coef_[0].round(1)}')
 print(f'intercept (parameter b): {r.intercept_.round(1)}')
 
-# Draw the prediction function
+# Draw
 legend = f'h(x) = {r.coef_[0].round(1)}x + {r.intercept_[0].round(1)}'
 ax.plot(x, r.coef_[0]*x + r.intercept_, label=legend)
 
@@ -38,7 +38,7 @@ for i in range(len(x)):
     R.append(y[i] - P[i])
 print(f'Residuals: {R}')
 
-# Draw residuals
+# Draw
 for i in range(len(x)):
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
 
@@ -48,5 +48,6 @@ for i in R:
     ssr += i**2
 print(f'SSR = {ssr}')
 
+# Show
 plt.legend()
 plt.show()
