@@ -2,12 +2,6 @@
     h(x) = ax + b
 Residuals, difference between the actual data points ...
 and the predicted (by our model) values
-Learning result:
-    Coeficient (parameter a): [1.3]
-    Intercept (parameter b): [-18.]
-    Predictions: [array([21.]), array([41.8]), array([60.]), ...
-    Residuals: [array([10.]), array([-11.8]), array([20.]), ...
-    SSR = [1248.15]
 """
 
 import numpy as np
@@ -26,8 +20,8 @@ plt.xlim(0, 140) #,plt.legend(), plt.show()
 
 # Learning a prediction function
 r = LinearRegression().fit(x, y)
-print(f'Coeficient (parameter a): {r.coef_[0].round(1)}')
-print(f'Intercept (parameter b): {r.intercept_.round(1)}')
+print(f'Coeficient (parameter a): {r.coef_[0].round(1)}') # 1.3
+print(f'Intercept (parameter b): {r.intercept_.round(1)}') # -18
 
 # Draw
 legend = f'h(x) = {r.coef_[0].round(1)}x + {r.intercept_[0].round(1)}'
@@ -37,13 +31,13 @@ ax.plot(x, r.coef_[0]*x + r.intercept_, label=legend)
 P = []
 for i in x:
     P.append(-18 + 1.3*i)
-print(f'Predicted values: {P}') #,plt.legend(), plt.show()
+print(f'Predicted values: {P}')  # 21, 41.8, 60, ... #,plt.legend(), plt.show()
 
 # Residuals
 R = []
 for i in range(len(x)):
     R.append(y[i] - P[i])
-print(f'Residuals: {R}')
+print(f'Residuals: {R}') # 10, -11.8, 20, ...
 
 # Draw
 for i in range(len(x)):
@@ -53,9 +47,8 @@ for i in range(len(x)):
 ssr = 0
 for i in R:
     ssr += i**2
-print(f'SSR = {ssr}')
+print(f'SSR = {ssr}') # 1248.15
 
 # Show
 plt.legend()
 plt.show()
-
