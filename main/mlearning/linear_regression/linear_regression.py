@@ -23,7 +23,6 @@ plt.legend() #, plt.show()
 r = LinearRegression().fit(x, y)
 a = r.coef_[0][0].round(1)
 b = r.intercept_[0].round(1)
-
 print(f'Coeficient (parameter a): {a}') # 1.3
 print(f'Intercept (parameter b): {b}') # -18
 
