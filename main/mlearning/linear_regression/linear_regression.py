@@ -1,5 +1,5 @@
 """ Linear Regression (one parameter)
-    h(x) = ax + b
+h(x) = ax + b
 Residuals, difference between the actual data points ...
 and the predicted (by our model) values
 """
