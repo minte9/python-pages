@@ -23,8 +23,8 @@ plt.legend() #, plt.show()
 r = LinearRegression().fit(x, y)
 a = r.coef_[0][0].round(1)
 b = r.intercept_[0].round(1)
-print(f'Coeficient (parameter a): {a}') # 1.3
-print(f'Intercept (parameter b): {b}') # -18
+print(a) # 1.3
+print(b) # -18
 
 # Draw
 ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x')
@@ -34,7 +34,7 @@ plt.legend() #, plt.show()
 P = []
 for i in x:
     P.append(-18 + 1.3*i)
-print(f'Predicted values: {P}')  # 21, 41.8, 60, ... 
+print(f'Predictions: {P}')  # 21, 41.8, 60, ... 
 
 # Residuals
 R = []
@@ -46,7 +46,7 @@ print(f'Residuals: {R}') # 10, -11.8, 20, ...
 ssr = 0
 for i in R:
     ssr += i**2
-print(f'SSR = {ssr}') # 1248.15
+print(f'SSR: {ssr}') # 1248.15
 
 # Draw
 for i in range(len(x)):
@@ -55,7 +55,7 @@ for i in range(len(x)):
 # Predict unknown
 x = 80
 y = -18 + 1.3*x
-print(f'Prediction x={x} -> {y}')
+print(f'Prediction: x = {x} -> y = {y}')
 ax.plot(x, y, 'o', color='r', label=f'h({x}) = {y}')
 
 plt.legend()
