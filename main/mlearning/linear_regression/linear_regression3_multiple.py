@@ -25,19 +25,15 @@ with open(DIR / 'data/real_estate.csv') as file:
     y = df['Y house price of unit area'].values
     r = LinearRegression().fit(X, y)
 
-fig, ax = plt.subplots()
-ax.plot(X, y, 'x', color='g')
-plt.show()
-
 # Predict some train data
-A = [2013.17, 13, 732.85, 0, 24.98, 121.53] # price: 39
-B = [2013.58, 16.6, 323.69, 6, 24.98, 121.54]  # price: 51
-a = r.predict([A]).round(0)
-b = r.predict([B]).round(0)
-print(a) # 39
-print(b) # 48
+A = [2013.17, 13, 732.85, 0, 24.98, 121.53]     # price: 39
+B = [2013.58, 16.6, 323.69, 6, 24.98, 121.54]   # price: 51
+a = r.predict([A]).round(1)
+b = r.predict([B]).round(1)
+print(a) # 38.8
+print(b) # 48.5
 
 # Predict unknown
-X = [2013.17, 33, 732.85, 0, 24.98, 121.53] # like A, but house_age = 33
-y = r.predict([X]).round(0)
-print(y) # 33
+X = [2013.17, 33, 732.85, 0, 24.98, 121.53]     # A with house_age = 33
+y = r.predict([X]).round(1)
+print(y) # 33.4
