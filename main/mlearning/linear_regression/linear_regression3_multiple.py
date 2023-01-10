@@ -1,7 +1,4 @@
 """ Linear Regression (multiple parameters)
-We can predict the CO2 emission of a car based on the size of the engine, 
-but with multiple regression we can throw in more variables, 
-like the weight of the car, to make the prediction more accurate
 """
 
 from os import X_OK
@@ -34,7 +31,7 @@ print(a) # 38.8
 print(b) # 48.5
 
 # Predict unknown
-# Ssimilar to A, house_age change from 13 to 33)
+# Similar to A, house_age change from 13 to 33)
 X = [2013.17, 33, 732.85, 0, 24.98, 121.53]
 y = r.predict([X]).round(1)
 print(y) # 33.4
