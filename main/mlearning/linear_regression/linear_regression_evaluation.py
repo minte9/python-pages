@@ -18,7 +18,6 @@ b = r.intercept_[0].round(1)
 print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 
 # Evaluate the model
-
 SSR = 0 # sum of squared residuals
 P = [] # predictions (on training dataset)
 R = [] # residuals  
@@ -40,5 +39,5 @@ ax.plot(x, y, 'x', color='g', label='training data')     # dataset points
 ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x')          # function line
 for i in range(len(x)):                                  # residuals
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
-    
+
 plt.legend(), plt.show()
