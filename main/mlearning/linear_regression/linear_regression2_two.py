@@ -46,12 +46,12 @@ for X in [
         [1600, 1252],   # Honda Civic, 1600, 1252 / 94
         [1100, 980],    # Hyundai I20, 1100, 980 / 99
         [1200, 780],    # ?
-    ]:
+]:
     y = r.predict([X])
     print(f'CO2: {y.round(1).item()}')
-        # CO2: 101.5
-        # CO2: 95.6
-        # CO2: 94.8
+    # CO2: 101.5
+    # CO2: 95.6
+    # CO2: 94.8
     ax.plot(X[0], X[1], y[0], 'o', color='r')
 
 plt.show()
