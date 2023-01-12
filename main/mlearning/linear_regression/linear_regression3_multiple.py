@@ -1,4 +1,5 @@
 """ Linear Regression (multiple parameters)
+h(x) = ax + by + cz + ... 
 """
 
 from os import X_OK
