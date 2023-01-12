@@ -20,17 +20,14 @@ print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 # Evaluate the model
 P = []
 R = []
-SSR = 0
-for i in x:
-    P.append(-18 + 1.3*i) # predictions (on training dataset)
+SSR = 0   
 for i in range(len(x)):
-    R.append(y[i] - P[i]) # residuals
-for i in R:
-    SSR += i**2 # sum of squared residuals
-
-print(f'Predictions: {P}')  # 21, 41.8, 60, ... 
-print(f'Residuals: {R}')    # 10, -11.8, 20, ...
-print(f'SSR: {SSR}')        # 1248.15
+    P.append(-18 + 1.3*x[i])    # predictions (on training dataset)
+    R.append(y[i] - P[i])       # residuals  
+    SSR += R[i] ** 2            # sum of squared residuals
+    print(f'x = {x[i]} => y {P[i]} r = {R[i]}')
+    
+print(f'SSR: {SSR}') # 1248.15
 
 # Draw graphics
 fig, ax = plt.subplots()
