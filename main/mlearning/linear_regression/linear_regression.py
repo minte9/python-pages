@@ -12,8 +12,8 @@ from sklearn.linear_model import LinearRegression
 x = np.array([[30], [46], [60], [65], [77], [95]])
 y = np.array([[31], [30], [80], [49], [70], [118]])
 
-fig, ax = plt.subplots() # draw dataset points
-ax.plot(x, y, 'x', color='g', label='training data')
+fig, ax = plt.subplots()
+ax.plot(x, y, 'x', color='g', label='training data') # draw dataset points
 plt.ylim(0, 140)
 plt.xlim(0, 140)
 plt.legend() #, plt.show()
@@ -40,20 +40,20 @@ for i in range(len(x)):
     R.append(y[i] - P[i])
 print(f'Residuals: {R}') # 10, -11.8, 20, ...
 
-ssr = 0 # sum of squared residuals
+ssr = 0
 for i in R:
-    ssr += i**2
+    ssr += i**2 # sum of squared residuals
 print(f'SSR: {ssr}') # 1248.15
 
-for i in range(len(x)): # draw residuals
-    ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
+for i in range(len(x)):
+    ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c') # draw residuals
 
 # Predict unknown
 x = 80
 y = -18 + 1.3*x
 print(f'x = {x} -> y = {y}') # x = 80 -> y = 86.0
 
+ax.plot(x, y, 'o', color='r', label=f'h({x}) = {y}') # draw prediction
+
 # Show graphics
-ax.plot(x, y, 'o', color='r', label=f'h({x}) = {y}')
-plt.legend()
-plt.show()
+plt.legend(), plt.show()
