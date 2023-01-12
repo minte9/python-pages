@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import pandas as pd
 import pathlib
+import warnings
+warnings.filterwarnings("ignore", category=Warning) # fitted without feature names
 
 DIR = pathlib.Path(__file__).resolve().parent
 with open(DIR / 'data/cars.csv') as file:
@@ -19,7 +21,7 @@ with open(DIR / 'data/cars.csv') as file:
     ]].values
     y = df['CO2'].values
 
-r = LinearRegression().fit(X, y)
+r = LinearRegression().fit(X, y) 
 
 # Visualization (surface)
 Ax, Ay = np.meshgrid(
@@ -42,6 +44,6 @@ ax.set_zlabel('CO2')
 X = [1100, 980] # CO2: 99
 y = r.predict([X])
 ax.plot(X[0], X[1], y[0], 'o', color='r')
-print(y) # 95.64991367
+print(y.round(1)) # 95.6
 
 plt.show()
