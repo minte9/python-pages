@@ -22,24 +22,23 @@ print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 
 # Predict unknown
 x1 = 80
-y1 = a*1.3 + b
+y1 = a*x1 + b
 print(f'f({x1}) = {y1}') # f(80) = 86.0
 
 # Evaluate the model
-P = [] 
+P = []
 R = []
+SSR = 0
 for i in x:
     P.append(-18 + 1.3*i) # predictions (on training dataset)
 for i in range(len(x)):
     R.append(y[i] - P[i]) # residuals
-
-ssr = 0
 for i in R:
-    ssr += i**2 # sum of squared residuals
+    SSR += i**2 # sum of squared residuals
 
 print(f'Predictions: {P}')  # 21, 41.8, 60, ... 
 print(f'Residuals: {R}')    # 10, -11.8, 20, ...
-print(f'SSR: {ssr}')        # 1248.15
+print(f'SSR: {SSR}')        # 1248.15
 
 # Draw graphics
 fig, ax = plt.subplots()
