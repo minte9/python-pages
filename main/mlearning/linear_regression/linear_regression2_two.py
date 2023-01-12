@@ -13,7 +13,10 @@ import pathlib
 DIR = pathlib.Path(__file__).resolve().parent
 with open(DIR / 'data/cars.csv') as file:
     df = pd.read_csv(DIR / 'data/cars.csv')
-    X = df[['Weight', 'Volume']].values
+    X = df[[
+        'Weight',
+        'Volume',
+    ]].values
     y = df['CO2'].values
 
 r = LinearRegression().fit(X, y)
