@@ -8,55 +8,59 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-# Dataset
+""" Training Dataset """
 x = np.array([[30], [46], [60], [65], [77], [95]])
 y = np.array([[31], [30], [80], [49], [70], [118]])
 
-# Draw 
+# Draw points
 fig, ax = plt.subplots()
 ax.plot(x, y, 'x', color='g', label='training data')
 plt.ylim(0, 140)
 plt.xlim(0, 140)
 plt.legend() #, plt.show()
 
-# Learning a prediction function
+
+"""Learning a prediction function"""
 r = LinearRegression().fit(x, y)
 a = r.coef_[0][0].round(1)
 b = r.intercept_[0].round(1)
 print(a) # 1.3
 print(b) # -18
 
-# Draw
+# Draw function
 ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x')
 plt.legend() #, plt.show()
 
-# Predicted values (for train dataset)
+
+"""Predicted values""" 
 P = []
-for i in x:
+for i in x: # on training dataset
     P.append(-18 + 1.3*i)
 print(f'Predictions: {P}')  # 21, 41.8, 60, ... 
 
-# Residuals
+
+"""Evaluate the model"""
 R = []
 for i in range(len(x)):
     R.append(y[i] - P[i])
 print(f'Residuals: {R}') # 10, -11.8, 20, ...
 
-# Sum of squared residuals (SSR)
-ssr = 0
+ssr = 0 # Sum of squared residuals (SSR)
 for i in R:
     ssr += i**2
 print(f'SSR: {ssr}') # 1248.15
 
-# Draw
+# Draw residuals
 for i in range(len(x)):
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c')
 
-# Predict unknown
+
+""" Predict unknown """
 x = 80
 y = -18 + 1.3*x
 print(f'Prediction: x = {x} -> y = {y}')
 ax.plot(x, y, 'o', color='r', label=f'h({x}) = {y}')
+
 
 plt.legend()
 plt.show()
