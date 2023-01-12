@@ -21,13 +21,15 @@ b = r.intercept_[0].round(1)
 print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 
 # Predict unknown
-print(f'f({80}) = {-18 + 1.3*80}') # f(80) = 86.0
+x1 = 80
+y1 = a*1.3 + b
+print(f'f({x1}) = {y1}') # f(80) = 86.0
 
 # Evaluate the model
 P = [] 
 R = []
 for i in x:
-    P.append(-18 + 1.3*i) # predictions
+    P.append(-18 + 1.3*i) # predictions (on training dataset)
 for i in range(len(x)):
     R.append(y[i] - P[i]) # residuals
 
@@ -44,9 +46,9 @@ fig, ax = plt.subplots()
 plt.ylim(0, 140)
 plt.xlim(0, 140)
 
-ax.plot(x, y, 'x', color='g', label='training data')            # dataset points
-ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x')                 # function line
-ax.plot(80, -18 + 1.3*80, 'o', color='r', label='h(80) = 86')   # prediction unknown
+ax.plot(x, y, 'x', color='g', label='training data')     # dataset points
+ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x')          # function line
+ax.plot(x1, y1, 'o', color='r', label=f'h({x1}) = {y1}') # prediction unknown
 
 for i in range(len(x)):
     ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c') # residuals
