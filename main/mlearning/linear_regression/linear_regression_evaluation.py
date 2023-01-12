@@ -18,15 +18,15 @@ b = r.intercept_[0].round(1)
 print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 
 # Evaluate the model
-P = []
-R = []
-SSR = 0   
+P = []  # predictions (on training dataset)
+R = []  # residuals  
+SSR = 0 # sum of squared residuals
 for i in range(len(x)):
-    P.append(-18 + 1.3*x[i])    # predictions (on training dataset)
-    R.append(y[i] - P[i])       # residuals  
-    SSR += R[i] ** 2            # sum of squared residuals
+    P.append(-18 + 1.3*x[i])
+    R.append(y[i] - P[i])
+    SSR += R[i] ** 2
     print(f'x = {x[i]} => y {P[i]} r = {R[i]}')
-    
+
 print(f'SSR: {SSR}') # 1248.15
 
 # Draw graphics
