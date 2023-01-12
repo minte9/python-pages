@@ -13,7 +13,7 @@ x = np.array([[30], [46], [60], [65], [77], [95]])
 y = np.array([[31], [30], [80], [49], [70], [118]])
 
 fig, ax = plt.subplots()
-ax.plot(x, y, 'x', color='g', label='training data') # draw dataset points
+ax.plot(x, y, 'x', color='g', label='training data') # dataset points
 plt.ylim(0, 140)
 plt.xlim(0, 140)
 plt.legend() #, plt.show()
@@ -25,7 +25,7 @@ b = r.intercept_[0].round(1)
 print(a) # 1.3
 print(b) # -18
 
-ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x') # draw function line
+ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x') # function line
 plt.legend() #, plt.show()
 
 # Predict known
@@ -46,14 +46,14 @@ for i in R:
 print(f'SSR: {ssr}') # 1248.15
 
 for i in range(len(x)):
-    ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c') # draw residuals
+    ax.plot([x[i], x[i]], [P[i], y[i]], '-', color='c') # residuals
 
 # Predict unknown
 x = 80
 y = -18 + 1.3*x
 print(f'x = {x} -> y = {y}') # x = 80 -> y = 86.0
 
-ax.plot(x, y, 'o', color='r', label=f'h({x}) = {y}') # draw prediction
+ax.plot(x, y, 'o', color='r', label=f'h({x}) = {y}') # prediction
 
 # Show graphics
 plt.legend(), plt.show()
