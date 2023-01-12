@@ -1,6 +1,6 @@
 """ Linear Regression (evaluation)
-Residuals, difference between the actual data points ...
-and the predicted (by our model) values
+A residual is the difference between the actual data point 
+and the predicted (by our model) value
 """
 
 import numpy as np
