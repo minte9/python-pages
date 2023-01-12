@@ -17,7 +17,7 @@ r = LinearRegression().fit(x, y)
 a = r.coef_[0][0].round(1)
 b = r.intercept_[0].round(1)
 
-# Function
+# Function learned
 print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 
 # Predict unknown
@@ -29,9 +29,7 @@ print(f'f({x1}) = {y1}') # f(80) = 86.0
 fig, ax = plt.subplots()
 plt.ylim(0, 140)
 plt.xlim(0, 140)
-
 ax.plot(x, y, 'x', color='g', label='training data')     # dataset points
 ax.plot(x, a*x + b, label=f'h(x) = {b} + {a}x')          # function line
 ax.plot(x1, y1, 'o', color='r', label=f'h({x1}) = {y1}') # prediction unknown
-
 plt.legend(), plt.show()
