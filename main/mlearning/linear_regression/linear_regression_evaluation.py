@@ -21,6 +21,7 @@ print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 P = [] # predictions (on training dataset)
 R = [] # residuals  
 SSR = 0 # sum of squared residuals
+
 for i in range(len(x)):
     P.append(-18 + 1.3*x[i])
     R.append(y[i] - P[i])
