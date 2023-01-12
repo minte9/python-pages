@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import pandas as pd
 import pathlib
-import warnings
-warnings.filterwarnings("ignore", category=Warning) # fitted without feature names
+import warnings  # fitted without feature names
+warnings.filterwarnings("ignore", category=Warning)
 
 DIR = pathlib.Path(__file__).resolve().parent
 with open(DIR / 'data/cars.csv') as file:
