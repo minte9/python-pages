@@ -52,7 +52,7 @@ fig, ax = plt.subplots()
 ax.plot(A, J(A, -18, x, y, m=len(x))) # points
 for a in A:
     msg ='J(%.1f, -18)' % a
-    ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label = msg) # J(-2.0. -18)
+    ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label = msg) # J(-2.0, -18)
 plt.legend() #; plt.show()
 
 # Plot for two parameters
