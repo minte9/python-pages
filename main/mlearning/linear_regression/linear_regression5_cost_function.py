@@ -3,6 +3,7 @@ f(x) = ax + b
 How can we build an algorithm to find the best fit parameter for f(x)
 First, we need a way to measure the goodness-of-fit (SSR)
 Second, search over all posible values of a and b (gradient descent)
+For start, let's pretend that b is known (-18)
 """
 
 import matplotlib.pyplot as plt
