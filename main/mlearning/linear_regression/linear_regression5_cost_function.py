@@ -20,7 +20,6 @@ ax.plot(x, y, 'o', color='g', label='training data') # points
 
 # Generate some a range values
 A = np.linspace(-2, 4.5, 13) # 21 values
-print(A)
 
 # Plot regression lines (for each a)
 for i in range(len(A)):
@@ -39,8 +38,6 @@ for a in A:
     for i in range(0, len(x)):
         SR.append((y[i] - P[i])**2)
     SSR.append(np.sum(SR))
-    print('a = %s SSR = %s' % (a.round(1), np.sum(SR).round()))
-        # a = -2.0 SSR = 282654.0 ...
 
 # Generic cost function J (SSR(a))
 def J(a, b, x, y, m):
