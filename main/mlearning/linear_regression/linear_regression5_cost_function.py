@@ -1,4 +1,4 @@
-""" Parameterized SSR (cost function) (p64)
+""" Parameterized SSR (cost function)
 f(x) = ax + b
 How can we build an algorithm to find the best fit parameter for f(x)
 First, we need a way to measure the goodness-of-fit (SSR)
@@ -53,7 +53,7 @@ ax.plot(A, J(A, -18, x, y, m=len(x))) # points
 for a in A:
     msg ='J(%.1f, -18)' % a
     ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label = msg) # J(-2.0, -18)
-    
+
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
 plt.legend()
