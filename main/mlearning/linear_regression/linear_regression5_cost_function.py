@@ -23,7 +23,8 @@ A = np.linspace(-2, 4.5, 13) # 21 values
 
 # Plot regression lines (for each a)
 for i in range(len(A)):
-    ax.plot(x, -18 + A[i]*x, label='f(x) = -18 + %sx' % A[i].round(1)) # lines
+    msg ='f(x) = -18 + %sx' % A[i].round(1)
+    ax.plot(x, -18 + A[i]*x, label = msg) # f(x) = -18 + -2.0x
 plt.xlabel("x")
 plt.ylabel("f(x)")  
 plt.legend() #; plt.show()
@@ -50,7 +51,8 @@ def J(a, b, x, y, m):
 fig, ax = plt.subplots()
 ax.plot(A, J(A, -18, x, y, m=len(x))) # points
 for a in A:
-   ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label='J(%.1f, -18)' %a) # line
+    msg ='J(%.1f, -18)' % a
+    ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label = msg) # J(-2.0. -18)
 plt.legend() #; plt.show()
 
 # Plot for two parameters
@@ -60,6 +62,6 @@ ax = fig.add_subplot(1,1,1,projection='3d')
 a = np.linspace(-1, 4, 20)
 b = np.linspace(-100, 100, 10)
 aa, bb = np.meshgrid(a, b)
-ax.plot_surface(aa, bb, J(aa, bb, x, y, m=len(x)))
+ax.plot_surface(aa, bb, J(aa, bb, x, y, m=len(x))) # surface
 ax.view_init(50,-150)
 plt.show()
