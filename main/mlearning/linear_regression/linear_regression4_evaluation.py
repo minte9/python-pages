@@ -25,7 +25,7 @@ for i in range(len(x)):
     P.append(-18 + 1.3*x[i])
     R.append(y[i] - P[i])
     SSR += R[i] ** 2
-    print(f'{x[i]} {P[i]} / {R[i]}')    # [30] [21.] / [10.] ...
+    print(f'{x[i]} {P[i]} / {R[i]}')    # 30, 21 / 10 ...
 
 print(f'f(x) = {a}x + {b}')             # f(x) = 1.3x - 18
 print(f'SSR = {SSR.round(2).item()}')   # 1248.15
