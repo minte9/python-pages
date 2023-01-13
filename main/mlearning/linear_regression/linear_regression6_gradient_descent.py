@@ -64,12 +64,17 @@ fig, ax = plt.subplots()
 A = np.linspace(-2, 4.5, 23) # 21 values
 ax.plot(A, J(A, -18, x, y, m=len(x))) # J(a)
 
-ax.plot(0, J(0, -18, x, y, m=len(x)), 'x', color='r')       # start a
-ax.plot(2.23, J(2.23, -18, x, y, m=len(x)), 'x', color='r') # start a
-ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', color='g')       # optim a
+a = 0
+for i in range(15):
+    d = dJ(a, -18, x, y, len(x))
+    curr = a
+    next = a - d*l
+    ax.plot(curr, J(curr, -18, x, y, len(x)), 'o', color='r')
+    ax.plot([curr, next],  [J(curr, -18, x, y, len(x)), J(next, -18, x, y, len(x))], color='r')
+    a = next
 
 plt.xlim(-2, 5)
-plt.ylim(-10000, 100000)
+plt.ylim(-10000, 70000)
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
 plt.show()
