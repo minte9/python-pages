@@ -70,7 +70,9 @@ for i in range(15):
     curr = a
     next = a - d*l
     ax.plot(curr, J(curr, -18, x, y, len(x)), 'o', color='r')
-    ax.plot([curr, next],  [J(curr, -18, x, y, len(x)), J(next, -18, x, y, len(x))], color='r')
+    ax.plot(
+        [curr, next],  
+        [J(curr, -18, x, y, len(x)), J(next, -18, x, y, len(x))], color='r')
     a = next
 
 plt.xlim(-2, 5)
