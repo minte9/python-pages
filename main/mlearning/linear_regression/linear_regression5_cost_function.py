@@ -25,9 +25,10 @@ A = np.linspace(-2, 4.5, 13) # 21 values
 for i in range(len(A)):
     msg ='f(x) = -18 + %sx' % A[i].round(1)
     ax.plot(x, -18 + A[i]*x, label = msg) # f(x) = -18 + -2.0x
+
 plt.xlabel("x")
 plt.ylabel("f(x)")  
-plt.legend() #; plt.show()
+plt.legend()
 
 # Calculate SSR for each a
 SSR = []
@@ -52,7 +53,10 @@ ax.plot(A, J(A, -18, x, y, m=len(x))) # points
 for a in A:
     msg ='J(%.1f, -18)' % a
     ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label = msg) # J(-2.0, -18)
-plt.legend() #; plt.show()
+    
+plt.xlabel("a")
+plt.ylabel("SSR(a)")  
+plt.legend()
 
 # Plot for two parameters
 from mpl_toolkits.mplot3d.axes3d import Axes3D
