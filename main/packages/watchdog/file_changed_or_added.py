@@ -8,7 +8,7 @@ import pathlib
 
 DIR = pathlib.Path(__file__).resolve().parent
 DIR = str(DIR).replace('python-pages/main/packages/watchdog', '')
-DIR_TO_WATCH = DIR + 'python-pages/main/'
+DIR_TO_WATCH = DIR + 'python-pages/main/mlearning'
 
 class ScriptTriggerHandler(FileSystemEventHandler):
 
