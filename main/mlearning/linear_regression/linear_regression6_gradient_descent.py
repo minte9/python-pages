@@ -1,4 +1,4 @@
-""" Gradient descent (p76)
+""" Gradient descent
 Finding the optimal value for a.
 Algorithm starts with a random value of the parameter a. 
 Then, it finds the direction in which the function
