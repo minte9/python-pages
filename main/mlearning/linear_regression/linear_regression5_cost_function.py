@@ -16,7 +16,7 @@ y = np.array([[31], [30], [80], [49], [70], [118]])
 fig, ax = plt.subplots()
 plt.ylim(0, 140)
 plt.xlim(0, 140)
-ax.plot(x, y, 'o', color='g', label='training data') # training points
+ax.plot(x, y, 'o', color='g', label='training data') # points
 
 # Generate some a range values
 A = np.linspace(-2, 4.5, 13) # 21 values
@@ -34,13 +34,10 @@ SSR = []
 for a in A:
     P = []  # predictions
     SR = [] # square residuals
-
     for i in x:
         P.append(-18 + a*i)
-
     for i in range(0, len(x)):
         SR.append((y[i] - P[i])**2)
-
     SSR.append(np.sum(SR))
     print('a = %s SSR = %s' % (a.round(1), np.sum(SR).round()))
         # a = -2.0 SSR = 282654.0 ...
@@ -54,7 +51,7 @@ def J(a, b, x, y, m):
 
 # Plot Cost function for coeficient (a)
 fig, ax = plt.subplots()
-ax.plot(A, J(A, -18, x, y, m=len(x))) # draw points
+ax.plot(A, J(A, -18, x, y, m=len(x))) # points
 for a in A:
    ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label='J(%.1f, -18)' %a) # line
 plt.legend() #; plt.show()
