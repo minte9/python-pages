@@ -72,5 +72,4 @@ plt.xlim(-2, 5)
 plt.ylim(-10000, 100000)
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
-
 plt.show()
