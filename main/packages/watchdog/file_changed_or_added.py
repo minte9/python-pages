@@ -13,12 +13,12 @@ DIR_TO_WATCH = DIR + 'python-pages/main/'
 class ScriptTriggerHandler(FileSystemEventHandler):
 
     def on_modified(self, event):
-        Popen(['git', 'add ' + DIR_TO_WATCH], stdout=subprocess.PIPE)
+        Popen(['git', 'add ' + DIR_TO_WATCH])
         Popen(['git', 'exportmdfcurl'])
         print('File was modified')
 
     def on_created(self, event):
-        Popen(['git', 'add ' + DIR_TO_WATCH], stdout=subprocess.PIPE)
+        Popen(['git', 'add ' + DIR_TO_WATCH])
         Popen(['git', 'exportmdfcurl'])
         print('File or directory was created')
 
