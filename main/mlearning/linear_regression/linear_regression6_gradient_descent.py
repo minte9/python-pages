@@ -61,13 +61,15 @@ print(round(a, 4)) # 1.3029
 
 # Grapichs
 fig, ax = plt.subplots()
-A = np.linspace(-2, 4.5, 13) # 21 values
+A = np.linspace(-2, 4.5, 23) # 21 values
 ax.plot(A, J(A, -18, x, y, m=len(x))) # J(a)
 
 ax.plot(0, J(0, -18, x, y, m=len(x)), 'x', color='r')       # start a
 ax.plot(2.23, J(2.23, -18, x, y, m=len(x)), 'x', color='r') # start a
 ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', color='g')       # optim a
 
+plt.xlim(-2, 5)
+plt.ylim(-10000, 100000)
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
 
