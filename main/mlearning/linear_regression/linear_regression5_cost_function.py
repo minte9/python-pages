@@ -49,11 +49,10 @@ def J(a, b, x, y, m):
     return J
 
 fig, ax = plt.subplots()
-ax.plot(A, J(A, -18, x, y, m=len(x))) # points
+ax.plot(A, J(A, -18, x, y, m=len(x))) # J(a)
 for a in A:
     msg ='J(%.1f, -18)' % a
-    ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label = msg) # J(-2.0, -18)
-
+    ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', label = msg) # points
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
 plt.legend()
