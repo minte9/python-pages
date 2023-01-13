@@ -24,7 +24,7 @@ print(A)
 
 # Plot regression lines (for each a)
 for i in range(len(A)):
-    ax.plot(x, -18 + A[i]*x, label=f'f(x) = -18 + {A[i].round(1)}x') # lines
+    ax.plot(x, -18 + A[i]*x, label='f(x) = -18 + %sx' % A[i].round(1)) # lines
 plt.xlabel("x")
 plt.ylabel("f(x)")  
 plt.legend() #; plt.show()
