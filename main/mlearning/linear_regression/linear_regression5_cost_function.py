@@ -42,7 +42,7 @@ for a in A:
         SR.append((y[i] - P[i])**2)
 
     SSR.append(np.sum(SR))
-    print(f'a = {a.round(1)} SSR = {np.sum(SR).round()}')
+    print('a = %s SSR = %s' % (a.round(1), np.sum(SR).round()))
         # a = -2.0 SSR = 282654.0 ...
 
 # Generic cost function J (SSR(a))
