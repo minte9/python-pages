@@ -64,19 +64,20 @@ fig, ax = plt.subplots()
 A = np.linspace(-2, 4.5, 23) # 21 values
 ax.plot(A, J(A, -18, x, y, m=len(x))) # J(a)
 
-a = 0
-for i in range(15):
-    d = dJ(a, -18, x, y, len(x))
-    curr = a
-    next = a - d*l
-    ax.plot(curr, J(curr, -18, x, y, len(x)), 'o', color='r')
-    ax.plot(
-        [curr, next],  
-        [J(curr, -18, x, y, len(x)), J(next, -18, x, y, len(x))], color='r')
-    a = next
+ax.plot(a, J(a, -18, x, y, m=len(x)), 'o', color='g', label='a = 1.3029') # optim
+
+ax.plot(0,  J(0,  -18, x, y, m=len(x)), 'o', color='r')
+ax.plot(a1, J(a1, -18, x, y, m=len(x)), 'o', color='r')
+ax.plot(a2, J(a2, -18, x, y, m=len(x)), 'o', color='r')
+ax.plot(a3, J(a3, -18, x, y, m=len(x)), 'o', color='r')
+
+ax.plot([0,  a1], [J(0,  -18, x, y, len(x)), J(a1, -18, x, y, len(x))], color='r')
+ax.plot([a1, a2], [J(a1, -18, x, y, len(x)), J(a2, -18, x, y, len(x))], color='r')
+ax.plot([a2, a3], [J(a2, -18, x, y, len(x)), J(a3, -18, x, y, len(x))], color='r')
 
 plt.xlim(-2, 5)
 plt.ylim(-10000, 70000)
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
+plt.legend()
 plt.show()
