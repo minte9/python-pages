@@ -1,7 +1,7 @@
 """ Gradient descent
-Algorithm starts with a random value of the parameter a. 
+Algorithm starts with a random value of the parameter a
 Then, it finds the direction in which the function
-descrease faster and takes a step in that direction, then repeat.
+descrease faster and takes a step in that direction, then repeat
 """
 
 import matplotlib.pyplot as plt

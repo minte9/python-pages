@@ -15,6 +15,10 @@ class ScriptTriggerHandler(FileSystemEventHandler):
         Popen(['git', 'add ' + DIR_TO_WATCH])
         print('File or directory was created')
 
+    def on_modified(self, event):
+        Popen(['git', 'exportmdfcurl'])
+        print('File or directory was created')
+
 event_handler = ScriptTriggerHandler()
 observer = Observer()
 observer.schedule(event_handler, DIR_TO_WATCH, recursive=True)
