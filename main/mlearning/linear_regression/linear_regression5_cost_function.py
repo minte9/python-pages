@@ -21,7 +21,7 @@ ax.plot(x, y, 'o', color='g', label='training data') # points
 # Generate some a range values
 A = np.linspace(-2, 4.5, 13) # 21 values
 
-# Plot regression lines (for each a)
+# Plot lines
 for i in range(len(A)):
     msg ='f(x) = -18 + %sx' % A[i].round(1)
     ax.plot(x, -18 + A[i]*x, label = msg) # f(x) = -18 + -2.0x
@@ -40,14 +40,13 @@ for a in A:
         SR.append((y[i] - P[i])**2)
     SSR.append(np.sum(SR))
 
-# Generic cost function J (SSR(a))
+# Generic cost function J = SSR(a)
 def J(a, b, x, y, m):
     J = 0
     for i in range(m): # number of train points
         J += (y[i] - (a*x[i] + b))**2
     return J
 
-# Plot Cost function for coeficient (a)
 fig, ax = plt.subplots()
 ax.plot(A, J(A, -18, x, y, m=len(x))) # points
 for a in A:
