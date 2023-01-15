@@ -40,7 +40,11 @@ for a in A:
     for i in range(0, len(X)):
         SR.append((Y[i] - P[i])**2)
     SSR.append(np.sum(SR).round())
+
 print(SSR)
+    # 282654, 197923, 128329, 73872, 34552, 10368, 
+    # 1320,
+    # 7409, 28635, 64998, 116497, 183133, 264906
 
 # Generic cost function J = SSR(a)
 def J(a, b, x, y, m):
