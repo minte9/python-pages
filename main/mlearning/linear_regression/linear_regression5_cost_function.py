@@ -53,7 +53,7 @@ def J(a, b, x, y, m):
         J += (y[i] - (a*x[i] + b))**2
     return J
 
-# Draw cost function
+# Draw J(a)
 fig, ax = plt.subplots()
 ax.plot(A, J(A, -18, X, X, m=len(X))) # J(a)
 for a in A:
@@ -63,7 +63,7 @@ plt.xlabel("a")
 plt.ylabel("SSR(a)")  
 plt.legend()
 
-# Draw cost function (for two parameters)
+# Draw J(a,b)
 from mpl_toolkits.mplot3d.axes3d import Axes3D
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1,projection='3d')
