@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
 # Training Dataset
-X = np.array([[30], [46], [60], [65], [77], [95]])
+X = np.array([30, 46, 60, 65, 77, 95]).reshape(6,1)
 Y = np.array([31, 30, 80, 49, 70, 118])
 
 # Learn a prediction function
