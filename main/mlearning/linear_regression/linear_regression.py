@@ -12,6 +12,7 @@ from sklearn.linear_model import LinearRegression
 X = np.array([[30], [46], [60], [65], [77], [95]])
 Y = np.array([31, 30, 80, 49, 70, 118])
 
+
 # Learn a prediction function
 r = LinearRegression().fit(X, Y)
 a = r.coef_[0].round(1)
@@ -24,6 +25,7 @@ print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 x1 = 80
 y1 = a*x1 + b
 print(f'f({x1}) = {y1}') # f(80) = 86.0
+
 
 # Draw graphics
 fig, ax = plt.subplots()
