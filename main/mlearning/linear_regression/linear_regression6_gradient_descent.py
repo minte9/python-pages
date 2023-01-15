@@ -45,17 +45,17 @@ print('Step 3 a =', round(a3, 5)) # 1.15511
 
 
 # Gradient descent (implementation)
-def gradient_descent(a=0, loops=15):
+def gradient_descent(a=0, b=-18, lr=0.00001, loops=15):
     for i in range(15):
-        d = dJ(a, -18, x, y, len(x))
-        a = a - d*l
+        d = dJ(a, b, x, y, len(x))
+        a = a - d*lr
         # print(f'Step {i+1} a = {round(a, 5)}')
     return round(a, 5)
 
-a = gradient_descent(0, 15)
+a = gradient_descent(0)
 print(round(a, 4)) # 1.3029
 
-a = gradient_descent(2.23, 15) # different value for a start
+a = gradient_descent(2.23) # different value for a start
 print(round(a, 4)) # 1.3029
 
 
