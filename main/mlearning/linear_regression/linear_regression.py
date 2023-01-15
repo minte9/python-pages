@@ -38,7 +38,7 @@ ax.plot(X, Y, 'x', color='g', label='training data')
 # Draw function line
 ax.plot(X, a*X + b, label=f'h(x) = {b} + {a}x')
 
-# Drow prediction point
+# Draw prediction point
 ax.plot(x1, y1, 'o', color='r', label=f'h({x1}) = {y1}')
 
 plt.legend(), plt.show()
