@@ -18,7 +18,6 @@ r = LinearRegression().fit(X, Y)
 a = r.coef_[0].round(1)
 b = r.intercept_.round(1)
 
-# Function learned
 print(f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 
 # Predict unknown
