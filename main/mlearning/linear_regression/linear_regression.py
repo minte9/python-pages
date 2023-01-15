@@ -29,7 +29,9 @@ print(f'f({x1}) = {y1}') # f(80) = 86.0
 fig, ax = plt.subplots()
 plt.ylim(0, 140)
 plt.xlim(0, 140)
+
 ax.plot(X, Y, 'x', color='g', label='training data')     # dataset points
 ax.plot(X, a*X + b, label=f'h(x) = {b} + {a}x')          # function line
 ax.plot(x1, y1, 'o', color='r', label=f'h({x1}) = {y1}') # prediction unknown
+
 plt.legend(), plt.show()
