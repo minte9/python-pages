@@ -1,11 +1,15 @@
 """ Gradient descent (two params, a and b)
-Algorithm starts with a random value of the parameter a
+Algorithm starts with a random value of the parameter a, b
 Then, it finds the direction in which the function
 descrease faster and takes a step in that direction, then repeat
 """
 
 import matplotlib.pyplot as plt
 import numpy as np
+
+# Training dataset
+X = np.array([30, 46, 60, 65, 77, 95])
+Y = np.array([31, 30, 80, 49, 70, 118])
 
 # The model
 def predict(X, a, b):
@@ -31,9 +35,6 @@ def gradient_descent(a, b, lr=0.00001, loops=15):
     print('a =', round(a, 1), ' b =', round(b, 1))
     return a, b
 
-# Training dataset
-X = np.array([30, 46, 60, 65, 77, 95])
-Y = np.array([31, 30, 80, 49, 70, 118])
 
 # Learning
 a, b = gradient_descent(0, 0)
