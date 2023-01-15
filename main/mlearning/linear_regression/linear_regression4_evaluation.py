@@ -27,7 +27,7 @@ for i in range(len(X)):
     R = np.append(R, Y[i] - P[i])
     SSR += R[i] ** 2
 
-print(R)                              # 10 -11.8 20 -17.5 -12.1 12.5
+print(R) # 10 -11.8 20 -17.5 -12.1 12.5
 print(f'SSR = {SSR.round(2).item()}') # 1248.15
 
 # Draw graphics
