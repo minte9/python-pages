@@ -4,7 +4,6 @@ Then, it finds the direction in which the function
 descrease faster and takes a step in that direction, then repeat
 """
 
-import matplotlib.pyplot as plt
 import numpy as np
 
 # Training dataset
