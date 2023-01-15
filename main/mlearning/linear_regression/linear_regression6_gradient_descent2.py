@@ -10,7 +10,7 @@ import numpy as np
 X = np.array([30, 46, 60, 65, 77, 95])
 Y = np.array([31, 30, 80, 49, 70, 118])
 
-# The model
+# The model (linear)
 def predict(X, a, b):
     return X * a + b # f(x) = ax + b
 
