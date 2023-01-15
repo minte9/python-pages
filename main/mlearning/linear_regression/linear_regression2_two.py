@@ -24,7 +24,8 @@ with open(DIR / 'data/cars.csv') as file:
 
 r = LinearRegression().fit(X, y) 
 
-# Visualization (surface)
+# Draw surface
+fig = plt.figure()
 Ax, Ay = np.meshgrid(
     np.linspace(df.Weight.min(), df.Weight.max(), 100),
     np.linspace(df.Volume.min(), df.Volume.max(), 100)
@@ -33,7 +34,6 @@ onlyX = pd.DataFrame({'Weight': Ax.ravel(), 'Volume': Ay.ravel()})
 fittedY = r.predict(onlyX)
 fittedY = np.array(fittedY)
 
-fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(df['Weight'], df['Volume'], df['CO2'], c='g', marker='x', alpha=0.5)
 ax.plot_surface(Ax, Ay, fittedY.reshape(Ax.shape), color='b', alpha=0.3)
@@ -42,16 +42,14 @@ ax.set_ylabel('Volume')
 ax.set_zlabel('CO2')
 
 # Predictions
-for X in [
-        [1600, 1252],   # Honda Civic, 1600, 1252 / CO2: 94
-        [1100, 980],    # Hyundai I20, 1100, 980 / CO2: 99
-        [1200, 780],    # ?
-]:
-    y = r.predict([X])
-    print(y.round(1).item())
-    # 101.5
-    # 95.6
-    # 94.8
-    ax.plot(X[0], X[1], y[0], 'o', color='r')
+X = [1600, 1252]   # Honda Civic, 1600, 1252 / CO2: 94
+y = r.predict([X]) # CO2: 101.5
+print(y.round(1).item())
+ax.plot(X[0], X[1], y[0], 'o', color='r')
+
+X = [1200, 780]    # ?
+y = r.predict([X]) # CO2: 94.8
+print(y.round(1).item())
+ax.plot(X[0], X[1], y[0], 's', color='g')
 
 plt.show()
