@@ -71,9 +71,9 @@ ax.plot(a1, J(a1, -18, x, y, m=len(x)), 'o', color='r')
 ax.plot(a2, J(a2, -18, x, y, m=len(x)), 'o', color='r')
 ax.plot(a3, J(a3, -18, x, y, m=len(x)), 'o', color='r')
 
-ax.plot([0,  a1], [J(0,  -18, x, y, len(x)), J(a1, -18, x, y, len(x))], color='r')
-ax.plot([a1, a2], [J(a1, -18, x, y, len(x)), J(a2, -18, x, y, len(x))], color='r')
-ax.plot([a2, a3], [J(a2, -18, x, y, len(x)), J(a3, -18, x, y, len(x))], color='r')
+ax.plot([0,  a1], [J(0,  -18, x,y, len(x)), J(a1, -18, x,y, len(x))], color='r')
+ax.plot([a1, a2], [J(a1, -18, x,y, len(x)), J(a2, -18, x,y, len(x))], color='r')
+ax.plot([a2, a3], [J(a2, -18, x,y, len(x)), J(a3, -18, x,y, len(x))], color='r')
 
 plt.xlim(-2, 5)
 plt.ylim(-10000, 70000)
