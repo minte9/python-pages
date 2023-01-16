@@ -6,7 +6,7 @@ may require an additional y-axis
 import matplotlib.pyplot as plt
 import numpy as np
 
-fig, ax = plt.subplots(figsize=(7, 2.7), layout='constrained')
+fig, ax = plt.subplots()
 
 x = np.arange(0.0, 5.0, 0.01)
 y = np.cos(2 * np.pi * x)
