@@ -18,12 +18,13 @@ plt.plot(X, X**2, label='f(x) = x^2')
 
 def plot_slope(x1, y1, slope):
 
-    # Calculate y intercept "b" in y = ax + b
+    # Calculate intercept "b" in y = ax + b
     b = y1 - slope * x1
 
     # Draw a point around the input point
     x2, y2 = (x1 + 1, slope * (x1 + 1) + b)
 
+    # Draw start line point
     plt.scatter(x1, y1)
     plt.annotate('(%s, %s)'%(x1, y1), xy=(x1, y1), xytext=(x1, y1))
 
