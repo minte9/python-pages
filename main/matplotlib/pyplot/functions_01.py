@@ -18,20 +18,27 @@ fig, ax = myfig()
 ax.plot(X, np.sqrt(I + X), label='f(x) = sqrt(x)')   
 ax.plot(X, np.sqrt(I - X), label='f(x) = sqrt(1-x)')
 plt.legend(loc='upper right')
-plt.show()
 
 # x^2
 fig, ax = myfig()
-ax.plot(X,  X**2, label='f(x) = x^2')
+ax.plot(X,  X**2, label='f(x) =  x^2')
 ax.plot(X, -X**2, label='f(x) = -x^2')
 plt.legend(loc='upper right')
-plt.show()
 
 # 1/x^2
 fig, ax = myfig()
 X1 = np.linspace(0.5, 10, 100) 
 X2 = np.linspace(-0.5, -10, 100) 
-ax.plot(X1, 1/X1**2, label='f(x) = 1/x^2')
+ax.plot(X1, 1/X1**2, label='f(x) =  1/x^2')
 ax.plot(X2, -1/X2**2, label='f(x) = -1/x^2')
 plt.legend(loc='upper right')
+
+# x^2-4 / x-2
+fig, ax = myfig()
+X = np.linspace(-4, 5, 10) 
+ax.plot(X, (X**2 - 4) / (X - 2), label='f(x) = x^2-4 / x-2')
+ax.plot(X, X + 2 + 1, label='f(x) = x + 2')
+plt.scatter(X, (X**2 - 4) / (X - 2))
+plt.legend(loc='upper right')
+
 plt.show()
