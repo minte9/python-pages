@@ -1,18 +1,36 @@
 import matplotlib.pyplot as plt
 
-# Creating 3 figures
-fig1 = plt.figure()
-fig2 = plt.figure()
-fig3 = plt.figure()
+import numpy as np
+import matplotlib.pyplot as plt
 
-# Creating subplots in each figure
-ax1 = fig1.add_subplot(111)
-ax2 = fig2.add_subplot(111)
-ax3 = fig3.add_subplot(111)
+# Define the function f(x) = x^2
+def f(x):
+    return x**2
 
-# Plotting something in each subplot
-ax1.plot([1, 2, 3], [1, 2, 3])
-ax2.plot([1, 2, 3], [2, 3, 4])
-ax3.plot([1, 2, 3], [3, 4, 5])
+# Define the derivative of the function, f'(x) = 2x
+def f_derivative(x):
+    return 2*x
 
+# Generate x values from -10 to 10 with increments of 0.1
+x = np.arange(-10, 10, 0.1)
+
+# Calculate y values for the function f(x) = x^2
+y = f(x)
+
+# Calculate y values for the derivative of the function, f'(x) = 2x
+y_derivative = f_derivative(x)
+
+# Plot the function f(x) = x^2
+plt.plot(x, y, label='f(x) = x^2')
+
+# Plot the derivative of the function, f'(x) = 2x
+plt.plot(x, y_derivative, label="f'(x) = 2x", linestyle='--')
+
+# Add labels, title, and legend
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Plot of the function f(x) = x^2 and its derivative')
+plt.legend()
+
+# Show the plot
 plt.show()
