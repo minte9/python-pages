@@ -36,10 +36,9 @@ plt.legend(loc='upper right')
 # x^2-4 / x-2
 fig, ax = myfig()
 X = np.linspace(-4, 5, 10) 
-ax.plot(X, (X**2 - 4) / (X - 2), label='f(x) = x^2-4 / x-2') # no value at x=2
-ax.plot(X, X + 2 + 1, label='f(x) = x + 2')
+ax.plot(X, (X**2-4) / (X-2), label='f(x) = x^2-4 / x-2') # no value at x=2
+ax.plot(X, (X + 2) + 1, label='f(x) = x + 2')
 plt.scatter(X, (X**2 - 4) / (X - 2))
 plt.legend(loc='upper right')
-
 
 plt.show()
