@@ -40,7 +40,6 @@ x1, y1 = (-1.42, 2)
 slope = 2 * x1
 plot_slope(x1, y1, slope)
 
-
 x1, y1 = (-2, 4)
 slope = 2 * x1
 plot_slope(x1, y1, slope)
