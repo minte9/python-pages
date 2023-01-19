@@ -7,18 +7,18 @@ descrease faster and takes a step in that direction, then repeat
 import numpy as np
 
 # The model (linear)
-def fx(X, a, b):
+def predict(X, a, b):
     return X * a + b # f(x) = ax + b
 
 # Cost function
 def J(a, b):
-    J = np.sum((Y - fx(X, a, b))**2)
+    J = np.sum((Y - predict(X, a, b))**2)
     return J
 
 # Derivatives
 def dJ(a, b):
-    da = np.sum(-2 * X * (Y - fx(X, a, b))) # b fixed
-    db = np.sum(-2 * 1 * (Y - fx(X, a, b))) # a fixed
+    da = np.sum(-2 * X * (Y - predict(X, a, b))) # b fixed
+    db = np.sum(-2 * 1 * (Y - predict(X, a, b))) # a fixed
     return da, db
 
 # Gradient descent
@@ -43,9 +43,9 @@ print('a =', round(a, 1), ' b =', round(b,1)) # 1.3, -18
 print('Predictions:', f'f(x) = {round(a, 1)}x + {round(b)}') # f(x) = 1.3x - 18
 
 # Predictions
-x = 33; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
-x = 45; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
-x = 62; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
+x = 33; y = round(predict(x, a, b)); print("fx(%s) =" %x, y)
+x = 45; y = round(predict(x, a, b)); print("fx(%s) =" %x, y)
+x = 62; y = round(predict(x, a, b)); print("fx(%s) =" %x, y)
     # fx(33) =  25
     # fx(45) =  41
     # fx(62) =  63
