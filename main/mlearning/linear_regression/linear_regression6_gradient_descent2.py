@@ -9,7 +9,8 @@ import numpy as np
 
 # The model (linear)
 def predict(X, a, b):
-    return X * a + b # f(x) = ax + b
+    Y = X*a + b
+    return np.round(Y) # f(x) = ax + b
 
 # Cost function
 def J(a, b):
@@ -37,17 +38,17 @@ def gradient_descent(X, Y, lr=0.00001, loops=1000):
 # Training dataset 1
 X = np.array([30, 46, 60, 65, 77, 95])
 Y = np.array([31, 30, 80, 49, 70, 118])
-print("\nDataset 1 Learning")
+print("\nLearning 1")
 
 # Learning a,b
 a, b = gradient_descent(X, Y)
 print('a =', a, ' b =', b) # 1.3, -18
-print('Predictions:', f'f(x) = {round(a, 1)}x + {round(b)}') # f(x) = 1.3x - 18
+print('Predictions:', f'f(x) = {a}x + {b}') # f(x) = 1.3x - 18
 
 # Predictions
-x = 33; y = round(predict(x, a, b)); print("fx(%s) =" %x, y)
-x = 45; y = round(predict(x, a, b)); print("fx(%s) =" %x, y)
-x = 62; y = round(predict(x, a, b)); print("fx(%s) =" %x, y)
+x = 33; y = predict(x, a, b); print("f(%s) =" %x, y)
+x = 45; y = predict(x, a, b); print("f(%s) =" %x, y)
+x = 62; y = predict(x, a, b); print("f(%s) =" %x, y)
     # fx(33) =  25
     # fx(45) =  41
     # fx(62) =  63
@@ -59,29 +60,31 @@ ax.grid(True, which='both')
 ax.axhline(y=0, color='k')
 ax.axvline(x=0, color='k')
 
-ax.plot(X, Y, 'x', color='g', label='training data') # Draw dataset points
-ax.plot(X, a*X + b, label=f'f(x) = {b} + {a}x') # Draw function line
-ax.plot(55, predict(55, a, b), 'o', color='r') # Draw unknown point
+# Draw dataset 1
+ax.plot(X, Y, 'x', color='g', label='training data') # points
+ax.plot(X, a*X + b, label=f'f(x) = {b} + {a}x') # function line
+ax.plot(55, predict(55, a, b), 'o', color='r') # prediction point
 plt.legend(loc='upper right')
 
 
 # Training dataset 2
 X = np.array([15, 18, 20, 21, 23, 25, 27, 28, 29, 30, 32, 34, 35, 36])
 Y = np.array([23, 74, 65, 82, 135, 321, 440, 400, 290, 620, 630, 610, 560, 568])
-print("\nDataset 2 Learning")
+print("\nLearning 2")
 
 # Learning a,b
 a, b = gradient_descent(X, Y)
 print('a =', round(a, 1), ' b =', round(b,1)) # 1.3, -18
 print('Predictions:', f'f(x) = {round(a, 1)}x + {round(b)}') # f(x) = 1.3x - 18
 
-x = 20; y = round(predict(x, a, b)); print("gx(%s) =" %x, y)
-x = 24; y = round(predict(x, a, b)); print("gx(%s) =" %x, y)
-x = 33; y = round(predict(x, a, b)); print("gx(%s) =" %x, y)
+x = 20; y = predict(x, a, b); print("f(%s) =" %x, y)
+x = 24; y = predict(x, a, b); print("f(%s) =" %x, y)
+x = 33; y = predict(x, a, b); print("f(%s) =" %x, y)
 
-ax.plot(X, Y, 'x', color='g') # Draw dataset points
-ax.plot(X, a*X + b, label=f'f(x) = {a}x + {b}') # Draw function line
-ax.plot(33, predict(33, a, b), 'o', color='r') # Draw unknown point
-
+# Draw dataset 2
+ax.plot(X, Y, 'x', color='g') # points
+ax.plot(X, a*X + b, label=f'f(x) = {b} + {a}x') # function line
+ax.plot(55, predict(33, a, b), 'o', color='r') # prediction point
 plt.legend(loc='upper right')
+
 plt.show()
