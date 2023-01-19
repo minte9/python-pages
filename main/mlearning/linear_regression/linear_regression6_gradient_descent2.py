@@ -37,12 +37,12 @@ def gradient_descent(X, Y, lr=0.00001, loops=1000):
 X = np.array([30, 46, 60, 65, 77, 95])
 Y = np.array([31, 30, 80, 49, 70, 118])
 
-# Learning
+# Learning a,b
 a, b = gradient_descent(X, Y)
-print('a =', round(a, 1), ' b =', round(b,1))
-print('Predictions:', f'f(x) = {round(a, 1)}x + {round(b)}')
+print('a =', round(a, 1), ' b =', round(b,1)) # 1.3, -18
+print('Predictions:', f'f(x) = {round(a, 1)}x + {round(b)}') # f(x) = 1.3x - 18
 
-# Prediction
+# Predictions
 x = 33; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
 x = 45; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
 x = 62; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
