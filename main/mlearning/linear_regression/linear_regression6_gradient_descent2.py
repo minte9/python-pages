@@ -74,8 +74,8 @@ print("\nLearning 2")
 
 # Learning a,b
 a, b = gradient_descent(X, Y)
-print('a =', round(a, 1), ' b =', round(b,1)) # 1.3, -18
-print('Predictions:', f'f(x) = {round(a, 1)}x + {round(b)}') # f(x) = 1.3x - 18
+print('a =', a, ' b =', b) # a = 32.9  b = -533.1
+print('Predictions:', f'f(x) = {a}x + {a}') # f(x) = 32.9x + -533
 
 x = 20; y = predict(x, a, b); print("f(%s) =" %x, y)
 x = 24; y = predict(x, a, b); print("f(%s) =" %x, y)
