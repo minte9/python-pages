@@ -47,18 +47,18 @@ print(SSR)
     # 7409, 28635, 64998, 116497, 183133, 264906
 
 # Generic cost function J = SSR(a)
-def J(a, b, x, y, m):
+def J(a, b=-18):
     J = 0
-    for i in range(m): # number of train points
-        J += (y[i] - (a*x[i] + b))**2
+    for i in range(len(X)): # number of train points
+        J += (Y[i] - (a*X[i] + b))**2
     return J
 
 # Draw J(a)
 fig, ax = plt.subplots()
-ax.plot(A, J(A, -18, X, X, m=len(X))) # J(a)
+ax.plot(A, J(A)) # J(a)
 for a in A:
     msg ='J(%.1f, -18)' % a
-    ax.plot(a, J(a, -18, X, Y, m=len(X)), 'o', label = msg) # points
+    ax.plot(a, J(a), 'o', label = msg) # points
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
 plt.legend()
@@ -70,6 +70,6 @@ ax = fig.add_subplot(1,1,1,projection='3d')
 a = np.linspace(-1, 4, 20)
 b = np.linspace(-100, 100, 10)
 aa, bb = np.meshgrid(a, b)
-ax.plot_surface(aa, bb, J(aa, bb, X, Y, m=len(X))) # surface
+ax.plot_surface(aa, bb, J(aa, bb)) # surface
 ax.view_init(50,-150)
 plt.show()

@@ -6,42 +6,46 @@ descrease faster and takes a step in that direction, then repeat
 
 import numpy as np
 
-# Training dataset
-X = np.array([30, 46, 60, 65, 77, 95])
-Y = np.array([31, 30, 80, 49, 70, 118])
-
 # The model (linear)
-def predict(X, a, b):
+def fx(X, a, b):
     return X * a + b # f(x) = ax + b
 
 # Cost function
 def J(a, b):
-    J = np.sum(Y - predict(X, a, b)**2)
+    J = np.sum((Y - fx(X, a, b))**2)
     return J
 
- # Derivatives
+# Derivatives
 def dJ(a, b):
-    da = -2 * np.sum(X * (X - (a * X + b))) # b fixed
-    db = -2 * np.sum(1 * (X - (a * X + b))) # a fixed
+    da = np.sum(-2 * X * (Y - fx(X, a, b))) # b fixed
+    db = np.sum(-2 * 1 * (Y - fx(X, a, b))) # a fixed
     return da, db
 
 # Gradient descent
-def gradient_descent(a, b, lr=0.00001, loops=15):
+def gradient_descent(X, Y, lr=0.00001, loops=1000):
+    a = 0
+    b = 0
     for i in range(loops):
         da, db = dJ(a, b)
         a = a - lr * da
-        b = b - lr * db 
-    print('a =', round(a, 1), ' b =', round(b, 1))
+        for j in range(loops):
+            b = b - lr * db
     return a, b
 
 
+# Training dataset
+X = np.array([30, 46, 60, 65, 77, 95])
+Y = np.array([31, 30, 80, 49, 70, 118])
+
 # Learning
-a, b = gradient_descent(0, -10)
+a, b = gradient_descent(X, Y)
+print('a =', round(a, 1), ' b =', round(b,1))
+print('Predictions:', f'f(x) = {round(a, 1)}x + {round(b)}')
 
 # Prediction
-print(95, round(predict(95, a, b)))
-print(30, round(predict(30, a, b)))
-print(77, round(predict(77, a, b)))
-# 95 95
-# 30 30
-# 77 77
+x = 33; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
+x = 45; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
+x = 62; y = round(fx(x, a, b)); print("fx(%s) =" %x, y)
+    # fx(33) =  25
+    # fx(45) =  41
+    # fx(62) =  63
