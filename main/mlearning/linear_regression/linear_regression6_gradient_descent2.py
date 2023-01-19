@@ -87,4 +87,5 @@ ax.plot(X, a*X + b, label=f'f(x) = {b} + {a}x') # function line
 ax.plot(55, predict(33, a, b), 'o', color='r') # prediction point
 plt.legend(loc='upper right')
 
+
 plt.show()
