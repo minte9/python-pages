@@ -35,7 +35,7 @@ def gradient_descent(X, Y, lr=0.00001, loops=1000):
     return round(a, 1), round(b, 1)
 
 
-# Training dataset 1
+# Train dataset 1
 X = np.array([30, 46, 60, 65, 77, 95])
 Y = np.array([31, 30, 80, 49, 70, 118])
 print("\nLearning 1")
@@ -67,7 +67,7 @@ ax.plot(55, predict(55, a, b), 'o', color='r') # prediction point
 plt.legend(loc='upper right')
 
 
-# Training dataset 2
+# Train dataset 2
 X = np.array([15, 18, 20, 21, 23, 25, 27, 28, 29, 30, 32, 34, 35, 36])
 Y = np.array([23, 74, 65, 82, 135, 321, 440, 400, 290, 620, 630, 610, 560, 568])
 print("\nLearning 2")
