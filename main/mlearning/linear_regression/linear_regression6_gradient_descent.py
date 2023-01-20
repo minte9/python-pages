@@ -26,7 +26,7 @@ def dJ(a):
     return dJ.item()
 
 d = dJ(0)
-print('Derivative J(a) = ', d) # -67218
+print('Derivative J(0) = ', d) # -67218
 
 
 # Gradient descent (algorithm)
@@ -61,7 +61,7 @@ print(round(a, 4)) # 1.3029
 # Grapichs
 fig, ax = plt.subplots()
 A = np.linspace(-2, 4.5, 23) # 21 values
-ax.plot(A, J(A)) # J(a)
+ax.plot(A, J(A), label='J(a) = sum(R(X)^2)') # J(a)
 
 # Mimin SSR(a), or optim a
 ax.plot(a, J(a), 'o', color='g', label='a = 1.3029')
@@ -82,5 +82,10 @@ plt.xlim(-2, 5)
 plt.ylim(-10000, 70000)
 plt.xlabel("a")
 plt.ylabel("SSR(a)")  
+ax.set_xlabel('x')
+ax.set_ylabel('f(x)')
+ax.grid(True, which='both')
+ax.axhline(y=0, color='k')
+ax.axvline(x=0, color='k')
 plt.legend()
 plt.show()
