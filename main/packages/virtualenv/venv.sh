@@ -1,17 +1,10 @@
-# Upgrade pip
-python -m pip install --upgrade pip
+python -m pip install --upgrade pip # Upgrade pip
+pip install virtualenv              # Install package
 
-# Install package
-pip install virtualenv
+virtualenv ./my_env     # Create venv right into project folder 
+. my_env/bin/activate   # Load and activate virtual environment 
 
-# Create venv right into project folder 
-virtualenv ./my_env
-
-# Load and activate virtual environment 
-. my_env/bin/activate
-
-# Test environment
-pip list
+pip list                # Test environment
 
 : '
 Package    Version
@@ -20,9 +13,6 @@ pip        22.3.1
 setuptools 65.6.3
 wheel      0.38.4
 '
+deactivate              # Exit virtual environment
 
-# Exit virtual environment
-deactivate
-
-# Repo ignore 
 echo 'my_env/' > .gitignore
