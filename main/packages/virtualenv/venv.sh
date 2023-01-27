@@ -7,7 +7,7 @@ pip install virtualenv
 # Create venv right into project folder 
 virtualenv ./my_env
 
-# Load and activate virtual environment
+# Load and activate virtual environment 
 . my_env/bin/activate
 
 # Run some commends
