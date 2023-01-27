@@ -15,7 +15,6 @@ Learn and Remember - [minte9.com/python](https://www.minte9.com/python)
 - [Scheduler](./main/scheduler/) 
 - [Packages](./main/packages/) 
 - [Applications](./main/applications/) 
-- [MLearning](./main/mlearning/) 
 
 ##
 
