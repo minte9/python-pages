@@ -4,7 +4,6 @@ pip install virtualenv
 virtualenv ./my_env     # create
 
 . my_env/bin/activate   # load and activate
-
 pip list                # test     
 
 deactivate              # exit  
