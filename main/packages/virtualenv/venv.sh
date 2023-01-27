@@ -16,5 +16,5 @@ pip list
 # Exit virtual environment
 deactivate
 
-# Repo ignore
+# Repo ignore 
 echo 'my_env/' > .gitignore
