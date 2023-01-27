@@ -10,7 +10,7 @@ virtualenv ./my_env
 # Load and activate virtual environment 
 . my_env/bin/activate
 
-# Run some commends
+# Test environment
 pip list
 
 # Exit virtual environment
@@ -18,3 +18,11 @@ deactivate
 
 # Repo ignore 
 echo 'my_env/' > .gitignore
+
+: '
+Package    Version
+---------- -------
+pip        22.3.1
+setuptools 65.6.3
+wheel      0.38.4
+'
