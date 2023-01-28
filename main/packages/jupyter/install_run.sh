@@ -3,6 +3,7 @@ virtualenv ./notebook     # create env
 
 pip install jupyter       # install
 pip install matplotlib
+pip install pandas
 
 echo 'notebook/' > .gitignore
 echo '.ipynb_checkpoints/' >> .gitignore
