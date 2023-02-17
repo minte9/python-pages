@@ -35,6 +35,8 @@ assert tree.children[0].children[0].children[0].value == 3
 assert tree.children[0].children[0].children[1].value == 4
 assert tree.children[0].children[1].children[0].value == 8
 assert tree.children[0].children[1].children[1].children[0].value == -2
+assert tree.children[0].children[1].children[1].children[1].value == 10
+assert tree.children[1].value == 7
 
 matrix = [
     [3, 4],
