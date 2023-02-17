@@ -7,19 +7,24 @@ class Node:
         self.value = value
         self.children = children
 
-def matrix_to_tree(m, method='for_loop'):
+# For loop
+def matrix_to_tree_FL(m):
     if isinstance(m, int):
         return Node(m, [])
 
-    if (method == 'for_loop'):
-        children = []
-        for child in m:
-            node = matrix_to_tree(child)
-            children.append(node)
+    children = []
+    for child in m:
+        node = matrix_to_tree_FL(child) # Look Here
+        children.append(node)
 
-    if (method == 'list_comprehension'):
-        children = [matrix_to_tree(child) for child in m] # Look Here
+    return Node(None, children)
 
+# List comprehension
+def matrix_to_tree_LC(m):
+    if isinstance(m, int):
+        return Node(m, [])
+
+    children = [matrix_to_tree_LC(child) for child in m] # Look Here
     return Node(None, children)
 
 matrix = [
@@ -30,7 +35,7 @@ matrix = [
     7,
 ]
 
-tree = matrix_to_tree(matrix, 'for_loop')
+tree = matrix_to_tree_FL(matrix)
 assert tree.children[0].children[0].children[0].value == 3
 assert tree.children[0].children[0].children[1].value == 4
 assert tree.children[0].children[1].children[0].value == 8
@@ -44,7 +49,7 @@ matrix = [
     7,
 ]
 
-tree = matrix_to_tree(matrix, 'list_comprehension')
+tree = matrix_to_tree_LC(matrix)
 assert tree.children[0].children[0].value == 3
 assert tree.children[0].children[1].value == 4
 assert tree.children[1].children[0].value == 8
