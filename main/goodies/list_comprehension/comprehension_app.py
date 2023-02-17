@@ -15,7 +15,6 @@ def matrix_to_tree_FL(m): # with For loop
     for child in m:
         node = matrix_to_tree_FL(child) # Look Here
         children.append(node)
-
     return Node(None, children)
 
 def matrix_to_tree_LC(m): # with List comprehension
