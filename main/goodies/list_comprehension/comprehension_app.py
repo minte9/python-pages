@@ -28,10 +28,8 @@ def matrix_to_tree_LC(m):
     return Node(None, children)
 
 A = [
-    [
-        [3, 4],
-        [8, [-2, 10], 5],
-    ],
+    [[3, 4],
+     [8, [-2, 10], 5]],
     7,
 ]
 
