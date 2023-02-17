@@ -18,7 +18,7 @@ def matrix_to_tree(m, method='for_loop'):
             children.append(node)
 
     if (method == 'list_comprehension'):
-        children = [matrix_to_tree(child) for child in m]
+        children = [matrix_to_tree(child) for child in m] # Look Here
 
     return Node(None, children)
 
