@@ -27,7 +27,7 @@ def matrix_to_tree_LC(m):
     children = [matrix_to_tree_LC(child) for child in m] # Look Here
     return Node(None, children)
 
-matrix = [
+A = [
     [
         [3, 4],
         [8, [-2, 10], 5],
@@ -35,7 +35,13 @@ matrix = [
     7,
 ]
 
-tree = matrix_to_tree_FL(matrix)
+B = [
+    [3, 4],
+    [8, [-2, 10], 5],
+    7,
+]
+
+tree = matrix_to_tree_FL(A)
 assert tree.children[0].children[0].children[0].value == 3
 assert tree.children[0].children[0].children[1].value == 4
 assert tree.children[0].children[1].children[0].value == 8
@@ -43,13 +49,7 @@ assert tree.children[0].children[1].children[1].children[0].value == -2
 assert tree.children[0].children[1].children[1].children[1].value == 10
 assert tree.children[1].value == 7
 
-matrix = [
-    [3, 4],
-    [8, [-2, 10], 5],
-    7,
-]
-
-tree = matrix_to_tree_LC(matrix)
+tree = matrix_to_tree_LC(B)
 assert tree.children[0].children[0].value == 3
 assert tree.children[0].children[1].value == 4
 assert tree.children[1].children[0].value == 8
