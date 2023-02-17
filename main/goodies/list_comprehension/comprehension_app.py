@@ -7,8 +7,7 @@ class Node:
         self.value = value
         self.children = children
 
-# For loop
-def matrix_to_tree_FL(m):
+def matrix_to_tree_FL(m): # with For loop
     if isinstance(m, int):
         return Node(m, [])
 
@@ -19,8 +18,7 @@ def matrix_to_tree_FL(m):
 
     return Node(None, children)
 
-# List comprehension
-def matrix_to_tree_LC(m):
+def matrix_to_tree_LC(m): # with List comprehension
     if isinstance(m, int):
         return Node(m, [])
 
