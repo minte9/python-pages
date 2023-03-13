@@ -31,8 +31,6 @@ Strings provide `methods` for various operations.
 https://github.com/minte9/python-pages/blob/0cbc5eec0acc0383a8317803ac328fd6d1a293ee/main/strings/slice/builtin.py#L1-L11
 
 
-##
-
 ### References
 
 https://greenteapress.com/thinkpython2/html/thinkpython2009.html#sec95  
