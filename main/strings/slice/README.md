@@ -33,6 +33,9 @@ https://github.com/minte9/python-pages/blob/0cbc5eec0acc0383a8317803ac328fd6d1a2
 
 ##
 
+https://www.minte9.com/python/strings-slice-1258
+
+##
+
 https://greenteapress.com/thinkpython2/html/thinkpython2009.html#sec95
 https://github.com/AllenDowney/ThinkPython2/blob/master/code/words.txt
-https://www.minte9.com/python/strings-slice-1258
