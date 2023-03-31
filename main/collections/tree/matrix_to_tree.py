@@ -16,7 +16,7 @@ def matrix_to_tree(m):
         sub_node = matrix_to_tree(child) # Recursive case
         children.append(sub_node) 
 
-    # children = [matrix_to_tree(child) for child in m] // online
+    # children = [matrix_to_tree(child) for child in m] // oneline
     return Node(None, children)
 
 matrix = [
