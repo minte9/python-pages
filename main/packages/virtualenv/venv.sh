@@ -4,9 +4,12 @@ pip install virtualenv
 virtualenv ./my_env     # create
 
 . my_env/bin/activate   # load and activate
-pip list                # test     
+pip list                # test env     
+deactivate              # exit env
 
-deactivate              # exit  
+source my_env/bin/activate # second method
+pip list
+deactivate
 
 : '
 Package    Version
