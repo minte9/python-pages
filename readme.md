@@ -60,10 +60,10 @@
 
 [Applications](./main/applications/)  
 > Pythagora   
-> Palindrome
-> Binary Search
-> Conway Game
-> Coin Flip
+> Palindrome  
+> Binary Search  
+> Conway Game  
+> Coin Flip  
 
 [Scheduler](./main/scheduler/)  
 > Time   
