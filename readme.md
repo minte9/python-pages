@@ -12,6 +12,14 @@
 > Debugging  
 
 [Strings](./main/strings/)  
+> Slice  
+> Raw  
+> Regex  
+> Validation  
+> Config  
+> Security  
+> Encrypt  
+
 [Functions](./main/functions/)   
 [Collections](./main/collections/)  
 [Storage](./main/storage/)  
