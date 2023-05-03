@@ -1,4 +1,4 @@
-# Python
+# Python Pages
 
 [Language](./main/language/)  
 > Hello World  
@@ -29,7 +29,22 @@
 > References  
 
 [Functions](./main/functions/)   
+> Recursion    
+> Factorial  
+> Modulus  
+> Reassignment  
+> Approximate  
+
 [Storage](./main/storage/)  
+> Files   
+> Databases  
+> Pipes  
+> With Open  
+> Shelve  
+> Zip  
+> Csv  
+> Json  
+
 [Class](./main/class/)  
 [Goodies](./main/goodies/)   
 [Applications](./main/applications/)   
