@@ -20,8 +20,15 @@
 > Security  
 > Encrypt  
 
-[Functions](./main/functions/)   
 [Collections](./main/collections/)  
+> Lists   
+> Dictionaries  
+> Efficiency  
+> Tree  
+> Tuples  
+> References  
+
+[Functions](./main/functions/)   
 [Storage](./main/storage/)  
 [Class](./main/class/)  
 [Goodies](./main/goodies/)   
