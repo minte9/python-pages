@@ -81,14 +81,14 @@
 
 #
 
-## Install
+### Install
 
 ~~~sh
 git clone https://github.com/minte9/python-pages.git
 cd python-pages/
 ~~~
 
-## Updates
+### Updates
 
 ~~~sh
 cd python-pages/
