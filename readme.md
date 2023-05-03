@@ -72,7 +72,12 @@
 > Logging  
 
 [Packages](./main/packages/)  
-[Applications](./main/applications/)   
+> Clipboard   
+> Ocr  
+> Socket  
+> Image  
+> Virtualenv  
+> Jupyter  
 
 #
 
