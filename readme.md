@@ -98,8 +98,8 @@ git pull origin main
 #
 
 ### References
-> [Think Python Like Computer Scientist](https://greenteapress.com/thinkpython2/html/index.html) (free)  
-> [Think Python Like Computer Scientist](https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362)  
-> [Automate the Boring Stuff with Python](https://www.amazon.com/gp/product/B07VSXS4NK)  
-> [Beyond the Basic Stuff with Python](https://www.amazon.com/gp/product/B07S2N8Q48)  
+> [Think Python Like Computer Scientist](https://greenteapress.com/thinkpython2/html/index.html) (online)  
+> [Think Python Like Computer Scientist](https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362) (buy)  
+> [Automate the Boring Stuff with Python](https://www.amazon.com/gp/product/B07VSXS4NK) (buy)  
+> [Beyond the Basic Stuff with Python](https://www.amazon.com/gp/product/B07S2N8Q48) (buy)  
 > [Learn and Remember](https://www.minte9.com) (minte9)  
