@@ -46,9 +46,31 @@
 > Json  
 
 [Class](./main/class/)  
+> Definition   
+> Attributes  
+> Functional  
+> Methods  
+
 [Goodies](./main/goodies/)   
-[Applications](./main/applications/)   
+> Conditional Expression    
+> List Comprehension  
+> Generator  
+> Named Tuple  
+> Modules  
+
+[Applications](./main/applications/)  
+> Pythagora   
+> Palindrome
+> Binary Search
+> Conway Game
+> Coin Flip
+
 [Scheduler](./main/scheduler/)  
+> Time   
+> Multithreading  
+> Subprocess  
+> Logging  
+
 [Packages](./main/packages/)  
 [Applications](./main/applications/)   
 
