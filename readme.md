@@ -1,6 +1,16 @@
 # Python
 
 [Language](./main/language/)  
+> Hello World  
+> Variables  
+> Functions  
+> Conditional  
+> Operators  
+> While  
+> Turtle  
+> Script Mode  
+> Debugging  
+
 [Strings](./main/strings/)  
 [Functions](./main/functions/)   
 [Collections](./main/collections/)  
