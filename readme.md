@@ -1,16 +1,16 @@
 # Python
 
-[Language](./main/language/) 
-[Strings](./main/strings/) 
-[Functions](./main/functions/) 
-[Collections](./main/collections/) 
-[Storage](./main/storage/) 
-[Class](./main/class/) 
-[Goodies](./main/goodies/) 
-[Applications](./main/applications/) 
-[Scheduler](./main/scheduler/) 
-[Packages](./main/packages/) 
-[Applications](./main/applications/) 
+[Language](./main/language/)  
+[Strings](./main/strings/)  
+[Functions](./main/functions/)   
+[Collections](./main/collections/)  
+[Storage](./main/storage/)  
+[Class](./main/class/)  
+[Goodies](./main/goodies/)   
+[Applications](./main/applications/)   
+[Scheduler](./main/scheduler/)  
+[Packages](./main/packages/)  
+[Applications](./main/applications/)   
 
 #
 
