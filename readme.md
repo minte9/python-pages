@@ -1,4 +1,4 @@
-# Python
+# Python Pages
 
 [Language](./main/language/)  
 > Hello World  
