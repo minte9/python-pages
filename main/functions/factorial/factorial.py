@@ -16,3 +16,4 @@ def factorial(n):
 assert factorial(3) == 6
 assert factorial(0) == 1
 assert factorial(4) == 24
+assert factorial(9) == 362880  # tic-tac-toe combinations
