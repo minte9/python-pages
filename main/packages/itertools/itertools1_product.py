@@ -7,12 +7,12 @@ Since it is a single loop, you can simply break once for both lists.
     pip install more-tools
 """
 
-import itertools 
+import itertools as it
 
 A = [1, 2, 3]
 B = [10, 20, 30]
 
-for i,j in itertools.product(A, B):
+for i,j in it.product(A, B): # cartesian product
 
     print("i =", i, "j = ", j)
     
