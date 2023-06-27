@@ -3,13 +3,12 @@ from PIL import Image, ImageTk
 
 # Create a Tkinter window
 window = tk.Tk()
+window.title("Image Fill")
 
-# Load the image
-image_path = "image.png"  # Replace with the path to your image file
-image = Image.open(image_path)
-image_width, image_height = image.size
+# Create a new blank image
+image = Image.new("RGB", (400, 400), "white")
 
-# Create a Tkinter-compatible photo image
+# Create a Tkinter compatible photo image
 photo = ImageTk.PhotoImage(image)
 
 # Create a label widget to display the image
