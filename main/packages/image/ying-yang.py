@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw
 
 # Create a new blank image
-image = Image.new("RGB", (500, 500), "white")
+image = Image.new("RGB", (400, 400), "white")
 
 # Create a drawing object
 draw = ImageDraw.Draw(image)
