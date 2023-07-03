@@ -5,7 +5,7 @@ Convert jpg to png
 """
 
 import os, pathlib
-from PIL import Image       # Look Here
+from PIL import Image # Look Here
 
 DIR = pathlib.Path(__file__).resolve().parent
 os.chdir(DIR)
