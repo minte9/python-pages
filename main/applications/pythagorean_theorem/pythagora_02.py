@@ -1,8 +1,6 @@
-# Incremental development - Pythagorean Theorem
-#
-#    d = square( (x2-x1)^2 + (y2-y1)^2 ) 
-#
-# Second: Find the differences x2-x1, y2-y1
+""" Pythagorean Theorem - Second step
+Find the differences x2-x1, y2-y1
+"""
 
 def distance(x1, y1, x2, y2):
     dx = x2 - x1

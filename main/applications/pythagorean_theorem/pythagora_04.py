@@ -1,8 +1,6 @@
-# Incremental development - Pythagorean Theorem 
-#
-#    d = square( (x2-x1)^2 + (y2-y1)^2 )
-#
-# Forth: Use math.sqrt() to compute the result
+""" Pythagorean Theorem - Forth step
+Use math.sqrt() to compute the result
+"""
 
 import math
 
