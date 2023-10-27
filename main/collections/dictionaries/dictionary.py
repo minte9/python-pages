@@ -1,5 +1,5 @@
 # A dictonary represents a mapping ...
-# from keys to values
+# from keys to values 
 # 
 # In a list, the index have to be integer ...
 # in a dictionary it can be any type.
