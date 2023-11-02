@@ -1,3 +1,7 @@
+""" Flask 'Hello World' app
+Start the app with 'flask run'
+"""
+
 from flask import Flask
 app = Flask(__name__)
 
