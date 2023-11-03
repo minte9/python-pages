@@ -1,4 +1,4 @@
-""" Flask 'Hello World' application    
+""" Flask 'Hello World' APP    
 Start the app with 'flask run'
 """
 
