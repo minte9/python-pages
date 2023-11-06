@@ -1,31 +1,26 @@
-import httpx
-import asyncio
-import os
+import openai
+import os, sys
 
-async def fetch_url():
-    client = httpx.AsyncClient()
-    api_key = os.environ.get("OPENAI_API_KEY")
+# Setup OpenAI API key
+openai.api_key = os.environ.get("OPENAI_API_KEY")
+
+# User question
+question = "What is flask python?"
+
+print("\n" + question + "\n")
+
+response = openai.ChatCompletion.create(
+    model="gpt-3.5-turbo",
+    messages=[{"role": "user", "content": question}],
+    max_tokens=256,
+    n=1,
+    stop=None,
+    temperature=0.7,
+    stream=True
+)
+
+for chunk in response:
+    content = chunk["choices"][0]["delta"].get("content", "")
+    print(content, end="", flush=True)
     
-    question = "What is flask python?"
-
-    async with client as client:
-        response = await client.post(
-            "https://api.openai.com/v1/chat/completions",
-            headers={"Authorization":  f"Bearer {api_key}"},
-            json={
-                "model": "gpt-3.5-turbo",
-                "messages": [{"role": "user", "content": question}],
-                "max_tokens": 1024,
-                "n": 1,
-                "stop": None,
-                "temperature": 0.7,
-                "stream": True  # Look Here
-            }
-        )
-
-        async for chunk in response.aiter_bytes():
-            # Process the response chunk as it arrives
-            print(chunk)
-
-if __name__ == "__main__":
-    asyncio.run(fetch_url())
+print("\n")
