@@ -10,3 +10,10 @@ while True:
 
     print("Produced =", message)
     time.sleep(1)
+
+"""
+    Produced = Hello, Kafka!
+    Produced = Hello, Kafka!
+    Produced = Hello, Kafka!
+    ...
+"""
