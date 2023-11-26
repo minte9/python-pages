@@ -5,9 +5,8 @@ import os, sys
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # User question
-question = "What is flask python?"
-
-print("\n" + question + "\n")
+print("Please enter your question (press Enter to submit):")
+question = input()
 
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
