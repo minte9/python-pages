@@ -1,7 +1,3 @@
-# Python Pages 
-
-#
-
 ### Install
 
 ~~~sh
@@ -15,8 +11,6 @@ cd python-pages/
 cd python-pages/
 git pull origin main
 ~~~
-
-#
 
 ### References
 
