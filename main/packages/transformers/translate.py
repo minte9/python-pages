@@ -13,7 +13,7 @@ tokenizer = MarianTokenizer.from_pretrained(model_name)
 model = MarianMTModel.from_pretrained(model_name)
 
 # Text to translate
-text = "Hello, how are you?"
+text = "Everything should be made as simple as possible, but no simpler."
 
 # Tokenize the input text
 inputs = tokenizer(text, return_tensors="pt")
@@ -29,6 +29,6 @@ print(text)
 print(translated_text)
 
 """
-    Hello, how are you?
-    Bună, ce mai faci?
+    Everything should be made as simple as possible, but no simpler.
+    Totul ar trebui să fie cât mai simplu posibil, dar nu mai simplu.
 """
