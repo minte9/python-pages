@@ -23,5 +23,5 @@ git pull origin main
 https://greenteapress.com/thinkpython2/html/index.html  
 https://github.com/AllenDowney/ThinkPython  
 https://www.amazon.com/Think-Python-Like-Computer-Scientist/dp/1491939362  
-https://www.amazon.com/gp/product/B07VSXS4NK   
-https://www.amazon.com/gp/product/B07S2N8Q48    
+https://www.amazon.com/Automate-Boring-Stuff-Python-2nd-ebook/dp/B07VSXS4NK  
+https://www.amazon.com/Python-Beyond-Basics-Al-Sweigart-ebook/dp/B07S2N8Q48   
