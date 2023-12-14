@@ -7,8 +7,8 @@ A = np.array([
 ])
 
 """
-  Create a vectorized function that adds 100 to each element it receives.
-  The function is applied to each element of the array A individually.
+  Create a vectorized function that adds 100 to each element it receives
+  The function is applied to each element of the array A individually
 """
 B = np.vectorize(lambda x: x + 100)(A)
 
