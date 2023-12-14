@@ -6,7 +6,13 @@ A = np.array([
     [7, 8, 9],
 ])
 
+"""
+  Create a vectorized function that adds 100 to each element it receives.
+  The function is applied to each element of the array A individually.
+"""
 B = np.vectorize(lambda x: x + 100)(A)
+
+# Output result
 print(B)
 
 """
