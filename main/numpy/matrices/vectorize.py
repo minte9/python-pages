@@ -10,7 +10,6 @@ B = np.vectorize(lambda x: x + 100)(A)
 print(B)
 
 """
-    Vectorized: 
      [[101 102 103]
       [104 105 106]
       [107 108 109]]

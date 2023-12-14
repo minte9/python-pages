@@ -7,11 +7,9 @@ A = np.array([
 ])
 
 B = A + 100
-
-print("Broadcasted: \n", B)
+print(B)
 
 """
-    Broadcasted: 
     [[101 102 103]
      [104 105 106]
      [107 108 109]]
