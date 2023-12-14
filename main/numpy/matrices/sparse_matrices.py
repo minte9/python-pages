@@ -1,6 +1,3 @@
-""" Sparse Matrix Example  
-"""
-
 import numpy as np
 from scipy import sparse
 from icecream import ic
