@@ -16,7 +16,7 @@ class ScriptTriggerHandler(FileSystemEventHandler):
 
     def on_modified(self, event):
         Popen(['git', 'exportmdfcurl'])
-        print('File or directory was created')
+        print('File or directory was modified')
 
 event_handler = ScriptTriggerHandler()
 observer = Observer()
