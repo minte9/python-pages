@@ -1,16 +1,8 @@
 from kafka import KafkaProducer
 import time
-import signal
 import sys
 
 producer = KafkaProducer(bootstrap_servers='localhost:9092')
-
-# Catch specific signals and gracefully exit
-def handle_signal(signum, frame):
-    print("Received signal:", signum)
-    sys.exit(0)
-
-signal.signal(signal.SIGTERM, handle_signal)
 
 # Open the file in read mode
 with open('/var/log/apache2/refresh.local-access.log', 'r') as file:
@@ -29,7 +21,6 @@ with open('/var/log/apache2/refresh.local-access.log', 'r') as file:
         sys.exit(0)
     finally:
         producer.close()
-
 
 """
     AccessLog: 127.0.0.1 - - [14/Jan/2024:11:26:50 +0200] "GET /algorithms HTTP/1.1" 200 5594 ...
