@@ -34,9 +34,6 @@ finally:
     consumer.close()
 
 """
-    Received: 14/Jan/2024:12:05:32 127.0.0.1 /spring-boot/guides-ajax-1310
-    Received: 14/Jan/2024:12:05:33 127.0.0.1 /spring-boot/guides-jwt-1454
-    Received: 14/Jan/2024:12:05:34 127.0.0.1 /spring-boot/guides-post-request-1455
-    Received: 14/Jan/2024:12:07:34 127.0.0.1 /spring-boot/guides-post-request-1455
-
+    Received: 14/Jan/2024:12:05:32 127.0.0.1 /algorithms
+    Received: 14/Jan/2024:12:05:33 127.0.0.1 /spring-boot
 """
