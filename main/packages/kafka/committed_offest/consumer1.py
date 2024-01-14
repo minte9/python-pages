@@ -3,12 +3,7 @@ import time
 import sys
 import re
 
-consumer = KafkaConsumer(bootstrap_servers='localhost: 9092', group_id='my-group')
-partition = TopicPartition('AccessLogTopic', 0)
-consumer.assign([partition])
-
-# Retrieve the current committed offset for partition
-committed_offset = consumer.committed(partition)
+consumer = KafkaConsumer('AccessLogTopic', bootstrap_servers='localhost: 9092')
 
 try:
     for message in consumer:
@@ -22,10 +17,7 @@ try:
             ip = match.group(1)
             time = match.group(2)
             path = match.group(3)
-            print(f"Received: {time} {ip} {path}")
-
-        # Commit the offset after processing the message
-        consumer.commit()
+            print(f"Consumer1: {path} {ip} {time}")
 
 except KeyboardInterrupt:
     print("Interrupted by user")
