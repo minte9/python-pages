@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSE Demo</title>
+
+    <style>
+        @keyframes blink-once {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blink-once {
+            animation: blink-once 0.5s ease 0s 1;
+        }
+    </style>
+
+    </style>
+    
+</head>
+<body>
+    <h1>Server Sent Events (SSE) Example</h1>
+    <div id="server-time"></div>
+
+    <script>
+        if(typeof(EventSource) !== "undefined") {
+            var source = new EventSource('http://127.0.0.1:5000/events');
+            var maxLines = 10; // For example, limit to 10 lines
+    
+            source.onmessage = function(event) {
+                var container = document.getElementById("server-time");
+                var newElement = document.createElement("div");
+                newElement.textContent = event.data;
+                newElement.classList.add("blink-once"); // Add the class for blinking
+                container.appendChild(newElement);
+    
+                // Remove old lines if exceeding maxLines
+                while (container.children.length > maxLines) {
+                    container.removeChild(container.firstChild);
+                }
+            };
+        } else {
+            document.getElementById("server-time").innerHTML = "Your browser does not support Server-sent events.";
+        }
+    </script>
+    
+</body>
+</html>
