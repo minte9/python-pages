@@ -1,3 +1,9 @@
+"""
+    Watchdog provides an efficient way to monitor file changes. 
+    It can notify your application immediately when a new line is added to the log file. 
+    This is more efficient than continuously polling the file for changes, 
+    which can use unnecessary CPU and I/O resources.
+"""
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import time
