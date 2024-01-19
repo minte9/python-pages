@@ -26,6 +26,9 @@ class MyHandler(FileSystemEventHandler):
 DIR = os.path.dirname(os.path.realpath(__file__))
 FILE = DIR + "/file.txt"
 
+# FILE = "/var/log/auth.log"
+# FILE = "/var/log/apache2/refresh.local-access.log"
+
 event_handler = MyHandler(FILE)
 observer = Observer()
 observer.schedule(event_handler, path=FILE, recursive=False)
