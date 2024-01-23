@@ -9,7 +9,17 @@ CORS(app)  # This enables CORS for all routes
 def events():
     def generate():
         while True:
+
+            """
+                Yeld is often used for streaming data to the client, like in Server-Sent Events (SSE).
+                When you use yield in a route, Flask keeps the connection open.
+                It sends each value yielded by the function to the client as it becomes available.
+                
+                This is different from a regular Flask route that returns a complete response at once. 
+                With yield, the response is sent in chunks over time.
+            """
             yield f"data: Server time is {time.ctime()}\n\n"
+
             time.sleep(2)
     return Response(generate(), mimetype='text/event-stream')
 
