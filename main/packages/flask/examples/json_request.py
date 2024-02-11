@@ -14,6 +14,7 @@ app = Flask(__name__)
 
 @app.route('/json-endpoint', methods=['POST'])
 def json_endpoint():
+    
     if request.is_json:
         data = request.get_json()
 
