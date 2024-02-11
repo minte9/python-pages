@@ -1,5 +1,10 @@
-""" Flask 'Hello World' APP v2.1   
-Start the app with 'flask run'
+""" Flask 'Hello World' APP v2.1  
+
+This is a simple Flask app that returns a 'Hello, Docker!' message
+The app runs on port 5000
+
+Start the app with 'flask run' command
+Running on http://127.0.0.1:5000
 """
 
 from flask import Flask
