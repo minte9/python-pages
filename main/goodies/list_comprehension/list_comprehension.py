@@ -1,9 +1,11 @@
-# For Loop - With list comprehension / More concise but are harder to debug ...
+# For Loop - With list comprehension 
+# More concise but are harder to debug ...
 
 str = "abc"
 E = [s.capitalize() for s in str]
 
-# For Loop - Without list comprehension / Normal use of a for loop ...
+# For Loop - Without list comprehension 
+# Normal use of a for loop ...
 
 str = "abc"
 D = []
