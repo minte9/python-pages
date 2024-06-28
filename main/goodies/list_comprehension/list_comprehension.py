@@ -1,18 +1,20 @@
 # Input string
 str = "abcd"
 
-# For Loop with list comprehension (more concise, but harder to debug)
-D = [s.capitalize() for s in str if s in ['a', 'b', 'c']]
-
 # For Loop without list comprehension (less concise, but easier to debug)
-E = []
+res = []
 for s in str:
     if s in ['a', 'b', 'c']:
-        E.append(s.capitalize())
+        res.append(s.capitalize())
 
-# Output
-print(D) # ['A', 'B', 'C']
-print(E) # ['A', 'B', 'C']
+print(res) 
+    # ['A', 'B', 'C']
+
+# For Loop with list comprehension (more concise, but harder to debug)
+res2 = [s.capitalize() for s in str if s in ['a', 'b', 'c']]
+
+print(res2)
+    # ['A', 'B', 'C']
 
 # Assertion
-assert D == E
+assert res == res2
