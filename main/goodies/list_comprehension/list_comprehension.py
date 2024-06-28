@@ -7,8 +7,6 @@ C1 = []
 for s in str:
     C1.append(s.capitalize())
 
-print(C1) # ['A', 'B', 'C']
-
 
 # With list comprehension
 # More concise but are harder to debug ...
@@ -16,7 +14,8 @@ print(C1) # ['A', 'B', 'C']
 str = "abc"
 C2 = [s.capitalize() for s in str]
 
+# Output
+print(C1) # ['A', 'B', 'C']
 print(C2) # ['A', 'B', 'C']
-
 
 assert C1 == C2
