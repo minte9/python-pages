@@ -2,20 +2,21 @@
 # Normal use of a for loop ...
 
 str = "abc"
-res = []
+C1 = []
 
 for s in str:
-    res.append(s.capitalize())
+    C1.append(s.capitalize())
 
-print(res) 
-    # ['A', 'B', 'C']
+print(C1) # ['A', 'B', 'C']
 
 
 # With list comprehension
 # More concise but are harder to debug ...
 
 str = "abc"
-res = [s.capitalize() for s in str]
+C2 = [s.capitalize() for s in str]
 
-print(res) 
-    # ['A', 'B', 'C']
+print(C2) # ['A', 'B', 'C']
+
+
+assert C1 == C2
