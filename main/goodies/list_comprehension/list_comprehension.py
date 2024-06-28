@@ -7,7 +7,8 @@ res = []
 for s in str:
     res.append(s.capitalize())
 
-print(res) # ['A', 'B', 'C']
+print(res) 
+    # ['A', 'B', 'C']
 
 
 # With list comprehension
@@ -16,4 +17,5 @@ print(res) # ['A', 'B', 'C']
 str = "abc"
 res = [s.capitalize() for s in str]
 
-print(res) # ['A', 'B', 'C']
+print(res) 
+    # ['A', 'B', 'C']
