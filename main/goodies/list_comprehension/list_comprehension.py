@@ -2,19 +2,19 @@
 str = "abcd"
 
 # For Loop without list comprehension (less concise, but easier to debug)
-res = []
+RESULT = []
 for s in str:
     if s in ['a', 'b', 'c']:
-        res.append(s.capitalize())
+        RESULT.append(s.capitalize())
 
-print(res) 
+print(RESULT) 
     # ['A', 'B', 'C']
 
 # For Loop with list comprehension (more concise)
-res2 = [s.capitalize() for s in str if s in ['a', 'b', 'c']]
+RESULT2 = [s.capitalize() for s in str if s in ['a', 'b', 'c']]
 
-print(res2)
+print(RESULT2)
     # ['A', 'B', 'C']
 
 # Assertion
-assert res == res2
+assert RESULT == RESULT2
