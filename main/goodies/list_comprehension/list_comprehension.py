@@ -1,16 +1,17 @@
 # For Loop - With list comprehension 
 # More concise but are harder to debug ...
 
-str = "abc"
-D = [s.capitalize() for s in str]
+str = "abcd"
+D = [s.capitalize() for s in str if s in ['a', 'b', 'c']]
 
 # For Loop - Without list comprehension 
 # Normal use of a for loop ...
 
-str = "abc"
+str = "abcd"
 E = []
 for s in str:
-    E.append(s.capitalize())
+    if s in ['a', 'b', 'c']:
+        E.append(s.capitalize())
 
 # Output
 
