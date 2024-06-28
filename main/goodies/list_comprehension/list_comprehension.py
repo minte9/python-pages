@@ -1,5 +1,4 @@
-# Without list comprehension
-# Normal use of a for loop ...
+# Without list comprehension / Normal use of a for loop ...
 
 str = "abc"
 D = []
@@ -8,8 +7,7 @@ for s in str:
     D.append(s.capitalize())
 
 
-# With list comprehension
-# More concise but are harder to debug ...
+# With list comprehension / More concise but are harder to debug ...
 
 str = "abc"
 E = [s.capitalize() for s in str]
