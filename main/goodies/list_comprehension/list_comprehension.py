@@ -10,7 +10,6 @@ for s in str:
     if s in ['a', 'b', 'c']:
         E.append(s.capitalize())
 
-
 # Output
 print(D) # ['A', 'B', 'C']
 print(E) # ['A', 'B', 'C']
