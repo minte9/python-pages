@@ -10,7 +10,7 @@ for s in str:
 print(res) 
     # ['A', 'B', 'C']
 
-# For Loop with list comprehension (more concise, but harder to debug)
+# For Loop with list comprehension (more concise)
 res2 = [s.capitalize() for s in str if s in ['a', 'b', 'c']]
 
 print(res2)
