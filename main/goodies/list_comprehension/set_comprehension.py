@@ -1,5 +1,4 @@
-# Set comprehension looks like list comprehension 
-# except with curly braches instead of square brackets
+# Set comprehension uses curly braches instead of square brackets
 
 # List comprehension
 STRINGS = ['a', 'as', 'bat', 'car', 'dove', 'python']
