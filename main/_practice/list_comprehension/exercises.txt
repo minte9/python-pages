@@ -1,0 +1,27 @@
+List comprehension
+
+    1. Use list comprehension to get a list of uppercase letters from a string.
+       
+       input_string = 'abcd'
+       capitalized_list = ...
+
+    2. Use set comprehension to get unique lengths set from a corresponding list of strings
+       
+       input_strings = ['a', 'b', 'ab', 'abc']
+       unique_lengths = ...
+
+    3. Use dictionary comprehension to cut in half the items' prices
+       
+       prices = {'milk': 1.02, 'coffe': 2.20}
+       procent = 0.5
+       prices_new = ...
+
+    4. Use recursion and list comprehension to convert a matrix (list) to a tree.
+       (hint: define a Node class)
+
+       matrix = [
+            [3, 4],
+            [8, [-2, 10], 5],
+            7,
+        ]
+        tree = ...
