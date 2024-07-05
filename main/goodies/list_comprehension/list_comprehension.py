@@ -6,13 +6,11 @@ RESULT = []
 for s in str:
     if s in ['a', 'b', 'c']:
         RESULT.append(s.capitalize())
-
 print(RESULT) 
     # ['A', 'B', 'C']
 
 # For Loop with list comprehension (more concise)
 RESULT2 = [s.capitalize() for s in str if s in ['a', 'b', 'c']]
-
 print(RESULT2)
     # ['A', 'B', 'C']
 
