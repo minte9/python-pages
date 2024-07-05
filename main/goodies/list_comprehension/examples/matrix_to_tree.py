@@ -21,19 +21,13 @@ def matrix_to_tree(m):
     children = [matrix_to_tree(child) for child in m] # Look Here
     return Node(None, children)
 
-A = [
-    [[3, 4],
-     [8, [-2, 10], 5]],
-    7,
-]
-
-B = [
+M = [
     [3, 4],
     [8, [-2, 10], 5],
     7,
 ]
 
-tree = matrix_to_tree(B)
+tree = matrix_to_tree(M)
 
 print(tree.children[0].children[0].value)               # 3
 print(tree.children[1].children[0].value)               # 8
