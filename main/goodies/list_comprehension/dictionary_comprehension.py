@@ -1,10 +1,6 @@
 # Dictionary is a data type that stores data in key/value pair
 prices = {'milk': 1.02, 'coffee': 2.5, 'bread': 2.5}
 
-# For loop without comprehension
-# result = dict()
-# for n in 
-
 # Dictionary comprehension
 procent = 0.5
 prices_new = {k: v*procent for (k, v) in prices.items() }
