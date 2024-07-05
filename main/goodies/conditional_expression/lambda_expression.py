@@ -1,4 +1,4 @@
-get_odd_even = lambda x: 'even' if x % 2 == 0 else 'odd'
+func = lambda x: 'even' if x % 2 == 0 else 'odd'
 
-print( get_odd_even(2) ) # even
-print( get_odd_even(3) ) # odd
+print( func(2) ) # even
+print( func(3) ) # odd
