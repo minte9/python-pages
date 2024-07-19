@@ -15,7 +15,6 @@ print("\nLooping through the function returned value:")
 A = squares_func()
 for x in A:
     print(x, end=' ')
-        # Generating squares from 1 to 100
         # 1 4 9 16 25 36 49 64 81 100
 
 
@@ -27,5 +26,6 @@ def squares_gen():
 print("\nLooping using iter object:")
 G = squares_gen()
 itr = iter(G)
-for i in range(1, 3):
-    print(next(itr))
+for i in range(0, 3):
+    print(next(itr), end=' ')
+        # 1 4 9
