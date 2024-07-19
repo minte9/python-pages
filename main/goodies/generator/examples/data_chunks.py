@@ -1,3 +1,8 @@
+"""
+Generators can be used to process data in chunks.
+This is useful for batch processing in machine learning or data transformation.
+"""
+
 def batch_generator(data, batch_size=10):
     for i in range(0, len(data), batch_size):
         yield data[i:i + batch_size]
