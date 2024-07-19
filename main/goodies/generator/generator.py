@@ -1,6 +1,6 @@
 """
-    A normal function execute and return a single result at a time.
-    A generator can return a sequence of values by pausing and resuming execution.
+A normal function execute and return a single result at a time.
+A generator can return a sequence of values by pausing and resuming execution.
 """
 
 # Functions return values

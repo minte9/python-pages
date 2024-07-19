@@ -1,7 +1,7 @@
 """
-    Many objects in Python support iteration.
-    It uses iteration protocol, a generic way to make objects iterable.
-    An interator is any object that will yield objects when used in a loop context.
+Many objects in Python support iteration.
+It uses iteration protocol, a generic way to make objects iterable.
+An interator is any object that will yield objects when used in a loop context.
 """
 
 # Loop context
