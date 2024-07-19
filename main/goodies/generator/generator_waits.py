@@ -7,29 +7,18 @@
 # but with parantheses instead of square brakets
 
 
-# Generator
-
 g = (x**2 for x in range(3))
 assert next(g) == 0
 assert next(g) == 1
 assert next(g) == 4
-next(g) # StopIteration - Exception
+
+try:
+    assert next(g) == 9
+except StopIteration:
+    print("StopIteration exception found")
 
 
-# Populate a list using generator
-# only once at a time
-
-list = []
-g = (x**2 for x in range(101010))
-list.append(next(g))
-list.append(next(g))
-assert len(list) == 2
-assert len(list) != 101010
-
-
-# Populate a list using for loop
-# automatically invokes __next__ generator
-
+# Populate a list using for loop, automatically invokes __next__
 list = []
 for x in range(101010): # __next__
     list.append(x)
