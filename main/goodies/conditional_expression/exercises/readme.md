@@ -1,4 +1,4 @@
-### Conditional expression / Exercises
+### Exercises / Conditional expression
 
 1. Use conditional expression to assign a new number to 100 if is greater than 100, or else to -1.  
    a = 0  
