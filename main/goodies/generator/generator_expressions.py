@@ -1,5 +1,5 @@
 """
-Generator expressions is similar to list, dictionary or set comprehension. 
+Generator expressions are similar to list, dictionary or set comprehensions. 
 Enclose withing parantheses insteed of brackets
 """
 
