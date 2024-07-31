@@ -2,17 +2,14 @@
 """
 DICT = {'a': 1, 'b': 2}
 
-# Loop
-for k, v in DICT.items():
+for k, v in DICT.items():  # Loop
     print(k)
 
-# Iterator
-iter = iter(DICT)
+iter = iter(DICT)  # Iterator
 print(next(iter))
 print(next(iter))
 
-# Generator expression
-G = (k for k in DICT)
+G = (k for k in DICT)  # Generator expression
 print(next(G))
 print(next(G))
 
@@ -21,12 +18,10 @@ print(next(G))
 """
 DICT = {'a': 1, 'b': 2}
 
-# Loop
-for v in DICT.values():
+for v in DICT.values():  # Loop
     print(v)
 
-# Generator expression
-G = (v for v in DICT.values())
+G = (v for v in DICT.values())  # Generator expression
 print(next(G))
 print(next(G))
 
@@ -35,13 +30,11 @@ print(next(G))
     Use generator expresion first, then list comprehension.
 """
 
-# Generator expression
-y = sum(x**2 for x in range(5))
+y = sum(x**2 for x in range(5))  # Generator expression
 print(y) 
     # 30
 
-# List comprehension
-y = sum([x**2 for x in range(5)])
+y = sum([x**2 for x in range(5)])  # List comprehension
 print(y)
     # 30
 
