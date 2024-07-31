@@ -1,6 +1,6 @@
 ### Exercises / Generators
 
-1. Display a dictionary's keys using loop, iter object and generator expression.
+1. Display a dictionary's keys using loop, iter object and generator expression.  
    DICT = {'a': 1, 'b': 2}  
 
 3. Do the same for values using loop and generator expresession.  
