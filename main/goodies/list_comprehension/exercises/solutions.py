@@ -1,28 +1,29 @@
-# Input string
-str = "abcd"
+"""
+    1. Capitalize each letter from a string and put them in a list.  
+       Use a single line of code using list comprehension.
+"""
 
-# For loop without list comprehension
-res = []
-for c in str:
-    if c in ['a', 'b', 'c']:
-        res.append(c.capitalize())
-print(res)
-    # A, B, C
+S = "Hippopotamus"
+R = [s.capitalize() for s in S]
+print(sorted(R))
+    # ['A', 'H', 'I', 'M', 'O', 'O', 'P', 'P', 'P', 'S', 'T', 'U']
 
-# List comprehension
-res2 = [c.capitalize() for c in str if c in ['a', 'b']]
-print(res2)
-    # A, B
+"""
+    2. Capitalize each letter from a string and put them in a set.  
+       Use a single line of code using set comprehension.
+"""
 
-# Set comprehension (curly brackets insteed of square brackets)
-myList = ['a', 'b', 'c', 'aa', 'abc']
-unique_lenghts = {len(s) for s in myList}
-print(unique_lenghts)
-    # 1, 2, 3
+S = "Hippopotamus"
+R = {s.capitalize() for s in S}
+print(sorted(R))
+    # ['A', 'H', 'I', 'M', 'O', 'P', 'S', 'T', 'U']
 
-# Dictionary comprehension
-prices = {'milk': 1.02, 'coffe': 2.20}
-procent = 0.5
-prices_new = {k: v*procent for (k,v) in prices.items()} # items() display the dictionary key/value pair
-print(prices_new) 
-    # 0.51, 1.10    
+
+"""
+    3. Use dictionary comprehension to cut in half the items' prices
+"""
+
+P = {'milk': 1.02, 'coffe': 2.20}
+R = {k: v/2 for (k,v) in P.items()}
+print(R)
+    # {'milk': 0.51, 'coffe': 1.1}
