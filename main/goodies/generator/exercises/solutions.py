@@ -1,5 +1,4 @@
-"""
-    1. Display a dictionary's keys using loop, iter object and generator expression.
+""" 1. Display a dictionary's keys using loop, iter object and generator expression.
 """
 DICT = {'a': 1, 'b': 2}
 
@@ -18,8 +17,7 @@ print(next(G))
 print(next(G))
 
 
-"""
-    2. Do the same for values using loop and generator expresession.
+""" 2. Do the same for values using loop and generator expresession.
 """
 DICT = {'a': 1, 'b': 2}
 
@@ -33,9 +31,8 @@ print(next(G))
 print(next(G))
 
 
-"""
-    3. Print the sum of the square numbers from 0 to 4.
-       Use generator expresion first, then list comprehension.
+""" 3. Print the sum of the square numbers from 0 to 4.
+    Use generator expresion first, then list comprehension.
 """
 
 # Generator expression
@@ -49,8 +46,7 @@ print(y)
     # 30
 
 
-"""
-    4. Create a generator that yields squares of numbers 0 to 9.
+""" 4. Create a generator that yields squares of numbers 0 to 9.
 """
 
 def SquareGenerator(n=10):
@@ -63,8 +59,7 @@ for x in G:
         # 0 1 4 9 16 25 36 49 64 81
 
 
-"""
-    5. For a list of 30 items, display chunks of 10 using a generator.
+""" 5. For a list of 30 items, display chunks of 10 using a generator.
 """
 
 def chunks_generator(data, size=10):
