@@ -1,4 +1,4 @@
-""" We can write for loop more concisely using List Comprehension.
+""" We can write for loop more concisely using List Comprehension
 """
 
 # Input string

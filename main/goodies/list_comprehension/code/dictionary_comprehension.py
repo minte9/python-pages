@@ -1,4 +1,4 @@
-""" A Dictionary is a data type that stores data in key/value pair.
+""" A Dictionary is a data type that stores data in key/value pair
 """
 
 # Dictionary is a data type that stores data in key/value pair

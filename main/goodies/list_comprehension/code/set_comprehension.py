@@ -1,4 +1,4 @@
-""" Set comprehension uses curly braches instead of square brackets.
+""" Set comprehension uses curly braches instead of square brackets
 """
 
 # Input list
