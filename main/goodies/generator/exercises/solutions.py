@@ -2,28 +2,46 @@
 """
 DICT = {'a': 1, 'b': 2}
 
-for k, v in DICT.items():  # Loop
+# Loop
+print('Keys using loop:')
+for k, v in DICT.items():
     print(k)
 
-iter = iter(DICT)  # Iterator
-print(next(iter))
-print(next(iter))
+# Iterator
+print('Keys using iter object:')
+I = iter(DICT)
+print(next(I))
+print(next(I))
 
-G = (k for k in DICT)  # Generator expression
+# Generator expression
+print('Keys using generator expression:')
+G = (k for k in DICT)
 print(next(G))
 print(next(G))
+
 
 
 """ 2. Do the same for values using loop and generator expresession.
 """
 DICT = {'a': 1, 'b': 2}
 
-for v in DICT.values():  # Loop
+# Loop
+print('Values using loop:')
+for v in DICT.values():
     print(v)
 
-G = (v for v in DICT.values())  # Generator expression
+# Iterator
+print('Values using iter object:')
+I = iter(DICT)
+print(DICT[next(I)])
+print(DICT[next(I)])
+
+# Generator expression
+print('Values using generator expression:')
+G = (v for v in DICT.values())
 print(next(G))
 print(next(G))
+
 
 
 """ 3. Print the sum of the square numbers from 0 to 4.
@@ -39,6 +57,7 @@ print(y)
     # 30
 
 
+
 """ 4. Create a generator that yields squares of numbers 0 to 9.
 """
 
@@ -50,6 +69,7 @@ G = SquareGenerator()
 for x in G:
     print(x, end=' ')
         # 0 1 4 9 16 25 36 49 64 81
+
 
 
 """ 5. For a list of 30 items, display chunks of 10 using a generator.
