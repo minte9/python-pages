@@ -1,7 +1,7 @@
 """ A Dictionary is a data type that stores data in key/value pair
 """
 
-# Dictionary is a data type that stores data in key/value pair
+# Input dictionary
 prices = {'milk': 1.02, 'coffee': 2.5, 'bread': 2.5}
 
 # Dictionary comprehension
