@@ -21,7 +21,7 @@ print(next(G))
 
 
 
-""" 2. Do the same for values using loop and generator expresession.
+""" 2. Do the same for values.
 """
 DICT = {'a': 1, 'b': 2}
 
