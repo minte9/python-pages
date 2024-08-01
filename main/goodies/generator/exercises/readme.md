@@ -3,7 +3,7 @@
 1. Display a dictionary's keys using loop, iter object and generator expression.  
    DICT = {'a': 1, 'b': 2}  
 
-2. Do the same for values. 
+2. Do the same for values.   
    items = {'a': 1, 'b': 2}  
 
 3. Print the sum of the square numbers from 0 to 4.  
