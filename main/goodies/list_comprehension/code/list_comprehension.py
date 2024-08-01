@@ -1,3 +1,6 @@
+""" We can write for loop more concisely using List Comprehension.
+"""
+
 # Input string
 S = "abcd"
 

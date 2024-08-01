@@ -1,3 +1,6 @@
+""" Set comprehension uses curly braches instead of square brackets.
+"""
+
 # Input list
 S = ['a', 'as', 'bat', 'car', 'rac', 'dove', 'python']
 
