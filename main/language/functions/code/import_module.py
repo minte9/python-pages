@@ -6,5 +6,10 @@ Python modules names like math, sys, csv
 
 import math
 
-print(math.pi) # 3.141592653589793
-print(math.sin(math.pi/2)) # 1.0
+print( math.pi )
+print( math.sin(math.pi/2) )
+
+"""
+    3.141592653589793
+    1.0
+"""

@@ -1,17 +1,23 @@
-""" Function definition
-A function is a named sequence of statements
-To end the function, you have to enter an empty line
+""" When you define a function, you specify the name and the sequence of statements.  
+Later, you can call the function by name.  
+
+To end the function, you have to enter an empty line.  
 Split a single instruction on multple lines with \
 """
 
-def myfunc(a): 
+def f(a): 
     return a%2
 
-def myprint(x):
+def h(x):
     return
 
-print(myfunc(3)) # 1
-print(myprint("2")) # None
-
+print( f(3) )
+print( h("2") )
 print("Hello " + \
-    "World") # Hello World
+    "World")
+
+"""
+    1
+    None
+    Hello World
+"""
