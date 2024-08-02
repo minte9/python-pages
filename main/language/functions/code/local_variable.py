@@ -1,22 +1,31 @@
-""" Local, global variables
-Local variable is destroyed after the function is called
-To modify a global variable from within a function, use global statement
+""" A local variable is destroyed after the function is called.
+To modify a global variable from within a function, use global statement.
 """
 
-def myfunc(a, b):
-    c = a + b # Look Here
+def f(a, b):
+    c = a + b
     return c
 
 n = 0
-def parse():
-    global n # Look Here
+def h():
+    global n 
+        # Look Here
+
     for i in range(10):
         n = i
+    return n
 
-print(myfunc(3,4))  # 7
-parse(); print(n)   # 9
+print(f(3,4))   # 7
+print(h())      # 9
 
 try:
     print(c)
 except Exception as e:
-    print(e) # name c not defined
+    print(e) 
+        # name c not defined
+
+"""
+    7
+    9
+    name 'c' is not defined
+"""
