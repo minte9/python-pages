@@ -15,9 +15,9 @@
    Use a Node class (with a value and children list as attributes).  
    Loop recursively through the matrix using a for loop.  
    Do the same using list comprehension.   
-      M = [  
-         [3, 4],  
-         [8, [-2, 10], 5],  
-         7,  
-      ]  
-      tree = matrix_to_tree(M)  
+   M = [  
+        [3, 4],  
+        [8, [-2, 10], 5],  
+        7,  
+    ]  
+    tree = matrix_to_tree(M)  
