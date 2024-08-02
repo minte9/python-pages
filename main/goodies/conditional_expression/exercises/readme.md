@@ -1,14 +1,16 @@
 ### Exercises / Conditional expression
 
-1. Use conditional expression to assign a new number to 100 if is greater than 100, or else to -1.  
+1. Use conditional expression to assign a new variable.
+   If variable a is greater than 100 assign b to 10, else assign to -1.  
    a = 0  
-   b = ...  
 
-2. Define the function to get the factorial of a number (use conditional expression).  
-   0! is 1 AND n! = n(n-1)!  
-   def factorial(n) ..  
-   
-   Asserts:  
-    factorial(3) == 6  
-    factorial(0) == 1  
-    factorial(4) == 24  
+2. Define the function to get the factorial of a number.   
+   Use conditional expression. 
+   ``` 
+   Factorial of 0! = 1  
+   Factorial of n! = n(n-1)! 
+
+   factorial(0) == 1  
+   factorial(3) == 6  
+   factorial(4) == 24  
+   ```

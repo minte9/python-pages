@@ -1,9 +1,6 @@
-"""
-    Conditional expression are very useful when using recursion
-
-    Factorial number:
-        0! is 1
-        n! = n(n-1)!
+""" Factorial number using conditional expression
+    0! is 1
+    n! = n(n-1)!
 """
 
 def factorial(n):
