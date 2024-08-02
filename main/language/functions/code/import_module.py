@@ -1,7 +1,5 @@
-""" Import modules
-To use a function from a module, you have to import it
-When you save your scripts don't use 
-Python modules names like math, sys, csv
+""" To use a function from a module, you have to import it.
+When you save your scripts don't use modules names like math, sys, csv.
 """
 
 import math
