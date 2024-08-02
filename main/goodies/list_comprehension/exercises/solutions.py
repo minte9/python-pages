@@ -2,8 +2,6 @@
        Use a single line of code using list comprehension.
 """
 
-
-
 S = "Hippopotamus"
 R = [s.capitalize() for s in S]
 print(sorted(R))
