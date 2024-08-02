@@ -4,17 +4,20 @@
    Use a single line of code using list comprehension.  
 ```
    S = "Hippopotamus"  
+   R = ? 
 ```
 
 2. Capitalize each letter from a string and put them in a set.  
    Use a single line of code using set comprehension.  
 ```
    S = "Hippopotamus"  
+   R = ?
 ```
 
 3. Use dictionary comprehension to cut in half the items' prices  
 ```
    P = {'milk': 1.02, 'coffe': 2.20}
+   R = ?
 ```
 
 4. Create a function that transform a matrix (list) into a tree (of nodes).  
@@ -28,4 +31,6 @@
       7,  
    ]  
    tree = matrix_to_tree(M)  
+   ...
+   print(tree.children[0].children[0].value) # 3
   ```
