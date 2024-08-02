@@ -1,7 +1,7 @@
 ### Exercises / Conditional expression
 
-1. Use conditional expression to assign a new variable.
-   If variable a is greater than 100 assign b to 10, else assign to -1.  
+1. Use conditional expression to assign a new variable.  
+   If variable a is greater than 100 assign b to 10, else assign to -1.   
    a = 0  
 
 2. Define the function to get the factorial of a number.   
