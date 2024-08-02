@@ -15,14 +15,13 @@ def h():
         n = i
     return n
 
-print(f(3,4))   # 7
-print(h())      # 9
+print(f(3,4))
+print(h())
 
 try:
     print(c)
 except Exception as e:
-    print(e) 
-        # name c not defined
+    print(e)
 
 """
     7
