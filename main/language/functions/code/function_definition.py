@@ -1,6 +1,5 @@
-""" When you define a function, you specify the name and the sequence of statements.  
+""" Specify the name and the sequence of statements.  
 Later, you can call the function by name.  
-
 To end the function, you have to enter an empty line.  
 Split a single instruction on multple lines with \
 """
