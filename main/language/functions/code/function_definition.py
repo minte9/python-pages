@@ -10,8 +10,9 @@ def f(a):
 def h(x):
     return
 
-print( f(3) )
-print( h("2") )
+print(f(3))
+print(h("2"))
+
 print("Hello " + \
     "World")
 
