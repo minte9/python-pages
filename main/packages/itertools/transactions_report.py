@@ -1,7 +1,9 @@
 """ Transactions report
     Generate a simple daily report of total credits and debits.
-    
+
 Itemgetter creates a callable (function) that retrive a specific item.
+    https://docs.python.org/3/library/operator.html
+
 You need to assign the list of a generator to a new variable.
 Once you convert group (generator) to a list and iterate over it, you cannot iterate over it again.
 """
