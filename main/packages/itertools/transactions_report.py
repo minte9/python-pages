@@ -3,8 +3,7 @@
     
 Itemgetter creates a callable (function) that retrive a specific item.
 You need to assign the list of a generator to a new variable.
-Once you convert group (generator) to a list and iterate over it, 
-    you cannot iterate over it again.
+Once you convert group (generator) to a list and iterate over it, you cannot iterate over it again.
 """
 
 from itertools import groupby
