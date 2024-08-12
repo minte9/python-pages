@@ -1,6 +1,6 @@
 """ Specify the name and the sequence of statements.  
     Later, you can call the function by name.  
-    Split a single instruction on multple lines with \
+    Split a single instruction on multple lines with backslash.
 """
 
 def f(a): 
