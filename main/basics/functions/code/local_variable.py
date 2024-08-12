@@ -1,5 +1,5 @@
 """ A local variable is destroyed after the function is called.
-To modify a global variable from within a function, use global statement.
+    To modify a global variable from within a function, use global statement.
 """
 
 def f(a, b):
