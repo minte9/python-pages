@@ -1,5 +1,4 @@
-""" hello.py
-    python hello.py
+""" python hello.py
 """
 
 print('Hello World') 
