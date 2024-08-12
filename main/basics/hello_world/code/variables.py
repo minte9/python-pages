@@ -1,5 +1,4 @@
-""" Variables
-    An assignment creates a variable and gives it value
+""" An assignment creates a variable and gives it value
 """
 
 message = 'Hello World'
