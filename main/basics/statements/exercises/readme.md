@@ -1,4 +1,4 @@
-### Exercises / Python Statements
+### Exercises / Statements
 
 1. Check if number N against the number 10.
    If N is greater than 10, display a message.
