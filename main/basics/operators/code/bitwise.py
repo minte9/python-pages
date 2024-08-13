@@ -1,4 +1,3 @@
 n = 6^2  # XOR
 
-print(n)
-    # 4
+print(n)  # 4
