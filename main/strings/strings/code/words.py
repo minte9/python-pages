@@ -3,7 +3,7 @@
 
 import os
 
-file = os.path.dirname(__file__) + "/words.txt"
+file = os.path.dirname(__file__) + "/../data/words.txt"
 rows = open(file)
 
 def has_no_e(word):
