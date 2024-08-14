@@ -1,11 +1,6 @@
-""" python hello_world.py
+""" An assignment creates a variable and gives it value
 """
 
-message = 'Hello World'
-print(message) 
-    # Hello World
-
-# An assignment creates a variable and gives it value
 n = 17
 n = n + 24
 print(n) 
