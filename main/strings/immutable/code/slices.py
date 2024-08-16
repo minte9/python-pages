@@ -1,4 +1,5 @@
 """ A string is a sequence of characters
+    We can slice a portion of it with [:]
 """
 
 str = "banana"
