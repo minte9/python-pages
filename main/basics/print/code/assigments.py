@@ -8,7 +8,7 @@ n = n + 24
 # You can assign multiple variables in one line
 a, b, c = 1, 2, 3
 
-# Output
+# Output variables
 print(n) 
 print(a, b, c)
 
