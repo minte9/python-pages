@@ -3,11 +3,13 @@
 
 n = 17
 n = n + 24
-print(n) 
 
 
 # You can assign multiple variables in one line
 a, b, c = 1, 2, 3
+
+# Output
+print(n) 
 print(a, b, c)
 
 """
