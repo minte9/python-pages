@@ -1,4 +1,5 @@
-""" An assignment creates a variable and gives it value
+""" Assignment statement
+    An assignment creates a variable and gives it value
 """
 
 n = 17
