@@ -4,10 +4,9 @@
 def countdown(n):
     if n <= 0:
         print ("End")
-        return
-    
-    print(n, end=" ")
-    countdown(n-1)
+    else:
+        print(n, end=" ")
+        countdown(n-1)
 
 countdown(3)   # 3 2 1 End
 
