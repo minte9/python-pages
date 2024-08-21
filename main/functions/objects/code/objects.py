@@ -7,7 +7,8 @@ import re
 A = [' Alabama', 'Georgia!', 'Georgia', 'georgia', 'FlOrIda?', 'south carolina##']
 
 
-""" Standard approach, applying operations to items
+""" Standard approach
+    Apply operations to items
 """
 
 def clear_strings(A):
@@ -23,7 +24,8 @@ B = clear_strings(A)
 print(B)
 
 
-""" Using a list of opperations, you can easily modify at a very high level
+""" Using a list of opperations
+    This way we can easily modify at a very high level
 """
 
 def remove_punctuation(value):
