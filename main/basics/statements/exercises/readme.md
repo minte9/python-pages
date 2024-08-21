@@ -8,6 +8,6 @@
 2. Write a program that waits for user input.  
    The user can type 'quit' for exit the program.  
 
-3. Use while statement to compute square root of 4.
-   The Newthon formula is y = (x + a/x) / 2
-   Start from an intial estimation of 3.
+3. Use while statement to compute square root of 4.  
+   The Newthon formula is y = (x + a/x) / 2  
+   Start from an intial estimation of 3.  
