@@ -32,7 +32,7 @@ def square_root(a, x):
 y = square_root(4, 3)
 
 
-# Checki
+# Check
 import math
 assert y == math.sqrt(4)
 
