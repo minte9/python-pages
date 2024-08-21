@@ -1,15 +1,17 @@
-# Fibonacci sequence:
-#
-#    fb(0) = 0
-#    fb(1) = 1
-#    fb(n) = fb(n-1) + fb(n-2)
-#
-# Each number is the sum of the two preceding ones.
+""" Fibonacci sequence
+    Each number is the sum of the two preceding ones.
+
+    fb(0) = 0
+    fb(1) = 1
+    fb(n) = fb(n-1) + fb(n-2)
+"""
 
 def fibonacci(n):
-
-    if (n==0): return 0
-    if (n==1): return 1
+    if (n==0): 
+        return 0
+        
+    if (n==1): 
+        return 1
 
     return fibonacci(n-1) + fibonacci(n-2)
 
