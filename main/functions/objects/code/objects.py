@@ -34,7 +34,7 @@ def remove_punctuation(value):
 def clear_strings_ops(A, ops):
     result = []
     for v in A:
-        for func in ops:
+        for func in ops:  # func is object
             v = func(v)
         result.append(v)
     return result
