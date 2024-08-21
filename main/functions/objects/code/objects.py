@@ -7,7 +7,7 @@ import re
 A = [' Alabama', 'Georgia!', 'Georgia', 'georgia', 'FlOrIda?', 'south carolina##']
 
 
-""" Standard approach
+""" Standard approach:
     Apply operations to items
 """
 
@@ -24,7 +24,7 @@ B = clear_strings(A)
 print(B)
 
 
-""" Using a list of opperations
+""" Using a list of opperations:
     This way we can easily modify at a very high level
 """
 
