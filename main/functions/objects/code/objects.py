@@ -3,7 +3,8 @@
 """
 
 import re
-states = [' Alabama', 'Georgia!', 'Georgia', 'georgia', 'FlOrIda?', 'south carolina##']
+
+A = [' Alabama', 'Georgia!', 'Georgia', 'georgia', 'FlOrIda?', 'south carolina##']
 
 
 """ Standard approach, applying operations to items
@@ -18,7 +19,7 @@ def clear_strings(A):
         result.append(v)
     return result
 
-B = clear_strings(states)
+B = clear_strings(A)
 print(B)
 
 
@@ -36,7 +37,7 @@ def clear_strings_ops(A, ops):
         result.append(v)
     return result
 
-B = clear_strings_ops(states, [str.strip, remove_punctuation, str.title])
+B = clear_strings_ops(A, [str.strip, remove_punctuation, str.title])
 print(B)
 
 
