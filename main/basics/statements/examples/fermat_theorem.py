@@ -1,4 +1,4 @@
-""" Fermat's Last Theorem
+""" Fermat's Last Theorem (input)
 
     For any positive integers a, b, c and n > 2
     (a**n + b**n) != c**n

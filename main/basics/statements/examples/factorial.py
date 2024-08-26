@@ -1,4 +1,4 @@
-""" Factorial number using conditional expression
+""" Factorial number (conditional expression)
     0! is 1
     n! = n(n-1)!
 """

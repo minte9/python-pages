@@ -1,4 +1,4 @@
-""" Square roots (Newton method)
+""" Square roots - Newton method (while)
 
     Loops are often used to compute numerical result by starting with an ...
     aproximation and iteratively improving it
