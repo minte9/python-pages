@@ -17,7 +17,30 @@ else:
 
 
 
-""" 2. Write a program that waits for user input.
+""" 2. Define the function to get the factorial of a number.   
+   Use conditional expression. 
+   ``` 
+   Factorial of 0! = 1  
+   Factorial of n! = n(n-1)! 
+
+   factorial(0) == 1  
+   factorial(1) == 1  
+   factorial(2) == 2  
+   factorial(3) == 6  
+   ```
+"""
+
+def factorial(n):
+    return 1 if n==0 else factorial(n-1) * n
+
+print("Factorial(0): ", factorial(0))  # 1
+print("Factorial(1): ", factorial(1))  # 1
+print("Factorial(2): ", factorial(2))  # 2
+print("Factorial(2): ", factorial(3))  # 6
+
+
+
+""" 3. Write a program that waits for user input.
        The user can type 'quit' for exit the program.
 """
 
@@ -29,7 +52,7 @@ while True:
 
 
 
-""" 3. Use while statement to compute square root of 4.
+""" 4. Use while statement to compute square root of 4.
    The Newthon formula is y = (x + a/x) / 2
    Start from an intial estimation of 3.
 """
