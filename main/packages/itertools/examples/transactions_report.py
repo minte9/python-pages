@@ -43,9 +43,9 @@ if DEBUG:
     print("""
         DEBUG / Transactions grouped by date:
 
-        You need to assign the list of a generator to a new variable
+        You need to assign the iterator to a new variable.
         Once you convert group (generator) to a list and iterate over it, 
-        you cannot iterate over it again
+        you cannot iterate over it again.
     """);
 
     grouped = itertools.groupby(transactions, key=itemgetter('date'))  # grouped is an iterator
