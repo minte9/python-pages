@@ -4,6 +4,9 @@ Generate a simple daily report of total credits and debits
 
 import itertools
 from operator import itemgetter
+from icecream import ic
+
+DEBUG = 1
 
 transactions = [
     {'date': '2024-08-01', 'amount': 100, 'type': 'credit'},
@@ -20,23 +23,21 @@ transactions.sort(key=itemgetter('date'))
 # Group transactions (by date)
 grouped = itertools.groupby(transactions, key=itemgetter('date'))  # grouped is an iterator
 
+# Totals (amout, credit)
 for date, group in grouped:
     group_list = list(group)
     
-    credit = sum(x['amount'] for x in group_list if x['type'] == 'credit')
-    debit  = sum(x['amount'] for x in group_list if x['type'] == 'debit')
+    credit_total = sum(x['amount'] for x in group_list if x['type'] == 'credit')
+    debit_total = sum(x['amount'] for x in group_list if x['type'] == 'debit')
 
-    print(f"{date} / Total credit: {credit} / Total debit: {debit}")
+    ic(date, credit_total, debit_total)
 
 """
-    2024-08-01 / Total credit: 400 / Total debit: 200
-    2024-08-02 / Total credit: 150 / Total debit: 50
-    2024-08-03 / Total credit: 250 / Total debit: 0
+    ic| date: '2024-08-01', credit_total: 400, debit_total: 200
+    ic| date: '2024-08-02', credit_total: 150, debit_total: 50
+    ic| date: '2024-08-03', credit_total: 250, debit_total: 0
 """
 
-
-from icecream import ic
-DEBUG = 1
 
 if DEBUG:
     print("""
