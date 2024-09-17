@@ -21,10 +21,10 @@ transactions = [
 transactions.sort(key=itemgetter('date'))
 
 # Group transactions (by date)
-grouped = itertools.groupby(transactions, key=itemgetter('date'))  # grouped is an iterator
+grouped = itertools.groupby(transactions, key=itemgetter('date'))  # Look here
 
 # Totals (amout, credit)
-for date, group in grouped:
+for date, group in grouped:  # grouped is an iterator
     group_list = list(group)
     
     credit_total = sum(x['amount'] for x in group_list if x['type'] == 'credit')
