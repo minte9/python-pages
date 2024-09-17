@@ -20,17 +20,13 @@ transactions.sort(key=itemgetter('date'))
 # Group transactions (by date)
 grouped = itertools.groupby(transactions, key=itemgetter('date'))  # grouped is an iterator
 
-totals = []
 for date, group in grouped:
     group_list = list(group)
     
     credit = sum(x['amount'] for x in group_list if x['type'] == 'credit')
     debit  = sum(x['amount'] for x in group_list if x['type'] == 'debit')
 
-    totals.append({'date': date, 'total_credit': credit, 'total_debit': debit})
-
-for item in totals:
-    print(f"{item['date']} / Total credit: {item['total_credit']} / Total debit: {item['total_debit']}")
+    print(f"{date} / Total credit: {credit} / Total debit: {debit}")
 
 """
     2024-08-01 / Total credit: 400 / Total debit: 200
