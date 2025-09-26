@@ -1,12 +1,12 @@
-"""Variables as references
-When you assign a value to a variable, you are creating that value
-in computer memory, and store a reference to it
-When you assign new value to a, reference to a doesn't affect b
+""" In Python everything is an object.
+A variable is a name bound to an object in memory.
+When we assign a variable to another, we'are just copying the reference.
 """
 
-a = 42; b = a; a = 100
+a = [1, 2, 3]
+b = a  # b is now a reference to the same list object
 
-assert a == 100
-assert b == 42
+b.append(4)
 
-print('Tests passed')
+print(a)  # [1, 2, 3, 4]
+print(b)  # [1, 2, 3, 4]
