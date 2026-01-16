@@ -1,4 +1,6 @@
-""" Slice operator [:] works on list, as with strings
+""" Slice operator [:]
+----------------------
+Works on list, as with strings
 The value -1 refers to the last index in a list
 """
 
