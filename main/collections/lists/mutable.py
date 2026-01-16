@@ -1,8 +1,11 @@
-"""Lists are mutable
-A list contains multiple values in an ordered sequence
+""" LISTS - MUTABLE
+-------------------
+Unlike strings, lists are mutable.
+A list contains multiple values in an ordered sequence.
 """
 
-A = [1, 2]; A[1] = 3
+A = [1, 2]
+A[1] = 3
 
 assert A == [1, 3]
 assert A != [1, 2]
