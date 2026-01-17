@@ -1,7 +1,7 @@
-""" Slice operator [:]
+""" SLICE operator [:]
 ----------------------
-Works on list, as with strings
-The value -1 refers to the last index in a list
+The slice operator works on list, as with strings.
+The value -1 refers to the last index in a list.
 """
 
 a = "abcde"

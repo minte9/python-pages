@@ -1,5 +1,7 @@
-"""To concatenate two list use + operator
-To multiply a list use * operator
+""" LISTS - CONCATENATION
+-------------------------
+To concatenate two list use + operator.
+To multiply a list use * operator.
 """
 
 A = [1, 2] + [3,4]
