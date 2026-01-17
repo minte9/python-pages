@@ -8,8 +8,8 @@ E = []
 for i in range(3):
     E.append(i)
 
-print(A)  # [0, 1, 2]
-print(E)  # [0, 1, 2]
+print(f"A: {A}")  # [0, 1, 2]
+print(f"E: {E}")  # [0, 1, 2]
 
 
 """ 
@@ -22,8 +22,8 @@ L = []
 for j in range(3):
     L.append([i for i in range(3)])
 
-print(M)  # [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
-print(L)  # [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+print(f"M: {M}")  # [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+print(f"L: {L}")  # [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
 
 
 """
@@ -37,5 +37,20 @@ perms = [
     if i != j and j != k and k != i
 ]
 
-print(perms)  
+print(f"P: {perms}")  
     # [[0, 1, 2], [0, 2, 1], [1, 0, 2], [1, 2, 0], [2, 0, 1], [2, 1, 0]]
+
+
+""" 
+    Pythonic / Permutations (recommended)
+
+    - faster
+    - cleaner
+    - less prone-error
+"""
+from itertools import permutations
+
+perms = list(permutations([0, 1, 2]))
+             
+print(f"P: {perms}")
+    # [(0, 1, 2), (0, 2, 1), (1, 0, 2), (1, 2, 0), (2, 0, 1), (2, 1, 0)]
