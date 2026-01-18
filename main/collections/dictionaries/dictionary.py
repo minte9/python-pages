@@ -1,49 +1,65 @@
-# A dictonary represents a mapping ...
-# from keys to valuess
-# 
-# In a list, the index have to be integer ...
-# in a dictionary it can be any type.
+# ---------------------------------------
+# DICTIONARIES
+# ---------------------------------------
+# A dictionary maps KEYS and VALUES.
+# Unlinke lists, keys do NOT have to be integers.
+# Keys must be unique and hashable.
 
 
-# Create a dictionary using dict()
+# Create an empty dictionary
+# --------------------------
+prices = dict()
 
-D = dict()
-D["one"] = "uno"
+# Add items (product -> price)
+prices["apple"] = 0.50
+prices["banana"] = 0.30
 
-assert D.get("one") == "uno"
-assert D.get("one") != None
-assert D.get("one") != "one"
+# Access values using the key
+assert prices.get("apple") == 0.50
+assert prices.get("orange") == None  # key not found
 
 
-# Creates a dictionary using {}
-
-D = {
-    "one": "uno",
-    "two": "dos",
-    "three": "tres",
+# Create a dictonary using {}
+# ---------------------------
+prices = {
+    "apple": 0.50,
+    "banana": 0.30,
+    "orange": 0.80,
 }
 
-assert D.get("two") == "dos"
-assert D["two"] == "dos"
+assert prices["banana"] == 0.30
+assert prices["orange"] == 0.80
 
 
-# in operator
+# ----------------------------------
+# CHECKING KEYS
+# ----------------------------------
 
-assert "one" in D
-assert ("dos" in D) == False
-assert ("two" in D) == True
+assert "apple" in prices
+assert "grape" not in prices
 
 
-# Loop
+# ----------------------------------
+# LOOPING
+# ----------------------------------
 
-for v in D.values():
-    print(v)
-        # uno
-        # dos
-        # tres
+# Loop througk values
+for price in prices.values():
+    print(price)
+    # 0.5
+    # 0.3
+    # 0.8
 
-for k in D.keys():
-    print(k)
-        # one
-        # two
-        # three
+# Loop through keys
+for product in prices.keys():
+    print(product)
+    # apple
+    # banana
+    # orange
+
+# Loop through keys and values together
+for product, price in prices.items():
+    print(product, "costs", price)
+    # apple costs 0.5
+    # banana costs 0.3
+    # orange costs 0.8
