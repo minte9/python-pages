@@ -1,5 +1,5 @@
 # --------------------------------------------
-# HASHING (DICTIONARY
+# HASHING (DICTIONARY)
 # --------------------------------------------
 # A hash is a function that takes a value (on any kind) and returns an integer.
 # Dictionaries use these integers to store and look up key-value pairs.
