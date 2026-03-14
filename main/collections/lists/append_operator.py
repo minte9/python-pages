@@ -3,6 +3,7 @@
 To add an element to a list use append().
 To add a list to another list use extend().
 The del statement removes values at the index in a list.
+--------------------------------------------------------
 """
 
 A = ['a', 'b', 'c']

@@ -2,6 +2,7 @@
 ----------------------
 The slice operator works on list, as with strings.
 The value -1 refers to the last index in a list.
+------------------------------------------------
 """
 
 a = "abcde"
@@ -14,8 +15,10 @@ A = [1, 2, 3, 4, 5]
 
 assert A[:1]   != 1
 assert A[:1]   == [1]
+
 assert A[1:]   == [2, 3, 4, 5]
 assert A[1:3]  == [2, 3] # limit 3 not included
+
 assert A[-1]   == 5
 assert A[-1:]  == [5] # last
 
